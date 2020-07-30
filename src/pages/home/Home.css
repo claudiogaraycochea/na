@@ -1,0 +1,33 @@
+.image-brain-check {
+  height: 260px;
+  width: 335px;
+  background-image: url('../../assets/images/image-brain-check.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.image-brain-cycle {
+  height: 240px;
+  width: 820px;
+  background-image: url('../../assets/images/image-brain-cycle.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.hero-wrapper h1 {
+  color: #60347B;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.hero-wrapper h2 {
+  color: #be4ed7;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.hero-wrapper .title {
+  border: 1px solid green;
+}
