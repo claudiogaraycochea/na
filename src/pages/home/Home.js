@@ -7,7 +7,7 @@ class Home extends Component {
     // const { fullData } = this.props;
     return (
       <Container>
-        <Section height='100' className='hero-wrapper'>
+        <Section className='hero-wrapper'>
           <Row>
             <Col>
               <div>
@@ -30,6 +30,7 @@ class Home extends Component {
             </Col>
           </Row>
         </Section>
+        <div className='section-divisor'/>
         <Section>
           <Row>
             <Col>
@@ -69,6 +70,7 @@ class Home extends Component {
             </Col>
           </Row>
         </Section>
+        <div className='section-divisor'/>
         <Section>
           <Row>
             <Col>
@@ -89,6 +91,7 @@ class Home extends Component {
             </Col>
           </Row>
         </Section>
+        <div className='section-divisor'/>
         <Section>
           <Row>
             <Col>
@@ -125,6 +128,7 @@ class Home extends Component {
             </Col>
           </Row>
         </Section>
+        <div className='section-divisor'/>
         <Section>
           <Row>
             <Col>
@@ -180,6 +184,7 @@ class Home extends Component {
             </Col>
           </Row>
         </Section>
+        <div className='section-divisor'/>
         <Section>
           <Row>
             <Col>
@@ -237,6 +242,7 @@ class Home extends Component {
             </Col>
           </Row>
         </Section>
+        <div className='section-divisor'/>
         <Section>
           <Row>
             <Col>
@@ -288,6 +294,7 @@ class Home extends Component {
             </Col>
           </Row>
         </Section>
+        <div className='section-divisor'/>
         <Section>
           <Row>
             <Col>
@@ -349,9 +356,6 @@ class Home extends Component {
         <Section>
           <Row>
             <Col>
-              Image
-            </Col>
-            <Col>
               <div>
                 <h3>Mis habilidades laborales con el Metodo de Asimilacion</h3>
                 Soy Claudio Garaycochea, con mas de 17 años de experiencia, desarrolle 
@@ -365,6 +369,7 @@ class Home extends Component {
             </Col>
           </Row>
         </Section>
+        <div className='section-divisor'/>
         <Section>
           <Row>
             <Col>
@@ -395,6 +400,7 @@ class Home extends Component {
             </Col>
           </Row>
         </Section>
+        <div className='section-divisor'/>
         <Section>
           <Row>
             <Col>
@@ -412,7 +418,12 @@ class Home extends Component {
           </Row>
           <Row>
             <Col>
-              <i className='image-brain-cycle'/>
+              <i className='image-assimilation-normal'/>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <i className='image-neo-assimilation'/>
             </Col>
           </Row>
           <Row>

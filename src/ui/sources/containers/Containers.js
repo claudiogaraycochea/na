@@ -15,24 +15,12 @@ export const Container = (props) => {
 
 export const Section = (props) => {
   const {
-    height,
     className,
-    backgroundImage,
-    alignItems,
-    justifyContent,
     children,
   } = props;
-  const styles = {
-    minHeight: (height) ? `${height}%` : null,
-    backgroundImage: `url(${backgroundImage})`,
-    alignItems: (alignItems) ? `${alignItems}` : null,
-    flex: 1,
-    justifyContent: (justifyContent) ? `${justifyContent}` : null,
-  }
   return (
     <div
       className={`section ${className}`}
-      style={styles}
     >
       {children}
     </div>
@@ -45,32 +33,18 @@ export const Row = (props) => {
     <div
       className='row'
     >
-      {props.children}
+      {children}
     </div>
   );
 };
 
 export const Col = (props) => {
   const {
-    height,
-    backgroundImage,
-    alignItems,
-    justifyContent,
-    textAlign,
     children,
   } = props;
-  const styles = {
-    height: (height) ? `${height}%` : null,
-    backgroundImage: `url(${backgroundImage})`,
-    alignItems: (alignItems) ? `${alignItems}` : null,
-    flex: 1,
-    justifyContent: (justifyContent) ? `${justifyContent}` : null,
-    textAlign: (textAlign) ? `${textAlign}` : null,
-  }
   return (
     <div
       className='col'
-      style={styles}
     >
       {children}
     </div>

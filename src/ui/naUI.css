@@ -3,12 +3,10 @@ body, html, .main-app, .app, #root {
   box-sizing: border-box;
   background-color: #ffffff; 
   color: #60347B;
-	overflow: hidden;
-	/*font-family: NotoSans-Regular,Arial,sans-serif;*/
 	font-family: 'Roboto', sans-serif;
-	line-height: 1.5;
+	line-height: 1.2;
 	font-weight: 300;
-	font-size: 24px;
+	font-size: 16px;
 }
 
 /* Scroll */
@@ -105,15 +103,9 @@ body, html, .main-app, .app, #root {
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
-	body {
-		font-size: 16px !important;
-	}
-	.box {
-		padding: 20px;
-	}
-	.full-height {
-		height: 99%;
-		box-sizing: border-box;
+	body, html, .main-app, .app, #root {
+		font-size: 24px;
+		line-height: 1.5;
 	}
 }
 
