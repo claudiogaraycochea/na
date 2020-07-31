@@ -1,0 +1,90 @@
+.image-brain-check {
+  display: block;
+  height: 200px;
+  width: 100%;
+  background-image: url('../../assets/images/image-brain-check.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.image-brain-cycle {
+  display: block;
+  height: 100px;
+  width: 100%;
+  background-image: url('../../assets/images/image-brain-cycle.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.image-assimilation-normal {
+  display: block;
+  height: 100px;
+  width: 100%;
+  background-image: url('../../assets/images/image-assimilation-normal.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.image-neo-assimilation {
+  display: block;
+  height: 100px;
+  width: 100%;
+  background-image: url('../../assets/images/image-neo-assimilation.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.hero-wrapper { 
+  height: 100vh;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero-wrapper h1 {
+  color: #60347B;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.hero-wrapper h2 {
+  color: #be4ed7;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.hero-wrapper .title {
+  border: 1px solid green;
+}
+
+@media (min-width: 768px) {
+  .hero-wrapper { 
+    padding: 0;
+  }
+
+  .hero-wrapper h1 {
+    color: #60347B;
+    font-size: 48px;
+    font-weight: bold;
+  }
+
+  .hero-wrapper h2 {
+    color: #be4ed7;
+    font-size: 26px;
+    font-weight: bold;
+  }
+
+  .image-brain-check {
+    height: 260px;
+  }
+
+  .image-assimilation-normal, .image-neo-assimilation {
+    height: 250px;
+  }
+}
