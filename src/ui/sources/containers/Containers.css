@@ -10,6 +10,29 @@
   padding: 100px 0;
 }
 
+.section.dark {
+  background-color: #222222;
+  color: #FFFFFF;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding: 20px;
+}
+
+.section.highlight {
+  background-color: #fbfbfb;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding: 20px;
+}
+
+.section.clear {
+  background-color: #222222;
+  color: #FFFFFF;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding: 20px;
+}
+
 .section-divisor {
   display: block;
   height: 16px;
@@ -20,22 +43,88 @@
 }
 
 .row {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   box-sizing: border-box;
   max-width: 900px;
   margin-bottom: 20px;
 }
 
+.row.margin-top {
+  margin-top: 20px;
+}
+
 .col {
   margin: 0 10px;
+  flex: 1;
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.col .col:last-child {
+  margin-bottom: 0;
 }
 
 .box {
   min-height: 100px;
   width: 100%;
+  padding: 20px;
+  background: #FFFFFF;
   border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.box.box-circle {
+  padding-top: 70px;
+  margin-top: 70px;
+}
+
+.box .image-top {
+  background-color: #ffffff;
+  border: 1px solid #e6e6e6;
+  width: 128px;
+  height: 128px;
+  position: absolute;
+  top: -70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  align-items: center;
+}
+
+.box .top-circle-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.box .top-circle-wrapper .title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.box .title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.box .subtitle {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.box .content {
+  font-size: 14px;
 }
 
 .box.margin-bottom-2 {
@@ -60,5 +149,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .row {
+    flex-direction: row;
+  }
+
+  .col {
+    margin: 0 10px;
+    flex: 1;
+    margin-bottom: 0;
   }
 }

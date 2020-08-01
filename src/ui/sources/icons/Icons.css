@@ -7,6 +7,11 @@
   background-size: contain;
 }
 
+.icon.large {
+  height: 64px;
+  width: 64px;
+}
+
 .icon.search {
   background-image: url('../../../assets/images/icon-search.svg');
 }
@@ -35,4 +40,15 @@
   background-image: url('../../../assets/images/icon-support.svg');
 }
 
+.icon.learn {
+  background-image: url('../../../assets/images/icon-learn.svg');
+}
+
+.icon.assimilate {
+  background-image: url('../../../assets/images/icon-assimilate.svg');
+}
+
+.icon.apply-automatically {
+  background-image: url('../../../assets/images/icon-apply-automatically.svg');
+}
 

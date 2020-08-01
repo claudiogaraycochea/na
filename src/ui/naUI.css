@@ -100,11 +100,19 @@ body, html, .main-app, .app, #root {
 	z-index: 1000;
 }
 
+.experiences { 
+	padding: 20px 40px;
+	border-radius: 10px;
+	background-color: #3b374e;
+	color: #fff;
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
 	body, html, .main-app, .app, #root {
-		font-size: 24px;
+		font-size: 18px;
 		line-height: 1.5;
 	}
 }
