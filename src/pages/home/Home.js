@@ -1,6 +1,12 @@
 import React, { Component }from "react";
-import { Container, Section, Row, Col, Box, H1, H2, H3 } from '../../ui/naUI';
+import {
+  Container, Section, Row, Col,
+  Box, BoxCircle,
+  H1, H2, H3, Button,
+  Icon,
+} from '../../ui/naUI';
 import './Home.css';
+import imageClaudio from '../../assets/images/image-claudio-g.png';
 
 class Home extends Component {
   render() {
@@ -12,7 +18,7 @@ class Home extends Component {
             <Col>
               <div>
                 <H1>ALFABETISMO COGNITIVO</H1>
-                <H2>APRENDE EL METODO DE ASIMILACION Y OBTEN HABILIDADES LABORALES EN 3 SIMPLES PASOS</H2>
+                <H2>APRENDE EL METODO DE NEO ASIMILACION Y OBTEN HABILIDADES LABORALES EN 3 SIMPLES PASOS</H2>
               </div>
             </Col>
           </Row>
@@ -23,10 +29,12 @@ class Home extends Component {
           </Row>
           <Row>
             <Col>
-              Con este metodo aprenderas a utilizar tu cerebro de 
-              manera mas racional, comprender mejor a terceros, 
-              adquirir nuevas habilidades para conseguir empleo 
-              y reducir el estres en tu actual trabajo.
+              <h3>
+                Con este metodo aprenderas a utilizar tu cerebro de 
+                manera mas racional, comprender mejor a terceros, 
+                adquirir nuevas habilidades para conseguir empleo, 
+                emprender o reducir el estres en tu actual trabajo.
+              </h3>
             </Col>
           </Row>
         </Section>
@@ -40,7 +48,7 @@ class Home extends Component {
           <Row>
             <Col>
               Soy Claudio Garaycochea, con casi dos decadas como 
-              desarrollador, la necesidad de aprender lenguajes de 
+              desarrollador web, la necesidad de aprender lenguajes de 
               programacion era cada vez mas exigente. Muchas horas 
               de trabajo, momentos de estres, me han llevado a 
               estudiar neurociencia para encontrar una solucion a 
@@ -54,7 +62,7 @@ class Home extends Component {
               encontraba como ponerlo en practica para que me 
               ayude. Es por ello que cree mi propio metodo para 
               obtener habilidades mentales, lo llamo Metodo de 
-              Asimilacion, que cambio mi vida y por ello decidi 
+              Neo Asimilacion, que cambio mi vida y por ello decidi 
               compartirlo para ayudarte a ti, es gratis y esta 
               todo en este documento. Mi unico deseo es que si 
               te da resultado, que ayudes a otras personas 
@@ -70,8 +78,7 @@ class Home extends Component {
             </Col>
           </Row>
         </Section>
-        <div className='section-divisor'/>
-        <Section>
+        <Section className='dark'>
           <Row>
             <Col>
               <H2>¿Qué aprenderás?</H2>
@@ -81,7 +88,7 @@ class Home extends Component {
             <Col>
               Este documento se divide en secciones que te ayudara a comprender 
               mejor que es lo que hacemos con nuestro cerebro, saber como funciona,
-               entenderlo con ejemplos y como ponerlo en marcha el Metodo de 
+               entenderlo con ejemplos y como ponerlo en marcha el Metodo de Neo
                Asimilacion desde ahora.
             </Col>
           </Row>
@@ -91,7 +98,6 @@ class Home extends Component {
             </Col>
           </Row>
         </Section>
-        <div className='section-divisor'/>
         <Section>
           <Row>
             <Col>
@@ -108,15 +114,30 @@ class Home extends Component {
           </Row>
           <Row>
             <Col>
-              <Row>
+              <Row className='margin-top'>
                 <Col>
-                  Ejemplo 1
+                  <Box>
+                    <div className='title'>Ejemplo 1</div>
+                    <div className='content'>
+                      Cuando vemos un Rottwailer, la mayoría de nosotros "cruzamos a la vereda del frente".
+                    </div>
+                  </Box>
                 </Col>
                 <Col>
-                  Ejemplo 2
+                  <Box>
+                    <div className='title'>Ejemplo 2</div>
+                    <div className='content'>
+                      Cuando vamos por una salsa de tomate en un supermercado, buscamos una lata de color rojo.
+                    </div>
+                  </Box>
                 </Col>
                 <Col>
-                  Ejemplo 3
+                  <Box>
+                    <div className='title'>Ejemplo 3</div>
+                    <div className='content'>
+                      Cuando conducimos, hablamos y leemos carteles en la ruta.
+                    </div>
+                  </Box>
                 </Col>
               </Row>
             </Col>
@@ -128,8 +149,7 @@ class Home extends Component {
             </Col>
           </Row>
         </Section>
-        <div className='section-divisor'/>
-        <Section>
+        <Section className='highlight'>
           <Row>
             <Col>
               <H2>La teoría de los 3 cerebros</H2>
@@ -145,15 +165,33 @@ class Home extends Component {
           </Row>
           <Row>
             <Col>
-              <Row>
+              <Row className='margin-top'>
                 <Col>
-                  1 El Neocórtex
+                  <Box>
+                    <div className='title'>Neocórtex</div>
+                    <div className='content'>
+                      <div>El cerebro que piensa</div>
+                      <div>APROX 10% DE USO</div>
+                    </div>
+                  </Box>
                 </Col>
                 <Col>
-                  2 El Limbico
+                  <Box>
+                    <div className='title'>Limbico</div>
+                    <div className='content'>
+                      <div>El cerebro que siente</div>
+                      <div>APROX 10% DE USO</div>
+                    </div>
+                  </Box>
                 </Col>
                 <Col>
-                  3 El Reptiliano
+                  <Box>
+                    <div className='title'>Reptiliano</div>
+                    <div className='content'>
+                      <div>El cerebro que actua</div>
+                      <div>APROX 80% DE USO</div>
+                    </div>
+                  </Box>
                 </Col>
               </Row>
             </Col>
@@ -171,7 +209,7 @@ class Home extends Component {
               Meses mas tarde y millones de dolares gastados en publicidad, 
               fue un total fracaso, la gente preferia seguir comiendo 
               hamburguesas. Esto se debe a que en el momento de la encuesta, 
-              la gente respondia con el cerebro Racional, pero a la hora de 
+              la gente respondia con el cerebro Neocórtex (racional), pero a la hora de 
               elegir utiliza el cerebro Reptiliano.
             </Col>
           </Row>
@@ -184,7 +222,6 @@ class Home extends Component {
             </Col>
           </Row>
         </Section>
-        <div className='section-divisor'/>
         <Section>
           <Row>
             <Col>
@@ -193,9 +230,11 @@ class Home extends Component {
           </Row>
           <Row>
             <Col>
-              El funcionamiento de tu cerebro a lo largo de tu vida actúa 
-              por "asimilación", es decir, aprende algo, asimila y aplica 
-              automáticamente para reaccionar de manera inmediata.
+              <H3>
+                El funcionamiento de tu cerebro a lo largo de tu vida actúa 
+                por "asimilación", es decir, aprende algo, asimila y aplica 
+                 automáticamente para reaccionar de manera inmediata.
+              </H3>
             </Col>
           </Row>
           <Row>
@@ -210,15 +249,45 @@ class Home extends Component {
           </Row>
           <Row>
             <Col>
-              <Row>
+              <Row className='margin-top'>
                 <Col>
-                  1 - Aprendes
+                  <BoxCircle 
+                    topChildren={
+                      <div className='top-circle-wrapper'>
+                        <Icon className='learn large'/>
+                        <div className='title'>PASO 1</div>
+                      </div>
+                    }
+                  >
+                    <div className='subtitle'>APRENDES</div>
+                    <div className='content'>Aprendes algo de manera consciente e inconsciente</div>
+                  </BoxCircle>
                 </Col>
                 <Col>
-                  2 - Asimilas
+                  <BoxCircle 
+                    topChildren={
+                      <div className='top-circle-wrapper'>
+                        <Icon className='assimilate large'/>
+                        <div className='title'>PASO 2</div>
+                      </div>
+                    }
+                  >
+                    <div className='subtitle'>ASIMILAS</div>
+                    <div className='content'>Lo que aprendes, lo asimilas de manera consciente e inconsciente</div>
+                  </BoxCircle>
                 </Col>
                 <Col>
-                  3 - Aplicas automaticamente
+                  <BoxCircle 
+                    topChildren={
+                      <div className='top-circle-wrapper'>
+                        <Icon className='apply-automatically large'/>
+                        <div className='title'>PASO 3</div>
+                      </div>
+                    }
+                  >
+                    <div className='subtitle'>APLICA AUTOMATICAMENTE</div>
+                    <div className='content'>El cerebro que actua</div>
+                  </BoxCircle>
                 </Col>
               </Row>
             </Col>
@@ -246,21 +315,23 @@ class Home extends Component {
         <Section>
           <Row>
             <Col>
-              <H2>El Metodo de Asimilacion</H2>
+              <H2>El Metodo de Neo Asimiliación</H2>
             </Col>
           </Row>
           <Row>
             <Col>
-              Genial, ya sabes como funciona tu cerebro, ahora vamos a utilizarlo 
-              correctamente. Se trata de un metodo en el que tu cerebro adquiere 
-              habilidades mentales rapidamente, es el mismo proceso de los 3 pasos 
-              en que aprende y asimila nuestro cerebro pero de manera consciente. 
-              Este simple detalle marcara un cambio enorme en tu vida si lo sabes aplicaro.
+              <H3>
+                Genial, ya sabes como funciona tu cerebro, ahora vamos a utilizarlo 
+                correctamente. Se trata de un metodo en el que tu cerebro adquiere 
+                habilidades mentales rapidamente, es el mismo proceso de los 3 pasos 
+                en que aprende y asimila nuestro cerebro pero de manera consciente. 
+                Este simple detalle marcara un cambio enorme en tu vida si lo sabes aplicaro.
+              </H3>
             </Col>
           </Row>
           <Row>
             <Col>
-              El Metodo de Asimilacion ayuda a te permite aprender habilidades de 
+              El Metodo de Neo Asimilacion ayuda a te permite aprender habilidades de 
               manera inmediata, podras entender mejor a un tercero, reducir el estres 
               frente a exigencias laborales, en general el metodo reducira tu carga 
               cerebral, haciendo que tu cerebro se sienta confortable mejorando tu 
@@ -269,15 +340,45 @@ class Home extends Component {
           </Row>
           <Row>
             <Col>
-              <Row>
+              <Row className='margin-top'>
                 <Col>
-                  1 - Aprendes de manera consciente y agradable
+                  <BoxCircle 
+                    topChildren={
+                      <div className='top-circle-wrapper'>
+                        <Icon className='learn large'/>
+                        <div className='title'>PASO 1</div>
+                      </div>
+                    }
+                  >
+                    <div className='subtitle'>APRENDES</div>
+                    <div className='content'>Aprendes algo de manera consciente y agradable</div>
+                  </BoxCircle>
                 </Col>
                 <Col>
-                  2 - Asimilas conscientemente
+                  <BoxCircle 
+                    topChildren={
+                      <div className='top-circle-wrapper'>
+                        <Icon className='assimilate large'/>
+                        <div className='title'>PASO 2</div>
+                      </div>
+                    }
+                  >
+                    <div className='subtitle'>ASIMILAS</div>
+                    <div className='content'>Lo que aprendes, lo asimilas de manera consciente</div>
+                  </BoxCircle>
                 </Col>
                 <Col>
-                  3 - Aplicas automaticamente
+                  <BoxCircle 
+                    topChildren={
+                      <div className='top-circle-wrapper'>
+                        <Icon className='apply-automatically large'/>
+                        <div className='title'>PASO 3</div>
+                      </div>
+                    }
+                  >
+                    <div className='subtitle'>APLICAS AUTOMATICAMENTE</div>
+                    <div className='content'>Lo que asimilas</div>
+                  </BoxCircle>
                 </Col>
               </Row>
             </Col>
@@ -298,7 +399,7 @@ class Home extends Component {
         <Section>
           <Row>
             <Col>
-              <H2>Ejemplo Real</H2>
+              <H2>Ejemplo Real de Neo Asimilacion</H2>
             </Col>
           </Row>
           <Row>
@@ -311,60 +412,67 @@ class Home extends Component {
               de asimilación.
             </Col>
           </Row>
-          <Row>
+          <Row className='margin-top'>
             <Col>
-              Aprender de Manera Confortable:
+              <BoxCircle
+                topChildren={
+                  <div className='top-circle-wrapper'>
+                    <Icon className='learn large'/>
+                    <div className='title'>PASO 1</div>
+                  </div>
+                }
+              >
+                <div className='title'>APRENDE DE MANERA CONFORTABLE</div>
+                <div className='content'>
+                  Apunte las 3 maneras de saludar del team, y busque las 20 palabras más 
+                  utilizadas por el team, como se escribe y su pronunciación. Finalmente 
+                  “Face” era “Phase”.
+                </div>                
+              </BoxCircle>
             </Col>
             <Col>
-              Apunte las 3 maneras de saludar del team, y busque las 20 palabras más 
-              utilizadas por el team, como se escribe y su pronunciación. Finalmente 
-              “Face” era “Phase”.
+              <BoxCircle
+                topChildren={
+                  <div className='top-circle-wrapper'>
+                    <Icon className='assimilate large'/>
+                    <div className='title'>PASO 2</div>
+                  </div>
+                }
+              >
+                <div className='title'>ASIMILA DE MANERA CONSCIENTE</div>
+                <div className='content'>
+                  Asimile las 23 palabras, por ejemplo budget, miraba una imagen de un 
+                  presupuesto y escuchaba como sonaba. Aproximadamente unas 10 veces por 
+                  cada palabra hasta que lo asimilaba como una palabra nativa.
+                </div>
+              </BoxCircle>
+            </Col>
+            <Col>
+              <BoxCircle
+                topChildren={
+                  <div className='top-circle-wrapper'>
+                    <Icon className='apply-automatically large'/>
+                    <div className='title'>PASO 3</div>
+                  </div>
+                }
+              >
+                <div className='title'>APLICA AUTOMATICAMENTE</div>
+                <div className='content'>
+                  Listo, una vez que lo asimilas, tu cerebro reconoce esa palabra automáticamente. 
+                  Una semana más tarde de la primer meeting, estaba hablando con ellos de manera 
+                  relajada, utilizando mis recursos cognitivos para resolver las tareas.
+                </div>                
+              </BoxCircle>
             </Col>
           </Row>
           <Row>
             <Col>
-              Asimilar de Manera Consciente:
-            </Col>
-            <Col>
-              Asimile las 23 palabras, por ejemplo budget, miraba una imagen de un 
-              presupuesto y escuchaba como sonaba. Aproximadamente unas 10 veces por 
-              cada palabra hasta que lo asimilaba como una palabra nativa.
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              Aplicar Automáticamente:
-            </Col>
-            <Col>
-              Listo, una vez que lo asimilas, tu cerebro reconoce esa palabra automáticamente. 
-              Una semana más tarde de la primer meeting, estaba hablando con ellos de manera 
-              relajada, utilizando mis recursos cognitivos para resolver las tareas.
-            </Col>
-          </Row>
-        </Section>
-        <Section>
-          <Row>
-            <Col>
-              Con el Metodo de Asimilacion aprendi ingles en una semana para trabajar en 
-              una startup de USA. El mismo tiempo aprendi lenguajes de programacion para 
-              desarrollar apps y websites en grandes companias, estas me contrataban 
-              conscientes que no cumplia con los requerimientos previamente, solo les 
-              pedia una semana y estaba 100% operativo. 
-            </Col>
-          </Row>
-        </Section>
-        <Section>
-          <Row>
-            <Col>
-              <div>
-                <h3>Mis habilidades laborales con el Metodo de Asimilacion</h3>
-                Soy Claudio Garaycochea, con mas de 17 años de experiencia, desarrolle 
-                apps para Facebook y el sitio de GlobalLogic (compnaia IT con clientes 
-                como Samsung, HP, Fox, entre otros), tambien trabaje en startups varias 
-                de California, Washington DC y Suiza.
-                Segun los requerimientos de cada proyecto me involucro desde idea, 
-                brainstorming, user experience, visual design, desarrollo, hasta 
-                tareas de marketing y venta corporativa. 
+              <div className='experiences'>
+                Con el Metodo de Neo Asimilacion aprendi ingles en una semana para trabajar en 
+                una startup de USA. El mismo tiempo aprendi lenguajes de programacion para 
+                desarrollar apps y websites en grandes companias, estas me contrataban 
+                conscientes que no cumplia con los requerimientos previamente, solo les 
+                pedia una semana y estaba 100% operativo. 
               </div>
             </Col>
           </Row>
@@ -373,7 +481,24 @@ class Home extends Component {
         <Section>
           <Row>
             <Col>
-              <H2>Metodo de Asimilacion con fines educativos</H2>
+              <BoxCircle backgroundImage={imageClaudio}>
+                <h3>Mis habilidades laborales</h3>
+                Soy Claudio Garaycochea, con mas de 17 años de experiencia, desarrolle 
+                apps para Facebook y el sitio de GlobalLogic (compnaia IT con clientes 
+                como Samsung, HP, Fox, entre otros), tambien trabaje en startups varias 
+                de California, Washington DC y Suiza.
+                Segun los requerimientos de cada proyecto me involucro desde idea, 
+                brainstorming, user experience, visual design, desarrollo, hasta 
+                tareas de marketing y venta corporativa. 
+              </BoxCircle>
+            </Col>
+          </Row>
+        </Section>
+        <div className='section-divisor'/>
+        <Section>
+          <Row>
+            <Col>
+              <H2>Neo Asimilacion en educacion</H2>
             </Col>
           </Row>
           <Row>
@@ -385,7 +510,7 @@ class Home extends Component {
           </Row>
           <Row>
             <Col>
-              Si se respeta los tres pasos que forman el metodo de asimilacion, estamos 
+              Si se respeta los tres pasos que forman el metodo de neo asimilacion, estamos 
               dando a nuestros hijos las herramientas que ayudaran a tener una mejor 
               calidad de vida, menos estres frente a exigencias y facilidad para 
               adquirir nuevos conocimientos para su futuro laboral.
@@ -404,7 +529,7 @@ class Home extends Component {
         <Section>
           <Row>
             <Col>
-              <H2>Metodo de Asimilacion enfocado a consumo</H2>
+              <H2>Neo Asimilacion en consumo</H2>
             </Col>
           </Row>
           <Row>
@@ -428,7 +553,51 @@ class Home extends Component {
           </Row>
           <Row>
             <Col>
-              El objetivo del metodo de Asimilacion es lograr la baja carga cerebral (punto 3 imagen)
+              El objetivo del metodo de Neo Asimilacion es lograr la baja carga cerebral (punto 3 imagen)
+            </Col>
+          </Row>
+        </Section>
+        <Section className='clear'>
+          <Row className='margin-top'>
+            <Col>
+              <Box className='text-normal'>
+                <div className='title'>NEO ASIMILACION EN PRODUCTOS Y SERVICIOS</div>
+                <div className='content'>
+                  Ofrecemos un servicio de consultoria basado en el 80% de las decisiones de tus potenciales clientes.
+                </div>
+                <Button
+                  className='primary large'
+                >
+                  Consultanos
+                </Button> 
+              </Box>
+            </Col>
+            <Col>
+              <Box className='text-normal'>
+                <div className='title'>UX BASADO EN NEO ASIMILACION</div>
+                <div className='content'>
+                  Creamos la manera de reducir la carga cerebral de tus usuarios, nos enfocaremos 
+                  a lograr una experiencia de usuario super intuitiva y confortable.
+                </div>
+                <Button
+                  className='primary large'
+                >
+                  Consultanos
+                </Button>
+              </Box>
+            </Col>
+            <Col>
+              <Box className='text-normal'>
+                <div className='title'>NEO ASIMILACION EN TAREAS LABORALES</div>
+                <div className='content'>
+                  Quieres adquirir habilidades de manera inmediata, te asesoramos con nuestra tecnica que podra mejorar tu desempeno.
+                </div>
+                <Button
+                  className='primary large'
+                >
+                  Consultanos
+                </Button>                
+              </Box>
             </Col>
           </Row>
         </Section>

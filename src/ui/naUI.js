@@ -1,6 +1,6 @@
 /* 
 
-NeuroAssimilations UI - User Interface Design
+NeoAssimilation UI - User Interface Design
 -------------------------------------------------------------------
 
   Features:
@@ -14,7 +14,7 @@ NeuroAssimilations UI - User Interface Design
 
 */
 
-import { Container, Section, Row, Col, Box } from './sources/containers/Containers';
+import { Container, Section, Row, Col, Box, BoxCircle } from './sources/containers/Containers';
 import { Button } from './sources/buttons/Buttons';
 import { Input } from './sources/inputs/Inputs';
 import { H1, H2, H3 } from './sources/texts/Texts';
@@ -30,6 +30,7 @@ export {
   Row,
   Col,
   Box,
+  BoxCircle,
   Button,
   Input,
   H1,
