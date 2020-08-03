@@ -28,10 +28,10 @@ export const Section = (props) => {
 };
 
 export const Row = (props) => {
-  const { children } = props;
+  const { className, children } = props;
   return (
     <div
-      className='row'
+      className={`row ${className}`}
     >
       {children}
     </div>
@@ -73,6 +73,31 @@ export const Box = (props) => {
       className={`box ${className}`}
       style={styles}
     >
+      {children}
+    </div>
+  );
+};
+
+export const BoxCircle = (props) => {
+  const {
+    className,
+    backgroundImage,
+    children,
+    topChildren,
+  } = props;
+  const styles = {
+    backgroundImage: `url(${backgroundImage})`,
+  }
+  return (
+    <div
+      className={`box box-circle ${className}`}
+    >
+      <div
+        className='image-top'
+        style={styles}
+      >
+        {topChildren}
+      </div>
       {children}
     </div>
   );
