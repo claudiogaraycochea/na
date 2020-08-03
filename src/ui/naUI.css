@@ -108,6 +108,10 @@ body, html, .main-app, .app, #root {
 	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
+.text-normal {
+	color: #60347B;
+}
+
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {

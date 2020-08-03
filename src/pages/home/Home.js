@@ -399,7 +399,7 @@ class Home extends Component {
         <Section>
           <Row>
             <Col>
-              <H2>Ejemplo Real</H2>
+              <H2>Ejemplo Real de Neo Asimilacion</H2>
             </Col>
           </Row>
           <Row>
@@ -414,34 +414,55 @@ class Home extends Component {
           </Row>
           <Row className='margin-top'>
             <Col>
-              <Box>
-                <div className='title'>Aprender de Manera Confortable</div>
+              <BoxCircle
+                topChildren={
+                  <div className='top-circle-wrapper'>
+                    <Icon className='learn large'/>
+                    <div className='title'>PASO 1</div>
+                  </div>
+                }
+              >
+                <div className='title'>APRENDE DE MANERA CONFORTABLE</div>
                 <div className='content'>
                   Apunte las 3 maneras de saludar del team, y busque las 20 palabras más 
                   utilizadas por el team, como se escribe y su pronunciación. Finalmente 
                   “Face” era “Phase”.
                 </div>                
-              </Box>
+              </BoxCircle>
             </Col>
             <Col>
-              <Box>
-                <div className='title'>Asimilar de Manera Consciente</div>
+              <BoxCircle
+                topChildren={
+                  <div className='top-circle-wrapper'>
+                    <Icon className='assimilate large'/>
+                    <div className='title'>PASO 2</div>
+                  </div>
+                }
+              >
+                <div className='title'>ASIMILA DE MANERA CONSCIENTE</div>
                 <div className='content'>
                   Asimile las 23 palabras, por ejemplo budget, miraba una imagen de un 
                   presupuesto y escuchaba como sonaba. Aproximadamente unas 10 veces por 
                   cada palabra hasta que lo asimilaba como una palabra nativa.
                 </div>
-              </Box>
+              </BoxCircle>
             </Col>
             <Col>
-              <Box>
-                <div className='title'>Aplicar Automáticamente</div>
+              <BoxCircle
+                topChildren={
+                  <div className='top-circle-wrapper'>
+                    <Icon className='apply-automatically large'/>
+                    <div className='title'>PASO 3</div>
+                  </div>
+                }
+              >
+                <div className='title'>APLICA AUTOMATICAMENTE</div>
                 <div className='content'>
                   Listo, una vez que lo asimilas, tu cerebro reconoce esa palabra automáticamente. 
                   Una semana más tarde de la primer meeting, estaba hablando con ellos de manera 
                   relajada, utilizando mis recursos cognitivos para resolver las tareas.
                 </div>                
-              </Box>
+              </BoxCircle>
             </Col>
           </Row>
           <Row>
@@ -537,25 +558,46 @@ class Home extends Component {
           </Row>
         </Section>
         <Section className='clear'>
-          <Row>
+          <Row className='margin-top'>
             <Col>
-              <H2>Accede al curso gratis!</H2>
+              <Box className='text-normal'>
+                <div className='title'>NEO ASIMILACION EN PRODUCTOS Y SERVICIOS</div>
+                <div className='content'>
+                  Ofrecemos un servicio de consultoria basado en el 80% de las decisiones de tus potenciales clientes.
+                </div>
+                <Button
+                  className='primary large'
+                >
+                  Consultanos
+                </Button> 
+              </Box>
             </Col>
-          </Row>
-          <Row>
             <Col>
-              Aprende mas sobre el metodo de asimilaion y ponlo en practica en la vida real.
-              En tu perfil vas a poder acceder, estructura del dia, herreamienta metodo de 
-              asimilacion, puesta en practica real con un requerimiento que elijas. 
+              <Box className='text-normal'>
+                <div className='title'>UX BASADO EN NEO ASIMILACION</div>
+                <div className='content'>
+                  Creamos la manera de reducir la carga cerebral de tus usuarios, nos enfocaremos 
+                  a lograr una experiencia de usuario super intuitiva y confortable.
+                </div>
+                <Button
+                  className='primary large'
+                >
+                  Consultanos
+                </Button>
+              </Box>
             </Col>
-          </Row>
-          <Row>
             <Col>
-              <Button
-                className='primary large'
-              >
-                Registrate
-              </Button> 
+              <Box className='text-normal'>
+                <div className='title'>NEO ASIMILACION EN TAREAS LABORALES</div>
+                <div className='content'>
+                  Quieres adquirir habilidades de manera inmediata, te asesoramos con nuestra tecnica que podra mejorar tu desempeno.
+                </div>
+                <Button
+                  className='primary large'
+                >
+                  Consultanos
+                </Button>                
+              </Box>
             </Col>
           </Row>
         </Section>
