@@ -18,7 +18,7 @@ class Home extends Component {
             <Col>
               <div>
                 <H1>ALFABETISMO COGNITIVO</H1>
-                <H2>APRENDE EL METODO DE NEO ASIMILACION Y OBTEN HABILIDADES LABORALES EN 3 SIMPLES PASOS</H2>
+                <H2>APRENDE EL METODO DE NEO ASIMILACION PARA OBTENER HABILIDADES EN 3 SIMPLES PASOS</H2>
               </div>
             </Col>
           </Row>
@@ -30,11 +30,19 @@ class Home extends Component {
           <Row>
             <Col>
               <h3>
-                Con este metodo aprenderas a utilizar tu cerebro de 
-                manera mas racional, comprender mejor a terceros, 
-                adquirir nuevas habilidades para conseguir empleo, 
-                emprender o reducir el estres en tu actual trabajo.
+                Este metodo trata de ensenarte a utilizar tu cerebro de manera mas racional, 
+                con la intencion de mejorar tu calidad de vida.
+                Obtendras una serie de beneficios, que van desde adquirir habilidades laborales rapidamente, 
+                reducir tu estres, hasta mejorar tu relacion con terceros.
               </h3>
+              {/*
+              <h3>
+                Con este metodo aprenderás a utilizar tu cerebro de 
+                manera más racional, comprender mejor a terceros, 
+                adquirir nuevas habilidades para conseguir empleo, 
+                emprender, mejorar la venta de un producto o servicio,
+                 o reducir el estres en tu actual trabajo.
+              </h3>*/}
             </Col>
           </Row>
         </Section>
@@ -47,34 +55,28 @@ class Home extends Component {
           </Row>
           <Row>
             <Col>
-              Soy Claudio Garaycochea, con casi dos decadas como 
-              desarrollador web, la necesidad de aprender lenguajes de 
-              programacion era cada vez mas exigente. Muchas horas 
-              de trabajo, momentos de estres, me han llevado a 
-              estudiar neurociencia para encontrar una solucion a 
-              tanta exigencia laboral.
+              Soy Claudio Garaycochea, durante casi dos decadas, me dedique al 
+              desarrollo de proyectos para startups y companias, cubriendo todo 
+              tipo de necesidades, que iban desde innovacion, ux, desarrollo, hasta 
+              marketing corporativo. 
+              El cubrir todo tipo de necesidades tecnologicas me exigia muchas horas de 
+              trabajo, momentos de estres y presion. Lo cual me llevo a estudiar 
+              neurociencia para encontrar una solucion a tanta exigencia mental.
             </Col>
           </Row>
           <Row>
             <Col>
-              Gracias a gurus de la neurociencia pude conocer como 
-              funciona nuestro cerebro, el problema es que no 
-              encontraba como ponerlo en practica para que me 
-              ayude. Es por ello que cree mi propio metodo para 
-              obtener habilidades mentales, lo llamo Metodo de 
-              Neo Asimilacion, que cambio mi vida y por ello decidi 
-              compartirlo para ayudarte a ti, es gratis y esta 
-              todo en este documento. Mi unico deseo es que si 
-              te da resultado, que ayudes a otras personas 
-              compartiendo esta pagina.
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              Cabe aclarar que es en base a lo que entendi, no 
-              significa que sea asi, sino que, lo que comparto 
-              me ayudo mucho a salir adelante y quiero compartirlo 
-              para que lo utilice quien quiera.
+              Despues de un proceso de varios meses, instruyendome con fuentes varias 
+              de gurus de neurociencia, sus materiales en videos, libros, etc, me 
+              llevaron a comprender el funcionamiento de nuestro cerebro, pero no 
+              encontraba nada que me pudiera ayudar.
+              Meses mas tarde, ensenando a leer a mi hijo se unieron en mi cabeza, 
+              toda la informacion que adquiri sobre neurociencia.
+              Pudiendo resumir el funcionamiento de nuestro cerebro en 3 simples pasos, 
+              a partir de alli, cree mi propio metodo para obtener habilidades mentales, 
+              lo llamo Metodo de Neo Asimilacion, algo tan simple, cambio mi vida y 
+              por ello quiero compartirlo contigo en este documento. Con el simple 
+              hecho de ayudarte.
             </Col>
           </Row>
         </Section>
