@@ -16,9 +16,14 @@ class Home extends Component {
         <Section className='hero-wrapper'>
           <Row>
             <Col>
-              <div>
-                <H1>ALFABETISMO COGNITIVO</H1>
-                <H2>APRENDE EL METODO DE NEO ASIMILACION PARA OBTENER HABILIDADES EN 3 SIMPLES PASOS</H2>
+              <div className='content'>
+                <H1>METODO DE NEOASIMILACION</H1>
+                <H2>Obten habilidades laborales en 3 simples pasos</H2>
+                <H3>
+                  Un metodo totalmente gratuito con el cual obtendras una serie de beneficios que van desde mejorar tu relacion con terceros, 
+                  adquirir habilidades laborales, mejorar 
+                  ventas de productos y reducir tu estres laboral.
+                </H3>
               </div>
             </Col>
           </Row>
@@ -27,27 +32,8 @@ class Home extends Component {
               <i className='image-brain-check'/>
             </Col>
           </Row>
-          <Row>
-            <Col>
-              <h3>
-                Este metodo trata de ensenarte a utilizar tu cerebro de manera mas racional, 
-                con la intencion de mejorar tu calidad de vida.
-                Obtendras una serie de beneficios, que van desde adquirir habilidades laborales rapidamente, 
-                reducir tu estres, hasta mejorar tu relacion con terceros.
-              </h3>
-              {/*
-              <h3>
-                Con este metodo aprenderás a utilizar tu cerebro de 
-                manera más racional, comprender mejor a terceros, 
-                adquirir nuevas habilidades para conseguir empleo, 
-                emprender, mejorar la venta de un producto o servicio,
-                 o reducir el estres en tu actual trabajo.
-              </h3>*/}
-            </Col>
-          </Row>
         </Section>
-        <div className='section-divisor'/>
-        <Section>
+        <Section className='dark'>
           <Row>
             <Col>
               <H2>Intro</H2>
@@ -55,48 +41,74 @@ class Home extends Component {
           </Row>
           <Row>
             <Col>
-              Soy Claudio Garaycochea, durante casi dos decadas, me dedique al 
-              desarrollo de proyectos para startups y companias, cubriendo todo 
-              tipo de necesidades, que iban desde innovacion, ux, desarrollo, hasta 
-              marketing corporativo. 
-              El cubrir todo tipo de necesidades tecnologicas me exigia muchas horas de 
+              Soy Claudio Garaycochea, durante casi dos decadas me dedique al 
+              desarrollo de proyectos para startups y companias, colaborando en 
+              todo tipo de tareas relacionadas a innovacion, experiencia de usuario, 
+              desarrollo de apps y websites, hasta 
+              marketing corporativo y nuevas tecnologias. 
+              El cubrir todo tipo de necesidades me exigia muchas horas de 
               trabajo, momentos de estres y presion. Lo cual me llevo a estudiar 
-              neurociencia para encontrar una solucion a tanta exigencia mental.
+              neurociencia para encontrar una solucion frente a tanta exigencia mental.          
             </Col>
           </Row>
           <Row>
             <Col>
-              Despues de un proceso de varios meses, instruyendome con fuentes varias 
-              de gurus de neurociencia, sus materiales en videos, libros, etc, me 
-              llevaron a comprender el funcionamiento de nuestro cerebro, pero no 
-              encontraba nada que me pudiera ayudar.
-              Meses mas tarde, ensenando a leer a mi hijo se unieron en mi cabeza, 
-              toda la informacion que adquiri sobre neurociencia.
-              Pudiendo resumir el funcionamiento de nuestro cerebro en 3 simples pasos, 
-              a partir de alli, cree mi propio metodo para obtener habilidades mentales, 
-              lo llamo Metodo de Neo Asimilacion, algo tan simple, cambio mi vida y 
-              por ello quiero compartirlo contigo en este documento. Con el simple 
-              hecho de ayudarte.
+              Gracias a gurus de la neurociencia pude conocer como funciona nuestro 
+              cerebro, sin embargo, no encontraba como ponerlo en practica. 
+              Lo cual me llevo a crear mi propio metodo para obtener 
+              habilidades mentales, lo llamé Metodo de Neoasimilacion, tan positivo fue el cambio en mi vida 
+              que me animo a compartir este conocimiento para ayudar a los demas, 
+              con el que obtendras una serie de beneficios que 
+              van desde mejorar tu relacion con terceros, 
+                adquirir habilidades laborales rapidamente para conseguir un mejor empleo, mejorar 
+                ventas de productos y reducir tu estres laboral.
             </Col>
           </Row>
         </Section>
-        <Section className='dark'>
+        <Section >
           <Row>
             <Col>
-              <H2>¿Qué aprenderás?</H2>
+              <H2>¿Qué puedes hacer con Neoasimilacion?</H2>
             </Col>
           </Row>
           <Row>
             <Col>
-              Este documento se divide en secciones que te ayudara a comprender 
-              mejor que es lo que hacemos con nuestro cerebro, saber como funciona,
-               entenderlo con ejemplos y como ponerlo en marcha el Metodo de Neo
-               Asimilacion desde ahora.
+              Con el Metodo de Neoasimilacion pude trabajar en una startup de USA 
+              sin saber inglés, en tan solo una semana logre 
+              comunicarme con un equipo 100% anglo. De la misma manera,
+              aprendi lenguajes de programacion para desarrollar apps y websites en 
+              grandes companias, estas me contrataban conscientes que no cumplia con 
+              los requerimientos previamente, a la semana estaba 100% operativo.
             </Col>
           </Row>
           <Row>
             <Col>
-              Sin más, comencemos...
+              El Metodo de Neoasimilacion hace que tu cerebro aprenda rapido y de manera 
+              confortable, para luego aplicar automaticamente lo aprendido. No es mas que 
+              es el mismo proceso natural en que tu cerebro funciona, pero de manera 
+              consciente y mas racional. A medida que lo aplicas, comenzaras a utilizarlo para todo, 
+              reduciendo considerablemente tu carga cerebral, hasta para resolver tareas 
+              complejas en poco tiempo.
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              El Metodo de Neoasimilacion se enfoca a mejorar tu calidad de vida 
+              y es totalmente gratis, sin más, comencemos...
+            </Col>
+          </Row>
+        </Section>
+        <Section className='start'>
+          <Row>
+            <Col>
+              <H2>Comenzar</H2>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              A continuacion aprenderas como funciona tu cerebro en tres items ("¿Como pensamos/actuamos?", 
+              "La teoria de los 3 cerebros" y "Tu asimilacion define tu vida"), luego aprenderas que es la 
+              neoasimilacion y como ponerlo en marcha ("El Metodo de Neoasimiliación", "Ejemplo de Neoasimilacion" y "Mi primer practica de Neoasimilacion").
             </Col>
           </Row>
         </Section>
@@ -109,7 +121,7 @@ class Home extends Component {
           <Row>
             <Col>
               El como "pensamos/actuamos", es relacionado a reducir carga 
-              en nuestro cerebro. Según entiendo, la "asimilación" es la 
+              en nuestro cerebro. Según entiendo, la asimilación es la 
               columna vertebral de la neurociencia. Donde una vez que asimilas 
               algo es muy difícil cambiarlo porque requiere carga cerebral.
             </Col>
@@ -119,7 +131,7 @@ class Home extends Component {
               <Row className='margin-top'>
                 <Col>
                   <Box>
-                    <div className='title'>Ejemplo 1</div>
+                    <div className='title'>EJEMPLO 1</div>
                     <div className='content'>
                       Cuando vemos un Rottwailer, la mayoría de nosotros "cruzamos a la vereda del frente".
                     </div>
@@ -127,7 +139,7 @@ class Home extends Component {
                 </Col>
                 <Col>
                   <Box>
-                    <div className='title'>Ejemplo 2</div>
+                    <div className='title'>EJEMPLO 2</div>
                     <div className='content'>
                       Cuando vamos por una salsa de tomate en un supermercado, buscamos una lata de color rojo.
                     </div>
@@ -135,9 +147,9 @@ class Home extends Component {
                 </Col>
                 <Col>
                   <Box>
-                    <div className='title'>Ejemplo 3</div>
+                    <div className='title'>EJEMPLO 3</div>
                     <div className='content'>
-                      Cuando conducimos, hablamos y leemos carteles en la ruta.
+                      Cuando conducimos nuestro automovil y hablamos o leemos.
                     </div>
                   </Box>
                 </Col>
@@ -151,7 +163,7 @@ class Home extends Component {
             </Col>
           </Row>
         </Section>
-        <Section className='highlight'>
+        <Section className='start'>
           <Row>
             <Col>
               <H2>La teoría de los 3 cerebros</H2>
@@ -170,7 +182,7 @@ class Home extends Component {
               <Row className='margin-top'>
                 <Col>
                   <Box>
-                    <div className='title'>Neocórtex</div>
+                    <div className='title'>NEOCORTEX</div>
                     <div className='content'>
                       <div>El cerebro que piensa</div>
                       <div>APROX 10% DE USO</div>
@@ -179,7 +191,7 @@ class Home extends Component {
                 </Col>
                 <Col>
                   <Box>
-                    <div className='title'>Limbico</div>
+                    <div className='title'>LIMBICO</div>
                     <div className='content'>
                       <div>El cerebro que siente</div>
                       <div>APROX 10% DE USO</div>
@@ -188,7 +200,7 @@ class Home extends Component {
                 </Col>
                 <Col>
                   <Box>
-                    <div className='title'>Reptiliano</div>
+                    <div className='title'>REPTILIANO</div>
                     <div className='content'>
                       <div>El cerebro que actua</div>
                       <div>APROX 80% DE USO</div>
@@ -200,7 +212,7 @@ class Home extends Component {
           </Row>
           <Row>
             <Col>
-              Para entender como tu vives, sitamos el siguiente ejemplo. 
+              Para entender como tu vives, citamos el siguiente ejemplo. 
               Años atras se realizo una campaña de McDonald's, hicieron 
               una encuesta a sus clientes y todos estaban de acuerdo que 
               seria bueno ofrecer comida saludable.
@@ -211,8 +223,8 @@ class Home extends Component {
               Meses mas tarde y millones de dolares gastados en publicidad, 
               fue un total fracaso, la gente preferia seguir comiendo 
               hamburguesas. Esto se debe a que en el momento de la encuesta, 
-              la gente respondia con el cerebro Neocórtex (racional), pero a la hora de 
-              elegir utiliza el cerebro Reptiliano.
+              la gente respondia con el cerebro Neocórtex (o cerebro racional), pero a la hora de 
+              elegir utiliza el cerebro Reptiliano (o cerebro automatico).
             </Col>
           </Row>
           <Row>
@@ -246,7 +258,8 @@ class Home extends Component {
               inmediato, pero generan un gran problema porque define el 
               camino de nuestras vidas, ya que cada accion depende de cosas 
               que asimilamos previamente, gran parte de ellas de manera 
-              inconsciente. No te asustes, aprenderas a usar mejor tu cerebro.
+              inconsciente. No te asustes, con Neoasimilacion aprenderas a 
+              usar mejor tu cerebro de manera mas racional y consciente.
             </Col>
           </Row>
           <Row>
@@ -317,7 +330,7 @@ class Home extends Component {
         <Section>
           <Row>
             <Col>
-              <H2>El Metodo de Neo Asimiliación</H2>
+              <H2>El Metodo de Neoasimiliación</H2>
             </Col>
           </Row>
           <Row>
@@ -333,7 +346,7 @@ class Home extends Component {
           </Row>
           <Row>
             <Col>
-              El Metodo de Neo Asimilacion ayuda a te permite aprender habilidades de 
+              El Metodo de Neoasimilacion ayuda a te permite aprender habilidades de 
               manera inmediata, podras entender mejor a un tercero, reducir el estres 
               frente a exigencias laborales, en general el metodo reducira tu carga 
               cerebral, haciendo que tu cerebro se sienta confortable mejorando tu 
@@ -401,7 +414,7 @@ class Home extends Component {
         <Section>
           <Row>
             <Col>
-              <H2>Ejemplo Real de Neo Asimilacion</H2>
+              <H2>Ejemplo Real de Neoasimilacion</H2>
             </Col>
           </Row>
           <Row>
@@ -470,7 +483,7 @@ class Home extends Component {
           <Row>
             <Col>
               <div className='experiences'>
-                Con el Metodo de Neo Asimilacion aprendi ingles en una semana para trabajar en 
+                Con el Metodo de Neoasimilacion aprendi ingles en una semana para trabajar en 
                 una startup de USA. El mismo tiempo aprendi lenguajes de programacion para 
                 desarrollar apps y websites en grandes companias, estas me contrataban 
                 conscientes que no cumplia con los requerimientos previamente, solo les 
@@ -478,9 +491,6 @@ class Home extends Component {
               </div>
             </Col>
           </Row>
-        </Section>
-        <div className='section-divisor'/>
-        <Section>
           <Row>
             <Col>
               <BoxCircle backgroundImage={imageClaudio}>
@@ -500,7 +510,7 @@ class Home extends Component {
         <Section>
           <Row>
             <Col>
-              <H2>Neo Asimilacion en educacion</H2>
+              <H2>Neoasimilacion en educacion</H2>
             </Col>
           </Row>
           <Row>
@@ -512,7 +522,7 @@ class Home extends Component {
           </Row>
           <Row>
             <Col>
-              Si se respeta los tres pasos que forman el metodo de neo asimilacion, estamos 
+              Si se respeta los tres pasos que forman el Metodo de Neoasimilacion, estamos 
               dando a nuestros hijos las herramientas que ayudaran a tener una mejor 
               calidad de vida, menos estres frente a exigencias y facilidad para 
               adquirir nuevos conocimientos para su futuro laboral.
@@ -531,7 +541,7 @@ class Home extends Component {
         <Section>
           <Row>
             <Col>
-              <H2>Neo Asimilacion en consumo</H2>
+              <H2>Neoasimilacion en consumo</H2>
             </Col>
           </Row>
           <Row>
@@ -541,6 +551,21 @@ class Home extends Component {
               Conociendo la desicion automatica del 80% del cerebro de tu potencial cliente. 
               Brindamos servicios de consultoria para mejorar la atraccion de tus productos 
               o servicios, consultanos.
+            </Col>
+          </Row>
+        </Section>
+        <Section>
+          <Row>
+            <Col>
+              <H2>Asimilacion vs Neoasimilacion</H2>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              Tal y como se comento, el uso de nuestro cerebro esta basado en asimilacion. 
+              Utilizar el cerebro con neoasimilacion optimiza la manera en que piensas ya 
+              que guardas en tu cabeza informacion de manera consciente para aplicarla 
+              automaticamente.
             </Col>
           </Row>
           <Row>
@@ -553,17 +578,12 @@ class Home extends Component {
               <i className='image-neo-assimilation'/>
             </Col>
           </Row>
-          <Row>
-            <Col>
-              El objetivo del metodo de Neo Asimilacion es lograr la baja carga cerebral (punto 3 imagen)
-            </Col>
-          </Row>
         </Section>
         <Section className='clear'>
           <Row className='margin-top'>
             <Col>
               <Box className='text-normal'>
-                <div className='title'>NEO ASIMILACION EN PRODUCTOS Y SERVICIOS</div>
+                <div className='title'>NEOASIMILACION EN PRODUCTOS Y SERVICIOS</div>
                 <div className='content'>
                   Ofrecemos un servicio de consultoria basado en el 80% de las decisiones de tus potenciales clientes.
                 </div>
@@ -576,7 +596,7 @@ class Home extends Component {
             </Col>
             <Col>
               <Box className='text-normal'>
-                <div className='title'>UX BASADO EN NEO ASIMILACION</div>
+                <div className='title'>UX BASADO EN NEOASIMILACION</div>
                 <div className='content'>
                   Creamos la manera de reducir la carga cerebral de tus usuarios, nos enfocaremos 
                   a lograr una experiencia de usuario super intuitiva y confortable.
@@ -590,7 +610,7 @@ class Home extends Component {
             </Col>
             <Col>
               <Box className='text-normal'>
-                <div className='title'>NEO ASIMILACION EN TAREAS LABORALES</div>
+                <div className='title'>NEOASIMILACION EN TAREAS LABORALES</div>
                 <div className='content'>
                   Quieres adquirir habilidades de manera inmediata, te asesoramos con nuestra tecnica que podra mejorar tu desempeno.
                 </div>

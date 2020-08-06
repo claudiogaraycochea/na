@@ -2,8 +2,9 @@ body, html, .main-app, .app, #root {
   height: 100%;
   box-sizing: border-box;
   background-color: #ffffff; 
-  color: #60347B;
-	font-family: 'Roboto', sans-serif;
+	color: #60347B;
+	font-family: 'Comfortaa', cursive;
+	/*font-family: 'Roboto', sans-serif;*/
 	line-height: 1.2;
 	font-weight: 300;
 	font-size: 16px;

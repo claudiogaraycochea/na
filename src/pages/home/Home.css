@@ -1,9 +1,42 @@
+.hero-wrapper { 
+  min-height: 100vh;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-wrapper h1 {
+  color: #222222;/*#60347B;*/
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.hero-wrapper h2 {
+  font-size: 36px;
+  color: #795ee6;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+
+.hero-wrapper h3 {
+  font-size: 18px;
+  color: #a5a5a5;
+}
+
+
+.hero-wrapper .title {
+  border: 1px solid green;
+}
+
 .image-brain-check {
   display: block;
-  height: 100px;
+  height: 50vh;
   width: 100%;
-  background-image: url('../../assets/images/image-brain-check.svg');
-  background-position: center;
+  background-image: url('../../assets/images/image-brain-check.jpg');
+  background-position: top;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -38,50 +71,33 @@
   background-size: contain;
 }
 
-.hero-wrapper { 
-  height: 100vh;
-  padding: 50px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.hero-wrapper h1 {
-  color: #60347B;
-  font-size: 40px;
-  font-weight: bold;
-}
-
-.hero-wrapper h2 {
-  color: #be4ed7;
-  font-size: 26px;
-  font-weight: bold;
-}
-
-.hero-wrapper .title {
-  border: 1px solid green;
-}
-
 @media (min-width: 768px) {
-  .hero-wrapper { 
-    padding: 0;
+  .hero-wrapper {
+    padding-top: 0;
+    margin-top: 0;
+    flex-direction: row;
+  }
+
+  .hero-wrapper .content {
+    text-align: left;
+    padding-left: 80px;
   }
 
   .hero-wrapper h1 {
-    color: #60347B;
-    font-size: 48px;
+    font-size: 60px;
     font-weight: bold;
+    line-height: 100%;
+    margin-bottom: 20px;
   }
 
   .hero-wrapper h2 {
-    color: #be4ed7;
-    font-size: 26px;
-    font-weight: bold;
+    font-size: 30px;
+    font-weight: 300;
   }
 
   .image-brain-check {
-    height: 260px;
+    height: 100vh;
+    background-position: center;
   }
 
   .image-assimilation-normal, .image-neo-assimilation {

@@ -7,7 +7,7 @@ export const H1 = (props) => {
     <h1
       className='h1'
     >
-      {props.children}
+      {children}
     </h1>
   );
 };
@@ -18,7 +18,7 @@ export const H2 = (props) => {
     <h2
       className='h2'
     >
-      {props.children}
+      {children}
     </h2>
   );
 };
@@ -29,7 +29,7 @@ export const H3 = (props) => {
     <h3
       className='h3'
     >
-      {props.children}
+      {children}
     </h3>
   );
 };

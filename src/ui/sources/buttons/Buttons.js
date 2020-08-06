@@ -5,15 +5,14 @@ export const Button = (props) => {
   const {
     className,
     onPress,
+    children,
   } = props;
-  const styles = {
-  }
   return (
     <button
       className={`btn ${className}`}
       onClick={onPress}
     >
-      {props.children}
+      {children}
     </button>
   );
 };

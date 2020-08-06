@@ -1,6 +1,7 @@
 h1, h2, h3, h4 {
 	font-weight: 400;
 	margin: 0;
+	color: #394056;
 }
 
 h1 {
@@ -14,7 +15,7 @@ h2 {
 }
 
 h3 {
-	font-size: 22px;
+	font-size: 20px;
 }
 
 @media (min-width: 768px) {
@@ -23,6 +24,6 @@ h3 {
 	}
 	
 	.h3 {
-		font-size: 26px;
+		font-size: 22px;
   }
 }

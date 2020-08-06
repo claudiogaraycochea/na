@@ -7,8 +7,6 @@ export const Input = (props) => {
     onPress,
     placeholder,
   } = props;
-  const styles = {
-  }
   return (
     <input
       className={`inp ${className}`}
