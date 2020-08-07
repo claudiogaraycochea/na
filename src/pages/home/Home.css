@@ -1,10 +1,16 @@
 .hero-wrapper { 
   min-height: 100vh;
   padding: 50px 0;
+  margin-left: -20px;
+  margin-right: -20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-image: url('../../assets/images/bg-image-left.svg');
+  background-position: -200px;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .hero-wrapper h1 {
@@ -33,10 +39,10 @@
 
 .image-brain-check {
   display: block;
-  height: 50vh;
+  height: 30vh;
   width: 100%;
-  background-image: url('../../assets/images/image-brain-check.jpg');
-  background-position: top;
+  background-image: url('../../assets/images/image-brain-check.svg');
+  background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -96,7 +102,7 @@
   }
 
   .image-brain-check {
-    height: 100vh;
+    height: 80vh;
     background-position: center;
   }
 

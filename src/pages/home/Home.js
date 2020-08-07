@@ -17,12 +17,14 @@ class Home extends Component {
           <Row>
             <Col>
               <div className='content'>
-                <H1>METODO DE NEOASIMILACION</H1>
-                <H2>Obten habilidades laborales en 3 simples pasos</H2>
+                <H1>NEOASIMILACION</H1>
+                <H2>Obten habilidades cognitivas en 3 simples pasos</H2>
                 <H3>
-                  Un metodo totalmente gratuito con el cual obtendras una serie de beneficios que van desde mejorar tu relacion con terceros, 
-                  adquirir habilidades laborales, mejorar 
-                  ventas de productos y reducir tu estres laboral.
+                  Un metodo totalmente gratuito con el cual obtendras una serie 
+                  de beneficios necesarios para soportar las presiones del 
+                  mundo de hoy, que van desde mejorar tu relacion con terceros, 
+                  adquirir habilidades laborales, reducir tu estres, hasta mejorar 
+                  ventas de productos.
                 </H3>
               </div>
             </Col>
@@ -34,9 +36,41 @@ class Home extends Component {
           </Row>
         </Section>
         <Section className='dark'>
+        <Row>
+            <Col>
+              <H2>¿Qué puedes hacer con Neoasimilacion?</H2>
+            </Col>
+          </Row>
           <Row>
             <Col>
-              <H2>Intro</H2>
+              La Neoasimilacion es un metodo ayuda a tu cerebro aprender rapido y de manera 
+              confortable, para luego aplicar automaticamente lo aprendido. No es mas que 
+              es el mismo proceso natural en que tu cerebro funciona, pero de manera 
+              consciente y mas racional. A medida que utilizas esta practica, reducira 
+              considerablemente tu carga cerebral.
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              Aplicando Neoasimilacion pude trabajar en una startup de USA 
+              sin saber inglés, en tan solo una semana logre 
+              comunicarme con un equipo 100% anglo. De la misma manera,
+              aprendi lenguajes de programacion para desarrollar apps y websites en 
+              grandes companias, estas me contrataban conscientes que no cumplia con 
+              los requerimientos previamente, a la semana estaba 100% operativo.
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              La Neoasimilacion es un metodo que se enfoca a mejorar tu calidad de 
+              vida, es totalmente gratis, sin más, comencemos...
+            </Col>
+          </Row>
+        </Section>
+        <Section >
+        <Row>
+            <Col>
+              <H2>¿Como surge la Neoasimilacion?</H2>
             </Col>
           </Row>
           <Row>
@@ -56,45 +90,13 @@ class Home extends Component {
               Gracias a gurus de la neurociencia pude conocer como funciona nuestro 
               cerebro, sin embargo, no encontraba como ponerlo en practica. 
               Lo cual me llevo a crear mi propio metodo para obtener 
-              habilidades mentales, lo llamé Metodo de Neoasimilacion, tan positivo fue el cambio en mi vida 
-              que me animo a compartir este conocimiento para ayudar a los demas, 
-              con el que obtendras una serie de beneficios que 
+              habilidades cognitivas, lo llamé Neoasimilacion, tan positivo fue el cambio en mi vida 
+              que me animo a compartir este conocimiento para ayudar a los demas. 
+              Con este metodo obtendras una serie de beneficios que 
               van desde mejorar tu relacion con terceros, 
                 adquirir habilidades laborales rapidamente para conseguir un mejor empleo, mejorar 
                 ventas de productos y reducir tu estres laboral.
-            </Col>
-          </Row>
-        </Section>
-        <Section >
-          <Row>
-            <Col>
-              <H2>¿Qué puedes hacer con Neoasimilacion?</H2>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              Con el Metodo de Neoasimilacion pude trabajar en una startup de USA 
-              sin saber inglés, en tan solo una semana logre 
-              comunicarme con un equipo 100% anglo. De la misma manera,
-              aprendi lenguajes de programacion para desarrollar apps y websites en 
-              grandes companias, estas me contrataban conscientes que no cumplia con 
-              los requerimientos previamente, a la semana estaba 100% operativo.
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              El Metodo de Neoasimilacion hace que tu cerebro aprenda rapido y de manera 
-              confortable, para luego aplicar automaticamente lo aprendido. No es mas que 
-              es el mismo proceso natural en que tu cerebro funciona, pero de manera 
-              consciente y mas racional. A medida que lo aplicas, comenzaras a utilizarlo para todo, 
-              reduciendo considerablemente tu carga cerebral, hasta para resolver tareas 
-              complejas en poco tiempo.
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              El Metodo de Neoasimilacion se enfoca a mejorar tu calidad de vida 
-              y es totalmente gratis, sin más, comencemos...
+              Como aplicar el metodo se trata de explicar totalmente gratis en este documento.
             </Col>
           </Row>
         </Section>
@@ -108,7 +110,7 @@ class Home extends Component {
             <Col>
               A continuacion aprenderas como funciona tu cerebro en tres items ("¿Como pensamos/actuamos?", 
               "La teoria de los 3 cerebros" y "Tu asimilacion define tu vida"), luego aprenderas que es la 
-              neoasimilacion y como ponerlo en marcha ("El Metodo de Neoasimiliación", "Ejemplo de Neoasimilacion" y "Mi primer practica de Neoasimilacion").
+              neoasimilacion y como ponerlo en marcha ("La Neoasimiliación", "Ejemplo de Neoasimilacion" y "Mi primer practica de Neoasimilacion").
             </Col>
           </Row>
         </Section>
@@ -159,7 +161,8 @@ class Home extends Component {
           <Row>
             <Col>
               Otro ejemplo de asimilación es "La rzaón por la que tu 
-              cberreo pudee leer etse txeto"
+              cberreo pudee leer etse txeto". Casi todo el tiempo nuestro 
+              cerebro actua de manera automatica con lo que haz asimilado previamente.
             </Col>
           </Row>
         </Section>
@@ -330,7 +333,7 @@ class Home extends Component {
         <Section>
           <Row>
             <Col>
-              <H2>El Metodo de Neoasimiliación</H2>
+              <H2>La Neoasimiliación</H2>
             </Col>
           </Row>
           <Row>
@@ -346,7 +349,7 @@ class Home extends Component {
           </Row>
           <Row>
             <Col>
-              El Metodo de Neoasimilacion ayuda a te permite aprender habilidades de 
+              La Neoasimilacion ayuda a te permite aprender habilidades de 
               manera inmediata, podras entender mejor a un tercero, reducir el estres 
               frente a exigencias laborales, en general el metodo reducira tu carga 
               cerebral, haciendo que tu cerebro se sienta confortable mejorando tu 
@@ -400,13 +403,14 @@ class Home extends Component {
           </Row>
           <Row>
             <Col>
-              Un ejemplo real, para comunicarme con un equipo de trabajo 100% 
-              anglo, en la primer charla no les entendía nada, aprendí las 3 
-              maneras de saludar del equipo, y 20 palabras mas usadas en este 
-              trabajo. Asimile las 3 maneras de saludar y 20 palabras, a la 
-              semana siguiente ya estaba hablando con ellos. Mi cerebro 
-              relajado y operativo para trabajar con ellos. Logicamente tenia 
-              el conocimiento de varias palabras en ingles desde el colegio primario.
+              El metodo de Neoasimilacion se explica en estos tres pasos, 
+              1) Aprendemos de manera agradable y consciente. 2) Asimilas, 
+              es decir guardas en tu cabeza lo que necesitas aprender y 
+              por ultimo 3) Es automatico, si lo asimilaste correctamente
+               tu cerebro replicara lo asimilado de manera automatica.
+              Es decir, no tendras que pensar porque lo aplicaras de 
+              manera automatica, reduciendo considerablemente tu carga cerebral.
+              Esto hace que te sientas mas confortable y con menos estres.
             </Col>
           </Row>
         </Section>
@@ -414,11 +418,12 @@ class Home extends Component {
         <Section>
           <Row>
             <Col>
-              <H2>Ejemplo Real de Neoasimilacion</H2>
+              <H2>Ejemplo real de Neoasimilacion</H2>
             </Col>
           </Row>
           <Row>
             <Col>
+              Anos atras me contrataron para trabajar en una startup 100% anglo sin saber ingles.
               Durante la primer meeting no entendía absolutamente nada, escuchaba 
               palabras como “Face”, entre otras que perdía el contexto por completo. 
               Imagine que hablaban de caras en proyectos, aprender 5000 palabras 
@@ -482,17 +487,6 @@ class Home extends Component {
           </Row>
           <Row>
             <Col>
-              <div className='experiences'>
-                Con el Metodo de Neoasimilacion aprendi ingles en una semana para trabajar en 
-                una startup de USA. El mismo tiempo aprendi lenguajes de programacion para 
-                desarrollar apps y websites en grandes companias, estas me contrataban 
-                conscientes que no cumplia con los requerimientos previamente, solo les 
-                pedia una semana y estaba 100% operativo. 
-              </div>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
               <BoxCircle backgroundImage={imageClaudio}>
                 <h3>Mis habilidades laborales</h3>
                 Soy Claudio Garaycochea, con mas de 17 años de experiencia, desarrolle 
@@ -503,54 +497,6 @@ class Home extends Component {
                 brainstorming, user experience, visual design, desarrollo, hasta 
                 tareas de marketing y venta corporativa. 
               </BoxCircle>
-            </Col>
-          </Row>
-        </Section>
-        <div className='section-divisor'/>
-        <Section>
-          <Row>
-            <Col>
-              <H2>Neoasimilacion en educacion</H2>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              Este metodo nos ensena a utilizar nuestro cerebro de manera efectiva, 
-              el objetivo es buscar la manera mas agradable para el cerebro de nuestros 
-              hijos, asimile facilmente nuevos conocimientos y los ponga en practica. 
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              Si se respeta los tres pasos que forman el Metodo de Neoasimilacion, estamos 
-              dando a nuestros hijos las herramientas que ayudaran a tener una mejor 
-              calidad de vida, menos estres frente a exigencias y facilidad para 
-              adquirir nuevos conocimientos para su futuro laboral.
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              Si formas parte de una institucion, como colegio, universidad, o cualquier 
-              institucion que desee mejorar la forma de aprendizaje, puedes contactarnos. 
-              Ofrecemos un servicio de asesorameitno totalmente gratis para instituciones 
-              educativas. 
-            </Col>
-          </Row>
-        </Section>
-        <div className='section-divisor'/>
-        <Section>
-          <Row>
-            <Col>
-              <H2>Neoasimilacion en consumo</H2>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              Asi como lo vimos en el ejemplo de McDonald’s en la parte superior de este 
-              documento, tambien podemos analizar la atraccion de un producto o servicio. 
-              Conociendo la desicion automatica del 80% del cerebro de tu potencial cliente. 
-              Brindamos servicios de consultoria para mejorar la atraccion de tus productos 
-              o servicios, consultanos.
             </Col>
           </Row>
         </Section>
@@ -578,6 +524,15 @@ class Home extends Component {
               <i className='image-neo-assimilation'/>
             </Col>
           </Row>
+          <Row>
+            <Col>
+              Te sugerimos poner en practica la Neoasimilacion para tareas basicas.
+              Busca aprender algo de manera agradable, asimilarlo para guardarlo en 
+              tu cerebro y luego aplicarlo automaticamente. A medida que lo utilizas 
+              correctamente podras aplicarlo a diario para cubrir todo tipo de necesidades, 
+              y reducir tu carga cerebral.
+            </Col>
+          </Row>
         </Section>
         <Section className='clear'>
           <Row className='margin-top'>
@@ -585,7 +540,11 @@ class Home extends Component {
               <Box className='text-normal'>
                 <div className='title'>NEOASIMILACION EN PRODUCTOS Y SERVICIOS</div>
                 <div className='content'>
-                  Ofrecemos un servicio de consultoria basado en el 80% de las decisiones de tus potenciales clientes.
+                  Asi como lo vimos en el ejemplo de McDonald’s en la parte superior de este 
+                  documento, tambien podemos analizar la atraccion de un producto o servicio. 
+                  Conociendo la desicion automatica del 80% del cerebro de tu potencial cliente. 
+                  Brindamos servicios de consultoria para mejorar la atraccion de tus productos 
+                  o servicios, consultanos.
                 </div>
                 <Button
                   className='primary large'
@@ -618,7 +577,24 @@ class Home extends Component {
                   className='primary large'
                 >
                   Consultanos
-                </Button>                
+                </Button>
+              </Box>
+            </Col>
+            <Col>
+              <Box className='text-normal'>
+                <div className='title'>NEOASIMILACION EN EDUCACION</div>
+                <div className='content'>
+                  Si formas parte de un colegio, universidad, o cualquier 
+                  institucion que desee mejorar la forma de aprendizaje, 
+                  puedes contactarnos. 
+                  Ofrecemos un servicio de asesorameitno totalmente 
+                  gratis para instituciones educativas.
+                </div>
+                <Button
+                  className='primary large'
+                >
+                  Consultanos
+                </Button>
               </Box>
             </Col>
           </Row>

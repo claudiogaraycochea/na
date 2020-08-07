@@ -28,7 +28,7 @@
 }
 
 .section.clear {
-  background-color: #1d1d1d;
+  background-color: #394056;
   color: #FFFFFF;
   margin-left: -20px;
   margin-right: -20px;
@@ -138,6 +138,8 @@
 
 .box .content {
   font-size: 14px;
+  height: 100%;
+  margin-bottom: 20px;
 }
 
 .box.margin-bottom-2 {
