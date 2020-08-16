@@ -2,8 +2,8 @@ body, html, .main-app, .app, #root {
   height: 100%;
   box-sizing: border-box;
   background-color: #ffffff; 
-	color: #60347B;
-	font-family: 'Comfortaa', cursive;
+	color: #3b374e;
+	font-family: 'Open Sans', sans-serif;
 	/*font-family: 'Roboto', sans-serif;*/
 	line-height: 1.2;
 	font-weight: 300;
