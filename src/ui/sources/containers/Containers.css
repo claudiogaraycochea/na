@@ -32,7 +32,7 @@
 }
 
 .section.highlight {
-  background-color: #7d4c98;
+  background-color: #412c4c;
   color: #FFFFFF;
   font-size: 30px;
   margin-left: -15px;
@@ -74,6 +74,10 @@
   /*border: 1px solid #e6e6e6;*/
   box-sizing: border-box;
   border-radius: 10px;
+}
+
+.box .box-image {
+  margin-bottom: 20px;
 }
 
 /*

@@ -24,10 +24,10 @@ export const H2 = (props) => {
 };
 
 export const H3 = (props) => {
-  const { children } = props;
+  const { children, className } = props;
   return (
     <h3
-      className='h3'
+      className={`h3 ${className}`}
     >
       {children}
     </h3>
