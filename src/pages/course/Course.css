@@ -17,11 +17,10 @@
   color: #222222;
   font-size: 40px;
   font-weight: bold;
-  margin-bottom: 10px !important;
 }
 
 .hero-wrapper h2 {
-  color: #a955fd;
+  color: #795ee6;
   font-size: 40px;
   font-weight: bold;
 }
@@ -30,7 +29,6 @@
   font-size: 22px;
   font-weight: 400 !important;
   color: #919ca5;
-  margin-bottom: 20px;
 }
 
 .hero-wrapper .title {
@@ -249,7 +247,7 @@
   }
 
   .hero-wrapper h1 {
-    font-size: 46px !important;
+    font-size: 50px;
     line-height: 100%;
   }
 

@@ -6,9 +6,7 @@ import {
   Icon,
 } from '../../ui/naUI';
 import { Container, Row, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import './Home.css';
-import Header from '../../components/header/Header';
+import './Course.css';
 // import imageClaudio from '../../assets/images/image-claudio-g.png';
 
 class Home extends Component {
@@ -41,109 +39,45 @@ class Home extends Component {
     // const { fullData } = this.props;
     return (
       <Container fluid>
-        <Header/>
-        <Section className='hero-wrapper'>
-          <Row>
-            <Col xs={12} lg={6} className='d-flex flex-column align-items-center justify-content-center'>
-              <div className='content'>
-                <H1>Curso de Neoasimilación</H1>
-                <H2>Aplicado al Mundo Digital</H2>
-                <H3>
-                  El mundo de hoy requiere que tu adquieras habilidades laborales de 
-                  manera constante. La falta de tiempo para estudiar, dinero, estres,  
-                  son factores que se suman a la exigencia de tu día a día. 
-                  Podemos ayudarte...
-                </H3>
-                <p>
-                  La Neoasimilación es un método basado en neurociencia con el cual 
-                  obtendrás rápidamente nuevas habilidades laborales y podrás reducir 
-                  tu carga cerebral. Una herramienta cognitiva creada para mejorar tu 
-                  calidad de vida, independientemente de las exigencias.
-                </p>
-                <p>
-                  En este documento podrás aprender gratis que es la Neoasimilación, 
-                  además, te invitamos a participar de un curso vía streaming, enfocado 
-                  a darte las herramientas laborales para que puedas emprender o trabajar 
-                  en el mundo digital.
-                </p>
-              </div>
-            </Col>
-            <Col xs={12} lg={6} className='d-flex flex-column align-items-center justify-content-center'>
-              <i className='image-brain-check'/>
-            </Col>
-          </Row>
-        </Section>
-        <Section className='highlight'>
-          <div className='bubble-wrapper'>
-            <Row>
-              <Col xs={12} lg={4}>
-                <i className='image-fisher'/>
-              </Col>
-              <Col xs={12} lg={8} className='d-flex flex-column align-items-center justify-content-center text-left'>
-                "Regala un pescado a un hombre y le darás alimento para un día, 
-                enseñale a pescar y lo alimentarás para el resto de su vida"
-              </Col>
-            </Row>
-          </div>
-        </Section>
         <Section>
           <Row>
-            <Col xs={12} lg={8} className='text-left'>
-              <H2>¿Cómo nace la Neoasimlación?</H2>
-              <p>
-                Soy Claudio Garaycochea, durante casi dos decadas me dedique al 
-                desarrollo de proyectos en startups y compañías, 
-                colaborando en todo tipo de tareas relacionadas a innovación, 
-                experiencia de usuario, desarrollo de apps y websites, hasta 
-                marketing corporativo y nuevas tecnologías. El cubrir todo tipo 
-                de necesidades demandaba muchas horas de trabajo, momentos de 
-                estrés y presión. Siempre requería aprender algo nuevo, pero 
-                no podía pagar cursos por cada necesidad, tampoco disponía de 
-                tiempo para ello, entraba en un pozo difícil de salir.
-              </p>
-              <p>
-                A medida que pasaban los años, la exigencia laboral era mayor y 
-                la carga cerebral aumentaba generando una sensación de malestar. 
-                Esto me impulso a estudiar neurociencia para encontrar una solución 
-                frente a tanta exigencia mental. El conocer como funciona nuestro 
-                cerebro me permitió crear mi propio método para obtener habilidades 
-                cognitivas y reducir mi estrés, lo llamé Neoasimilacién. Con él, logré 
-                aprender a hablar en inglés en tan solo una semana, el mismo lapso 
-                para aprender lenguajes de programación para trabajar en startups y 
-                compañías de IT. Tal fue el cambio en mi vida que me animó a 
-                compartir este conocimiento para ayudar a los demás.
-              </p>
-            </Col>
-            <Col xs={12} lg={4}>
-              <i className='image-how-born'/>
+            <Col>
+              <H1>Curso de Neoasimilación</H1>
+              <H2>Aplicado al Mundo Digital</H2>
             </Col>
           </Row>
         </Section>
         <Section className='image-left'>
           <Row>
             <Col>
-              <H2>Aprende Neoasimilacion gratis</H2>
+              <H2>Aprende neoasimilacion gratis</H2>
             </Col>
           </Row>
           <Row>
             <Col>
-              <H3>
-                En este momento de crisis es muy importante ayudarnos entre todos, 
-                si aprendes como adquirir habilidades laborales rápidamente, te 
-                permitirá mayores oportunidades de empleo o realizar tu propio 
-                emprendimiento.                 
-              </H3>
               <p>
-                Queremos que aprendas a utilizar Neoasimilación sin coste alguno, 
-                por ello hemos publicado en este documento la información necesaria para 
-                que puedas comenzar a implementarlo, si tienes dudas, consultanos a 
-                nuestro correo.
+                Con la neoasimilacion queremos que disfrutes tu trabajo, hemos pensado este curso en reducir 
+                tu carga cerebral al maximo, que aprendas lo suficiente para emprender 
+                o trabajar en startups o companias.
+                Practicas de aprendizaje comunitario para reducir carga cerebral, 
+                reduccion de carga cerebral en tareas repetitivas, descompresion de exitasion o 
+                carga cerebral con musica, 
+                autoeducacion constante, autocreacion de referencias laborales,
+                estructura del dia, metodo pomodoro, herramientas de trabajo en 
+                startups y companias (slack, git, jira, otros).
+                Herramientas de diseno (photoshop, figma, illustrator, iconfinder, dafont, google fonts, otros).
+                Lenguajes de programacion (Javascript, vue, Angular, React, React Native, otros)                
+              </p>
+              <p>
+                <span className='text-highlight'>Queremos que aprendas a utilizar neoasimilacion sin coste alguno, 
+                por ello hemos publicado en este documento la informacion necesaria para 
+                que aprendas a implementarlo gratis</span>.
               </p>
               <p>
                 Tambien puede utilizarse como metodo de estudio en instituciones educativas, 
                 colegios, universidad, cursos, etc.
-                Para sustentar la ayuda gratuita de Neoasimilacion, ofrecemos cursos 
-                por un valor asequible para que apliques Neoasimilacion aprendiendo 
+                Para sustentar la ayuda gratuita de neoasimilacion, ofrecemos cursos 
+                por un valor asequible para que apliques neoasimilacion aprendiendo 
                 habilidades laborales en el sector digital. Podras aprender a crear 
                 campanas de marketing y digitalizacion de comercios, hasta programacion 
                 de websites para trabajar en una startups o companias. Generamos en ti 
@@ -342,7 +276,7 @@ class Home extends Component {
               <p>
                 ¿Se imaginan cuanto tardaríamos hablando si fuésemos seres plenamente racionales? bueno 
                 sería imposible, por eso casi siempre actuamos de manera automática gracias a la asimilación.
-                La Neoasimilacion es una forma que nos ayuda a ser mas racional.
+                La neoasimilacion es una forma que nos ayuda a ser mas racional.
               </p>
             </Col>
           </Row>
@@ -506,7 +440,7 @@ class Home extends Component {
                     <div className='circle-wrapper'>3</div>
                     <H3>Aplica automaticamente:</H3>
                     Una vez que asimilas, tu cerebro reduce su carga cerebral porque toma la asimilacion como algo que repite automaticamente. 
-                    Inicialmente costara un poco, a medida que lo utlizas los resultados te soprenderan, hablar ingles en una semana, aprender lenguaje de programacion en una semana es posible, todo dependera si aplicas correctamente la Neoasimilacion. 
+                    Inicialmente costara un poco, a medida que lo utlizas los resultados te soprenderan, hablar ingles en una semana, aprender lenguaje de programacion en una semana es posible, todo dependera si aplicas correctamente la neoasimilacion. 
                   </Box>
                 </Col>
               </Row>
@@ -527,7 +461,7 @@ class Home extends Component {
           </Row>
           <Row>
             <Col>
-              Creamos la Neoasimilacion para adquirir conocimientos rapidamente y reducir 
+              Creamos la neoasimilacion para adquirir conocimientos rapidamente y reducir 
               nuestra carga cerebral, esto se traduce en un cerebro mas confortable 
               frente a todo tipo de tareas, menos estres y mas capacidad para cubrir 
               multiples tareas.
@@ -547,7 +481,7 @@ class Home extends Component {
         <Section>
           <Row>
             <Col>
-              Para que asimiles correctamente la Neoasimilacion, te sugerimos leer 
+              Para que asimiles correctamente la neoasimilacion, te sugerimos leer 
               al menos una vez mas este documento, ya que si lo sabes aplicar 
               reducira considerablemente tu carga cerebral y por tanto tu estres.
               A medida que lo aplicas, te generara una sensacion de bienestar 
@@ -587,7 +521,7 @@ class Home extends Component {
         <Section>
           <Row>
             <Col>
-              <H2>Curso de Neoasimilacion</H2>
+              <H2>Curso de neoasimilacion</H2>
               <H3>Basado en Mundo Digital</H3>
             </Col>
           </Row>
@@ -599,14 +533,33 @@ class Home extends Component {
                   Te ensenaremos a que aprendas de manera agradable nociones basicas 
                   marketing online, digitalizacion de comercios, desarrollo de apps y websites.
                 </div>
+                <div>
+                  Con la neoasimilacion queremos que disfrutes tu trabajo, hemos pensado este curso en reducir 
+                  tu carga cerebral al maximo, que aprendas lo suficiente para emprender 
+                  o trabajar en startups o companias.
+                  Practicas de aprendizaje comunitario para reducir carga cerebral, 
+                  reduccion de carga cerebral en tareas repetitivas, descompresion de exitasion o 
+                  carga cerebral con musica, 
+                  autoeducacion constante, autocreacion de referencias laborales,
+                  estructura del dia, metodo pomodoro, herramientas de trabajo en 
+                  startups y companias (slack, git, jira, otros).
+                  Herramientas de diseno (photoshop, figma, illustrator, iconfinder, dafont, google fonts, otros).
+                  Lenguajes de programacion (Javascript, vue, Angular, React, React Native, otros)
+                </div>
                 <div><a href='/course'>Ver programa de estudios</a></div>
                 <div className='deal-date'>
                   Todos los viernes 18hs Espana 10 de octubre 2020 22hs Espana
                 </div>
                 <div className='deal-price'>$30/Mes o subscribete ahora y recibe tu descuento</div>
-                <Link to='/course'>
-                  <Button className='primary large'>Get Ticket 19Month</Button>
-                </Link>
+                <Button
+                  className='secondary large'
+                >
+                  Get Ticket $19/Mes
+                </Button>
+                <div>
+                  TOP 10 CSS EFFECT
+                  https://www.youtube.com/watch?v=kEt5DCHeyJo
+                </div>
               </div>
             </Col>
           </Row>
