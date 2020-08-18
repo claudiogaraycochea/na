@@ -1,14 +1,40 @@
 import React, { Component }from "react";
 import {
+  Button,
   Section, Box,
   H1, H2, H3,
   Icon,
 } from '../../ui/naUI';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import './Home.css';
 import imageClaudio from '../../assets/images/image-claudio-g.png';
 
 class Home extends Component {
+
+  getFacebookURL = () => {
+    const message = 'Te invito a conocer el curso de Neoasimilación para adquirir habilidades laborales rápidamente y reducir estres. Visitalo https://neoasimilacion.com';
+    const text = encodeURIComponent(message);
+    return `https://www.facebook.com/sharer.php?u=https%3A%2F%2Fneoassimilation.com&t=${text}`;
+  }
+
+  getWhatsappURL = () => {
+    const message = 'Te invito a conocer el curso de Neoasimilación para adquirir habilidades laborales rápidamente y reducir estres. Visitalo https://neoasimilacion.com';
+    const text = encodeURIComponent(message);
+    return `whatsapp://send?text=${text}`;
+  }
+
+  getTwitterURL = () => {
+    const message = 'Te invito a conocer el curso de Neoasimilación para adquirir habilidades laborales rápidamente y reducir estres. Visitalo https://neoasimilacion.com';
+    const text = encodeURIComponent(message);
+    return `https://twitter.com/intent/tweet?text=${text}`;
+  }
+
+  getLinkedinURL = () => {
+    const message = 'Te invito a conocer el curso de Neoasimilación para adquirir habilidades laborales rápidamente y reducir estres. Visitalo https://neoasimilacion.com';
+    const text = encodeURIComponent(message);
+    return `https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fneoassimilation.com&title=${text}`;
+  }
+
   render() {
     // const { fullData } = this.props;
     return (
@@ -25,10 +51,10 @@ class Home extends Component {
                   mundo de hoy, que van desde mejorar tu relacion con terceros, 
                   adquirir habilidades laborales rapidamente, reducir tu estres y mas...
                 </H3>
-                <H3>
+                <p>
                   Aprende a utilizar la neoasimilacion con un curso enfocado 
                   a brindarte una salida laboral en el mundo digital.
-                </H3>
+                </p>
               </div>
             </Col>
             <Col xs={12} lg={6} className='d-flex flex-column align-items-center justify-content-center'>
@@ -37,20 +63,22 @@ class Home extends Component {
           </Row>
         </Section>
         <Section className='highlight'>
-          <Row>
-            <Col>
-              "Regala un pescado a un hombre y le darás alimento para un día, 
-              enseñale a pescar y lo alimentarás para el resto de su vida"
-            </Col>
-          </Row>
+          <div className='bubble-wrapper'>
+            <Row>
+              <Col xs={12} lg={4}>
+                <i className='image-fisher'/>
+              </Col>
+              <Col xs={12} lg={8} className='d-flex flex-column align-items-center justify-content-center text-left'>
+                "Regala un pescado a un hombre y le darás alimento para un día, 
+                enseñale a pescar y lo alimentarás para el resto de su vida"
+              </Col>
+            </Row>
+          </div>
         </Section>
         <Section>
           <Row>
-            <Col>
-              <i className='image-how-born'/>
-            </Col>
-            <Col className='text-left'>
-              <H2>¿Como nace la Neoasimlacion?</H2>
+            <Col xs={12} lg={8} className='text-left'>
+              <H2>¿Cómo nace la Neoasimlación?</H2>
               <p>
                 Soy Claudio Garaycochea, durante casi dos decadas me dedique al 
                 desarrollo de proyectos freelance, startups y companias, 
@@ -70,15 +98,18 @@ class Home extends Component {
                 en una semana con un equipo de desarrollo web, y lenguajes de 
                 programacion en el mismo lapso para trabajar en startups y companias. 
                 Tal fue el cambio en mi vida que me animo a compartir este 
-                conocimiento para ayudar a los demas.                
+                conocimiento para ayudar a los demas.
               </p>
+            </Col>
+            <Col xs={12} lg={4}>
+              <i className='image-how-born'/>
             </Col>
           </Row>
         </Section>
-        <Section>
+        <Section className='image-left'>
           <Row>
             <Col>
-              <H2>Aprender neoasimilacion es gratis</H2>
+              <H2>Aprende neoasimilacion gratis</H2>
             </Col>
           </Row>
           <Row>
@@ -109,7 +140,7 @@ class Home extends Component {
             </Col>
           </Row>
         </Section>
-        <Section>
+        <Section className='image-right'>
           <Row>
             <Col>
               <H2>¿Como pensamos/actuamos?</H2>
@@ -257,7 +288,7 @@ class Home extends Component {
             <Col xs={12} lg={4}>
               <Box>
                 <div className='box-image'>
-                  <i className='image-assimilation-step-1'/>
+                  <i className='image-assimilation-step-2'/>
                 </div>
                 <H3>ASIMILA</H3>
                 <p>
@@ -268,7 +299,7 @@ class Home extends Component {
             <Col xs={12} lg={4}>
               <Box>
                 <div className='box-image'>
-                  <i className='image-assimilation-step-1'/>
+                  <i className='image-assimilation-step-3'/>
                 </div>
                 <H3>APLICA AUTOMATICAMENTE</H3>
                 <p>
@@ -340,9 +371,9 @@ class Home extends Component {
             <Col xs={12} lg={4}>
               <Box>
                 <div className='box-image'>
-                  <i className='image-assimilation-step-1'/>
+                  <i className='image-neoassimilation-step-1'/>
                 </div>
-                <H3>APRENDE DE MANERA CONSCIENTE Y AGRADABLE</H3>
+                <H3>APRENDE DE MANERA AGRADABLE</H3>
                 <p>
                   Resume lo que tienes que hacer en lo estrictamente relevante, reduce tu carga cerebral.
                 </p>
@@ -351,7 +382,7 @@ class Home extends Component {
             <Col xs={12} lg={4}>
               <Box>
                 <div className='box-image'>
-                  <i className='image-assimilation-step-1'/>
+                  <i className='image-neoassimilation-step-2'/>
                 </div>
                 <H3>ASIMILA DE MANERA CONSCIENTE</H3>
                 <p>
@@ -362,7 +393,7 @@ class Home extends Component {
             <Col xs={12} lg={4}>
               <Box>
                 <div className='box-image'>
-                  <i className='image-assimilation-step-1'/>
+                  <i className='image-neoassimilation-step-3'/>
                 </div>
                 <H3>APLICA AUTOMATICAMENTE</H3>
                 <p>
@@ -505,40 +536,80 @@ class Home extends Component {
               al menos una vez mas este documento, ya que si lo sabes aplicar 
               reducira considerablemente tu carga cerebral y por tanto tu estres.
               A medida que lo aplicas, te generara una sensacion de bienestar 
-              que mejorara considerablemente tu calidad de vida.
+              que mejorara considerablemente tu calidad de vida. Aprender 
+              rapidamente habilidades laborales para conseguir empleo, reducir 
+              estres, mejor relacion con terceros y mas.
             </Col>
           </Row>
           <Row>
             <Col>
-              Compartir Whatsapp, Facebook, Instagram, Twitter
+              <Row>
+                <Col>
+                  
+                  <a href={this.getWhatsappURL()} data-action="share/whatsapp/share">
+                    <Button className='whatsapp'><Icon className='whatsapp small space'/> Compartir en Whatsapp</Button>
+                  </a>
+                </Col>
+                <Col>
+                  <a href={this.getFacebookURL()}>
+                    <Button className='facebook'><Icon className='facebook small space'/> Compartir en Facebook</Button>
+                  </a>
+                </Col>
+                <Col>
+                  <a href={this.getTwitterURL()} data-size="large">
+                    <Button className='twitter'><Icon className='twitter small space'/> Compartir en Twitter</Button>
+                  </a>
+                </Col>
+                <Col>
+                  <a href={this.getLinkedinURL()} data-size="large">
+                    <Button className='linkedin'><Icon className='linkedin small space'/> Compartir en Linkedin</Button>
+                  </a>
+                </Col>
+              </Row>
             </Col>
           </Row>
         </Section>
         <Section>
           <Row>
             <Col>
-              <H2>Comenzar curso de neoasimilacion basado en el mundo digital</H2>
-              <H3>Curso virtual via streaming en vivo</H3>
+              <H2>Curso de neoasimilacion</H2>
+              <H3>Basado en Mundo Digital</H3>
             </Col>
           </Row>
           <Row>
             <Col>
-              Este curso cumple con dos funciones, la principal, es que aprendas a 
-              utilizar neoasimilacion para adquirir habilidades laborales rapidamente 
-              y reducir el estres. Lo segundo es que puedas convertir este aprendizaje 
-              en una salida laboral, tanto para hacer un emprendimiento o conseguir 
-              empleo. Si tienes la capacidad de adquirir habilidades laborales 
-              rapidamente, muchas empresas se interesaran por ti.
-              Te ensenaremos a que aprendas de manera agradable nociones basicas 
-              marketing online, digitalizacion de comercios, desarrollo de apps y websites.
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <h3>Adquiere tu ticket mensual</h3>
-              Todos los viernes 18hs Espana 10 de octubre 2020 22hs Espana
-              Precio Normal $30
-              <Button>Get Ticket $19/Mes Antes de Octubre</Button>
+              <div className='deal-wrapper'>
+                <div className='title'>Obten tu ticket para acceder al curso streaming en vivo de Neoasimilacion</div>
+                <div className='description'>
+                  Te ensenaremos a que aprendas de manera agradable nociones basicas 
+                  marketing online, digitalizacion de comercios, desarrollo de apps y websites.
+                </div>
+                <div>
+                  Con la neoasimilacion queremos que disfrutes tu trabajo, hemos pensado este curso en reducir 
+                  tu carga cerebral al maximo, que aprendas lo suficiente para emprender 
+                  o trabajar en startups o companias.
+                  Practicas de aprendizaje comunitario para reducir carga cerebral, 
+                  reduccion de carga cerebral en tareas repetitivas, descompresion de exitasion o 
+                  carga cerebral con musica, 
+                  autoeducacion constante, autocreacion de referencias laborales,
+                  estructura del dia, metodo pomodoro, herramientas de trabajo en 
+                  startups y companias (slack, git, jira, otros).
+                </div>
+                <div><a href=''>Ver programa de estudios</a></div>
+                <div className='deal-date'>
+                  Todos los viernes 18hs Espana 10 de octubre 2020 22hs Espana
+                </div>
+                <div className='deal-price'>$30/Mes o subscribete ahora y recibe tu descuento</div>
+                <Button
+                  className='secondary large'
+                >
+                  Get Ticket $19/Mes
+                </Button>
+                <div>
+                  TOP 10 CSS EFFECT
+                  https://www.youtube.com/watch?v=kEt5DCHeyJo
+                </div>
+              </div>
             </Col>
           </Row>
         </Section>

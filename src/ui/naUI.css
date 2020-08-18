@@ -113,6 +113,10 @@ body, html, .main-app, .app, #root {
 	color: #60347B;
 }
 
+a:hover {
+	text-decoration: none !important;
+}
+
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {

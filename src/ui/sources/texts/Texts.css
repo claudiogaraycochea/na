@@ -23,8 +23,8 @@ h3 {
 	color: #A500FF !important;
 }
 
-ul.list-wrapper {
-	border: 1px solid red;
+.text-medium {
+	font-size: 14px;
 }
 
 @media (min-width: 768px) {
