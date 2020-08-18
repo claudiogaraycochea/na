@@ -7,13 +7,38 @@
   background-size: contain;
 }
 
+.icon.small {
+  height: 20px;
+  width: 20px;
+}
+
 .icon.large {
   height: 64px;
   width: 64px;
 }
 
+.icon.space {
+	margin-right: 10px;
+}
+
 .icon.search {
   background-image: url('../../../assets/images/icon-search.svg');
+}
+
+.icon.whatsapp {
+  background-image: url('../../../assets/images/icon-whatsapp.svg');
+}
+
+.icon.facebook {
+  background-image: url('../../../assets/images/icon-facebook.svg');
+}
+
+.icon.twitter {
+  background-image: url('../../../assets/images/icon-twitter.svg');
+}
+
+.icon.linkedin {
+  background-image: url('../../../assets/images/icon-linkedin.svg');
 }
 
 .icon.interactivity {
@@ -51,4 +76,3 @@
 .icon.apply-automatically {
   background-image: url('../../../assets/images/icon-apply-automatically.svg');
 }
-
