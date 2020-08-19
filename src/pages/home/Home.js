@@ -107,7 +107,7 @@ class Home extends Component {
                 Esto me impulso a estudiar neurociencia para encontrar una solución 
                 frente a tanta exigencia mental. El conocer como funciona nuestro 
                 cerebro me permitió crear mi propio método para obtener habilidades 
-                cognitivas y reducir mi estrés, lo llamé Neoasimilacién. Con él, logré 
+                cognitivas y reducir mi estrés, lo llamé Neoasimilación. Con él, logré 
                 aprender a hablar en inglés en tan solo una semana, el mismo lapso 
                 para aprender lenguajes de programación para trabajar en startups y 
                 compañías de IT. Tal fue el cambio en mi vida que me animó a 
@@ -122,56 +122,70 @@ class Home extends Component {
         <Section className='image-left'>
           <Row>
             <Col>
-              <H2>Aprende Neoasimilacion gratis</H2>
+              <H2>Aprende Neoasimilación gratis</H2>
             </Col>
           </Row>
           <Row>
             <Col>
               <H3>
                 En este momento de crisis es muy importante ayudarnos entre todos, 
-                si aprendes como adquirir habilidades laborales rápidamente, te 
+                poder adquirir habilidades laborales rápidamente te 
                 permitirá mayores oportunidades de empleo o realizar tu propio 
-                emprendimiento.                 
+                emprendimiento sin que la falta de recursos te frene
               </H3>
               <p>
                 Queremos que aprendas a utilizar Neoasimilación sin coste alguno, 
                 por ello hemos publicado en este documento la información necesaria para 
-                que puedas comenzar a implementarlo, si tienes dudas, consultanos a 
-                nuestro correo.
+                que puedas comenzar a implementarlo. También sugerimos utilizar 
+                como método de estudio en instituciones educativas, colegios, 
+                universidad, cursos, etc. Si tienes dudas, consultanos a 
+                nuestro correo. 
               </p>
               <p>
-                Tambien puede utilizarse como metodo de estudio en instituciones educativas, 
-                colegios, universidad, cursos, etc.
-                Para sustentar la ayuda gratuita de Neoasimilacion, ofrecemos cursos 
-                por un valor asequible para que apliques Neoasimilacion aprendiendo 
-                habilidades laborales en el sector digital. Podras aprender a crear 
-                campanas de marketing y digitalizacion de comercios, hasta programacion 
-                de websites para trabajar en una startups o companias. Generamos en ti 
-                una habilidad de autoaprendizaje solido para que siempre puedas cubrir 
-                cualquier necesidad en el sector tecnologico. No te ensenamos una 
-                tecnologia, te ensenamos a que aprendas facilmente todas las que 
-                necesites el resto de tu vida laboral.
+                Para sustentar la ayuda gratuita de Neoasimilación, ofrecemos cursos 
+                por un valor asequible para que apliques el metodo aprendiendo 
+                habilidades laborales en el sector digital. Podrás aprender a crear 
+                campañas de marketing y digitalización de comercios, hasta programación 
+                de websites para trabajar en una startups o compañías. Generamos en ti 
+                una habilidad de autoaprendizaje para que siempre puedas cubrir 
+                cualquier necesidad en el sector tecnológico.
               </p>
+            </Col>
+          </Row>
+        </Section>
+        <Section className='dark'>
+          <Row>
+            <Col>
+              <H2>Comencemos...</H2>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              A continuación aprenderás cómo funciona tu cerebro, como 
+              actúa automaticamente, como acelerar el proceso de aprendizaje 
+              y reducir la carga cerebral. Ten en cuenta que los cambios 
+              quedan bajo absoluta responsabilidad, dependerá pura y 
+              exclusivamente de tu correcta implementación.
             </Col>
           </Row>
         </Section>
         <Section className='image-right'>
           <Row>
             <Col>
-              <H2>¿Como pensamos/actuamos?</H2>
+              <H2>¿Cómo pensamos/actuamos?</H2>
             </Col>
           </Row>
           <Row>
             <Col>
               El como "pensamos/actuamos", es relacionado a reducir carga en nuestro cerebro. 
-              Según entiendo, la asimilación es la columna vertebral de la neurociencia. 
+              Según entenemos, la asimilación es la columna vertebral de la neurociencia. 
               Donde una vez que asimilas algo es muy difícil cambiarlo porque requiere carga cerebral.
             </Col>
           </Row>
           <Row>
             <Col xs={12} lg={4}>
               <Box>
-                <H3>EJEMPLO 1</H3>
+                <div className='title'>EJEMPLO 1</div>
                 <p>
                   Cuando vemos un Rottwailer, la mayoría de nosotros 
                   "cruzamos a la vereda del frente".
@@ -180,7 +194,7 @@ class Home extends Component {
             </Col>
             <Col xs={12} lg={4}>
               <Box>
-                <H3>EJEMPLO 2</H3>
+                <div className='title'>EJEMPLO 2</div>
                 <p>
                   Cuando vamos por una salsa de tomate en un supermercado, buscamos una lata de color rojo.
                 </p>
@@ -188,9 +202,9 @@ class Home extends Component {
             </Col>
             <Col xs={12} lg={4}>
               <Box>
-                <H3>EJEMPLO 3</H3>
+                <div className='title'>EJEMPLO 3</div>
                 <p>
-                  Cuando conducimos nuestro automovil y hablamos o leemos.
+                  Cuando conducimos nuestro automóvil y hablamos.
                 </p>
               </Box>
             </Col>
@@ -198,7 +212,7 @@ class Home extends Component {
           <Row>
             <Col>
               Otro ejemplo de asimilación es "La rzaón por la que tu cberreo pudee leer etse txeto".
-              <span className='text-highlight'>Casi todo el tiempo nuestro cerebro actua de manera automatica con lo que haz asimilado previamente.</span>
+              <span className='text-highlight'> Casi todo el tiempo tu cerebro actúa de manera automática con lo que haz asimilado previamente.</span>
             </Col>
           </Row>
         </Section>
@@ -210,8 +224,8 @@ class Home extends Component {
           </Row>
           <Row>
             <Col>
-              Hay muchas teorias que si bien no aseguramos que son ciertas, nos ayudan a medir como 
-              actuamos en el dia a dia, se indexa en tres funciones basicas que nos ayudan a 
+              Hay muchas teorías que si bien no aseguramos que son ciertas, nos ayudan a medir como 
+              actuamos en el día a día, se indexa en tres funciones básicas que nos ayudan a 
               comprender nuestro comportamiento.
             </Col>
           </Row>
@@ -223,25 +237,25 @@ class Home extends Component {
           <Row>
             <Col xs={12} lg={4}>
               <Box>
-                <H3>NEOCORTEX</H3>
+                <div className='title'>NEOCORTEX</div>
                 <p>
-                  El cerebro que piensa, lo utilzamos aproximadamente un 10%.
+                  El cerebro que piensa, lo utilzamos apróximadamente un 10%.
                 </p>
               </Box>
             </Col>
             <Col xs={12} lg={4}>
               <Box>
-                <H3>LIMBICO</H3>
+                <div className='title'>LIMBICO</div>
                 <p>
-                  El cerebro que siente, lo utilizamos aproximadamente un 10%
+                  El cerebro que siente, lo utilizamos apróximadamente un 10%
                 </p>
               </Box>
             </Col>
             <Col xs={12} lg={4}>
               <Box>
-                <H3>REPTILIANO</H3>
+                <div className='title'>REPTILIANO</div>
                 <p>
-                  El cerebro que actua automaticamente, lo usamos aproximadamente un 80%
+                  El cerebro que actua automáticamente, lo utilizamos apróximadamente un 80%
                 </p>
               </Box>
             </Col>
@@ -249,22 +263,22 @@ class Home extends Component {
           <Row>
             <Col>
               <p>
-                Para entender como tu vives, citamos el siguiente ejemplo. Años atras se 
+                Para entender cómo tu vives, citamos el siguiente ejemplo. Años atrás se 
                 realizo una campaña de McDonald's, hicieron una encuesta a sus clientes 
-                y todos estaban de acuerdo que seria bueno ofrecer comida saludable.
+                y todos estaban de acuerdo que sería bueno ofrecer comida saludable.
               </p>
               <p>
-                Meses mas tarde y millones de dolares gastados en publicidad, fue un total 
-                fracaso, la gente preferia seguir comiendo hamburguesas. Esto se debe a 
-                que en el momento de la encuesta, la gente respondia con el cerebro 
+                Meses más tarde y millones de dolares invertidos en publicidad, fue un total 
+                fracaso, la gente prefería seguir comiendo hamburguesas. Esto se debe a 
+                que en el momento de la encuesta, la gente respondía con el cerebro 
                 Neocórtex (o cerebro racional), pero a la hora de elegir utiliza el 
-                cerebro Reptiliano (o cerebro automatico).
+                cerebro Reptiliano (o cerebro automático).
               </p>
               <p>
-                Segun los libros de psicologia, dejamos nuestra vida en manos del cerebro 
+                Es importante entender que dejamos nuestra vida en manos del cerebro 
                 reptiliano. Es el mismo que domina el 80% de las desiciones de tu vida. 
-                A su vez, tu cerebro Reptiliano se divide aprox. 10% genetico y 90% por 
-                asimilación.
+                A su vez, tu cerebro Reptiliano se divide apróximadamente 10% genético 
+                y 90% por asimilación.
               </p>
             </Col>
           </Row>
@@ -272,20 +286,22 @@ class Home extends Component {
         <Section>
           <Row>
             <Col>
-              <H2>Asimilacion define tu vida</H2>
+              <H2>Asimilación define tu vida</H2>
             </Col>
           </Row>
           <Row>
             <Col>
-              El funcionamiento de tu cerebro a lo largo de tu vida actúa por "asimilación", 
-              es decir, aprende algo, asimila y aplica automáticamente para reaccionar de 
-              manera inmediata.
+              <H3>
+                El funcionamiento de tu cerebro a lo largo de tu vida actúa por "asimilación", 
+                es decir, aprende algo, asimila y aplica automáticamente para reaccionar de 
+                manera inmediata.
+              </H3>
               Esta claro que no podemos razonar todo por cuestiones obvias. Estos 3 pasos en 
-              que nuestro cerebro actua, es positivo para resolver en lo inmediato, pero 
+              que nuestro cerebro actúa, es positivo para resolver en lo inmediato, pero, 
               generan un gran problema porque define el camino de nuestras vidas, ya que 
-              cada accion depende de cosas que asimilamos previamente, gran parte de ellas 
-              de manera inconsciente. Con Neoasimilacion aprenderas a usar mejor tu cerebro 
-              de manera mas racional y consciente.
+              cada acción depende de cosas que asimilamos previamente, gran parte de ellas 
+              de manera inconsciente. Con Neoasimilación aprenderás a usar tu cerebro 
+              de manera más racional y consciente.
             </Col>
           </Row>
           <Row>
@@ -294,9 +310,9 @@ class Home extends Component {
                 <div className='box-image'>
                   <i className='image-assimilation-step-1'/>
                 </div>
-                <H3>APRENDE</H3>
+                <div className='title'>APRENDE</div>
                 <p>
-                  Tu cerebro se encuentra en constante aprendizaje de manera consciente o inconsciente
+                  Tu cerebro se encuentra en constante aprendizaje de manera consciente o inconsciente.
                 </p>
               </Box>
             </Col>
@@ -305,9 +321,9 @@ class Home extends Component {
                 <div className='box-image'>
                   <i className='image-assimilation-step-2'/>
                 </div>
-                <H3>ASIMILA</H3>
+                <div className='title'>ASIMILA</div>
                 <p>
-                  Una vez que aprende, la informacion se guarda en tu cabeza de manera consciente e inconsciente
+                  Una vez que aprende, esta información se graba en tu cabeza de manera consciente e inconsciente.
                 </p>
               </Box>
             </Col>
@@ -316,9 +332,9 @@ class Home extends Component {
                 <div className='box-image'>
                   <i className='image-assimilation-step-3'/>
                 </div>
-                <H3>APLICA AUTOMATICAMENTE</H3>
+                <div className='title'>APLICA AUTOMATICAMENTE</div>
                 <p>
-                  Una vez que asimilas lo aplicas automaticamente
+                  Al asimilar tu cerebro aplicará automáticamente esa información.
                 </p>
               </Box>
             </Col>
@@ -326,23 +342,22 @@ class Home extends Component {
           <Row>
             <Col>
               <p>
-                Por ejemplo, cuando hablas de política, nuestro cerebro asimilo algo que creía que esta 
-                bien, y <span className='text-highlight'>la respuesta es automática, es por eso que 
-                discutimos por cualquier cosa y si mostramos evidencias la otra persona o nosotros no entenderemos algo, nuestra comprension 
-                depende exclusivamente de nuestra asimilacion</span>, esta sencilla explicacion es 
-                la base de porque peleamos, nos enojamos, o deriva en cosas peores. 
+                Por ejemplo, cuando discutimos sobre política con otra persona, 
+                si intentamos mostrale con evidencias claras que esta equivocada, 
+                esta persona no entenderá, o te dirá que si, pero luego seguirá 
+                "pensando" lo mismo. Aunque tenga un elefante frente a sus ojos, 
+                no lo verá. Esta otra persona también somos nosotros, las cosas 
+                se escapan de nuestra comprensión, ya que todo depende de nuestra 
+                asimilación previa. 
               </p>
               <p>
-                Ahora bien, si seriamos 
-                seres realmente racionales 
-                analizaríamos lo que estamos hablando, lo cual llevaría tiempo en hacerlo y sacar 
-                conclusiones correctas que demoran varios minutos u horas de análisis por algo que 
-                no vale la pena.
+                La falta de correcta asimilación es la base del por qué peleamos, 
+                nos enojamos, en ocaciones deriva en cosas peores.
               </p>
               <p>
-                ¿Se imaginan cuanto tardaríamos hablando si fuésemos seres plenamente racionales? bueno 
-                sería imposible, por eso casi siempre actuamos de manera automática gracias a la asimilación.
-                La Neoasimilacion es una forma que nos ayuda a ser mas racional.
+                ¿Se imaginan cuanto tardaríamos hablando si fuésemos seres 
+                plenamente racionales? sería imposible, por eso casi siempre 
+                actuamos de manera automática gracias a la asimilación.
               </p>
             </Col>
           </Row>
@@ -351,35 +366,34 @@ class Home extends Component {
           <Row>
             <Col>
               Genial, ya sabemos que nuestro cerebro aprende de manera consciente e inconsciente, 
-              esta la asimila y la aplica automaticamente. La asimilacion es la informacion que 
-              vas a repetir automaticamente, define el 80% de nuestras decisiones, como pensamos 
-              y que haremos. Por este motivo, tomamos la asimilacion como el punto mas importante 
-              en nuestras capacidades, este proceso automatico reducira tu carga cerebral de 
+              asimila y la aplica automáticamente. La asimilación es la información que 
+              vas a repetir automáticamente, define el 80% de nuestras decisiones, como pensamos 
+              y que haremos. Por este motivo, tomamos la asimilación como el punto más importante 
+              en nuestras capacidades, este proceso automático reducirá tu carga cerebral en 
               cualquier tarea independientemente de su complejidad, hablar, conducir, prevenir, 
-              aprender, empleo, etc.
+              aprender, empleo, etc. Un proceso tan increible que incluso podemos hacer 
+              multiples tareas a la vez.
             </Col>
           </Row>
         </Section>
         <Section>
           <Row>
             <Col>
-              <H2>Neoasimilacion</H2>
+              <H2>Neoasimilación</H2>
             </Col>
           </Row>
           <Row>
             <Col>
-              Muy bien, ya sabes cuales son los tres pasos que tu cerebro repite consciente e 
-              inconscientemente para actuar rapidamente. Ahora bien, que pasa si a tu cerebro 
-              repites el mismo proceso pero de manera consciente. Los resultados son 
-              interesantes, adquirimos habilidades laborales rapidamente y reducimos el estres. 
-              Independientemente de la complejidad de la tarea, puedes guardar en tu cerebro 
-              solo la informacion necesaria para actuar rapido, reducira considerablemente 
-              tu carga cerebral.
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <H3>LA NEOASIMILACION, ES LA ASIMILACION PERO REPITE LOS TRES PASOS DE MANERA CONSCIENTE</H3>
+              <H3>
+                Ahora bien, que pasa si hacemos el mismo proceso de asimilación pero de manera 
+                consciente. A este proceso lo hemos llamado Neoasimilación, los resultados son 
+                muy interesantes, adquirimos habilidades laborales rápidamente, 
+                reducimos el estrés, comprendemos mejor a terceros y más.
+              </H3>    
+              Utilizando correctamente la neoasimilación, independientemente de la complejidad 
+              de la tarea, podrás guardar en tu cerebro solo la información necesaria para 
+              actuar rápido, además, lo asimilado reducirá considerablemente tu carga cerebral. 
+              Generando un estado de conford y mejorando tu calidad de vida.
             </Col>
           </Row>
           <Row>
@@ -388,9 +402,10 @@ class Home extends Component {
                 <div className='box-image'>
                   <i className='image-neoassimilation-step-1'/>
                 </div>
-                <H3>APRENDE DE MANERA AGRADABLE</H3>
+                <div className='title'>APRENDE DE MANERA AGRADABLE</div>
                 <p>
-                  Resume lo que tienes que hacer en lo estrictamente relevante, reduce tu carga cerebral.
+                  Haz un resumen de lo que tienes que aprender con lo 
+                  estrictamente relevante.
                 </p>
               </Box>
             </Col>
@@ -399,9 +414,10 @@ class Home extends Component {
                 <div className='box-image'>
                   <i className='image-neoassimilation-step-2'/>
                 </div>
-                <H3>ASIMILA DE MANERA CONSCIENTE</H3>
+                <div className='title'>ASIMILA DE MANERA CONSCIENTE</div>
                 <p>
-                  Una vez que aprendes guarda esa informacion en tu cabeza con tecnicas de asimilacion apropiada.
+                  Una vez que aprendes, debes guardar esa información en tu 
+                  cabeza con una técnica de asimilación apropiada.
                 </p>
               </Box>
             </Col>
@@ -410,41 +426,30 @@ class Home extends Component {
                 <div className='box-image'>
                   <i className='image-neoassimilation-step-3'/>
                 </div>
-                <H3>APLICA AUTOMATICAMENTE</H3>
+                <div className='title'>APLICA AUTOMATICAMENTE</div>
                 <p>
-                  Una vez que asimilas lo aplicas automaticamente. Es el proceso nautral para responder 
-                  rapidamente. Pero con informacion relevante y consciente. 
+                  Una vez asimilado, lo aplicaras automáticamente. 
+                  Una respuesta inmediata y con baja carga cerebral. 
                 </p>
               </Box>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <p>
-                En este curso te ensenaremos a guardar informacion relevante de manera 
-                consciente, para cubrir tareas laborales de manera inmediata. Es muy 
-                importante que es solo para tareas especificas, es un complemento 
-                que puede ser utilizado para reforzar aprendizaje en universidades, 
-                cursos o con fines laborales. 
-              </p>
             </Col>
           </Row>
         </Section>
         <Section>
           <Row>
             <Col>
-              <H2>Neoasimilacion</H2>
+              <H2>Ejemplo Real de Neoasimilación</H2>
             </Col>
           </Row>
           <Row>
             <Col>
-              Muy bien, ya sabes cuales son los tres pasos que tu cerebro repite consciente e 
-              inconscientemente para actuar rapidamente. Ahora bien, que pasa si a tu cerebro 
-              repites el mismo proceso pero de manera consciente. Los resultados son 
-              interesantes, adquirimos habilidades laborales rapidamente y reducimos el estres. 
-              Independientemente de la complejidad de la tarea, puedes guardar en tu cerebro 
-              solo la informacion necesaria para actuar rapido, reducira considerablemente 
-              tu carga cerebral.
+              Años atrás fui contratado para trabajar en una startup 100% anglo sin 
+              saber inglés. Durante la primer meeting no entendía absolutamente nada, 
+              escuchaba palabras como “Face”, entre otras que perdía el contexto por 
+              completo. Imagine que hablaban de caras en proyectos, aprender 5000 
+              palabras en inglés de una semana a otra es imposible. Entonces ¿Cómo 
+              logré de una semana a otra hablar en inglés? aplicando los 3 pasos del 
+              método de asimilación.
             </Col>
           </Row>
           <Row>
@@ -453,7 +458,7 @@ class Home extends Component {
                 <Col lg={4}>
                   <Box>
                     <div className='circle-wrapper'>1</div>
-                    <H3>Aprender de Manera Consciente y Agradable:</H3>
+                    <div className='title'>APRENDE DE MANERA AGRADABLE</div>
                     Apunte las 3 maneras de saludar del team, y busque las 20 palabras más 
                     utilizadas por el team, como se escribe y su pronunciación. Finalmente 
                     “Face” era “Phase”.                    
@@ -462,14 +467,14 @@ class Home extends Component {
                 <Col lg={4}>
                   <Box>
                     <div className='circle-wrapper'>2</div>
-                    <H3>Asimila de Manera Consciente:</H3>
+                    <div className='title'>ASIMILA DE MANERA CONSCIENTE</div>
                     Asimile las 23 palabras, por ejemplo budget, miraba una imagen de un presupuesto y escuchaba como sonaba. Aproximadamente unas 10 veces por cada palabra hasta que lo asimilaba como una palabra nativa.
                   </Box>
                 </Col>
                 <Col lg={4}>
                   <Box>
                     <div className='circle-wrapper'>3</div>
-                    <H3>Aplica automaticamente:</H3>
+                    <div className='title'>APLICA AUTOMATICAMENTE</div>
                     Listo, una vez que lo asimilas, tu cerebro reconoce esa palabra automáticamente. Una semana más tarde de la primer meeting, estaba hablando con ellos de manera relajada, utilizando mis recursos cognitivos para resolver las tareas.
                   </Box>
                 </Col>
@@ -482,7 +487,7 @@ class Home extends Component {
                 <Col lg={4}>
                   <Box>
                     <div className='circle-wrapper'>1</div>
-                    <H3>Aprende de Manera Agradable:</H3>
+                    <div className='title'>APRENDE DE MANERA AGRADABLE</div>
                     <div>1 - Define tiempo de aprendizaje, no debe superar una semana.</div>
                     <div>2 - Estructurate el dia</div>
                     <div>3 - Haz una vision general de contenido para ver lo que aprenderas y reducir tu ansiedad</div>
@@ -492,7 +497,7 @@ class Home extends Component {
                 <Col lg={4}>
                   <Box>
                     <div className='circle-wrapper'>2</div>
-                    <H3>Asimila de Manera Consciente:</H3>
+                    <div className='title'>ASIMILA DE MANERA CONSCIENTE</div>
                       Ya tienes un resume sobre como aprender de manera confortable, la asimilacion es 
                       la manera en que se guarda lo que aprendes en tu cerebro.
                       Hay varias tecnicas de asimilacion consciente, la mas comun es la de repetir 
@@ -504,7 +509,7 @@ class Home extends Component {
                 <Col lg={4}>
                   <Box>
                     <div className='circle-wrapper'>3</div>
-                    <H3>Aplica automaticamente:</H3>
+                    <div className='title'>APLICA AUTOMATICAMENTE</div>
                     Una vez que asimilas, tu cerebro reduce su carga cerebral porque toma la asimilacion como algo que repite automaticamente. 
                     Inicialmente costara un poco, a medida que lo utlizas los resultados te soprenderan, hablar ingles en una semana, aprender lenguaje de programacion en una semana es posible, todo dependera si aplicas correctamente la Neoasimilacion. 
                   </Box>
@@ -560,7 +565,6 @@ class Home extends Component {
             <Col>
               <Row>
                 <Col>
-                  
                   <a href={this.getWhatsappURL()} data-action="share/whatsapp/share">
                     <Button className='whatsapp'><Icon className='whatsapp small space'/> Compartir en Whatsapp</Button>
                   </a>
