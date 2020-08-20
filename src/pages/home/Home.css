@@ -236,6 +236,18 @@
   align-items: center;
 }
 
+.deal-wrapper h2, .deal-wrapper h3 {
+  color: #FFFFFF;
+}
+
+.social-wrapper .social-item {
+  margin-bottom: 20px;
+}
+
+.social-wrapper .social-item .btn {
+  min-width: 300px !important;
+}
+
 @media (min-width: 768px) {
   .hero-wrapper {
     padding-top: 60px;
@@ -260,6 +272,10 @@
   .hero-wrapper .row {
     min-width: 100%;
     width: 100%;
+  }
+
+  .social-wrapper .social-item .btn {
+    min-width: 100% !important;
   }
 
   .image-brain-check {
