@@ -234,6 +234,22 @@
   align-items: center;
 }
 
+.form-wrapper {
+  max-width: 500px;
+  width: 100%;
+  text-align: left;
+}
+
+.ul-wrapper {
+  list-style-type: none;
+}
+
+.ul-wrapper li {
+  font-size: 14px;
+  text-align: left;
+  list-style-image: url('../../assets/images/icon-check.svg');
+}
+
 @media (min-width: 768px) {
   .hero-wrapper {
     padding-top: 60px;

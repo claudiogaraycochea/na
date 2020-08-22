@@ -2,7 +2,7 @@ import React, { Component }from "react";
 import {
   Button,
   Section, Box,
-  H1, H2,
+  H1, H2, H3,
 } from '../../ui/naUI';
 import { Container, Row, Col, Form } from 'react-bootstrap';
 import './Course.css';
@@ -15,7 +15,14 @@ class Home extends Component {
 		super(props);
 		this.state = {
 			forgotPasswordSent: false,
-			email: '',
+      email: '',
+      repeat_email: '',
+      firstname: '',
+      lastname: '',
+      city: '',
+      zip_code: '',
+      state: '',
+      country: '',
 			validated: false,
 		};
 		this.handleInputChange = this.handleInputChange.bind(this);
@@ -88,7 +95,17 @@ class Home extends Component {
 
   render() {
     // const { fullData } = this.props;
-    const { email, validated } = this.state;
+    const {
+      firstname,
+      lastname,
+      city,
+      zip_code,
+      state,
+      country,
+      email,
+      repeat_email,
+      validated 
+    } = this.state;
 
     return (
       <Container fluid>
@@ -97,12 +114,12 @@ class Home extends Component {
             <Col>
               <H1>Curso de Neoasimilación</H1>
               <H2>Aplicado al Mundo Digital</H2>
-              <p>
-                Si no sabes que es Neoasimilación, haz click en el siguiente enlace.         
-              </p>
-              <Link to='/'>
-                ¿Qué es Neoasimilación?
-              </Link>  
+              <H3>
+                Los cursos son vía streaming en vivo. Todos los viernes 
+                de 19hs a 20hs (España) a partir del 10 de noviembre 
+                2020, la duración es de 6 meses a un valor $30/Mes /
+                Si te subscribes antes de noviembre $19/Mes
+              </H3>
             </Col>
           </Row>
         </Section>
@@ -139,79 +156,74 @@ class Home extends Component {
                 Los resultados son increibles, siempre puedes cubrir con 
                 cualquier necesidad ya sea en la empresa o emprendimiento.
               </p>
+              <p>
+                Si no sabes que es Neoasimilación, haz click en el siguiente enlace.         
+              </p>
+              <Link to='/'>
+                ¿Qué es Neoasimilación?
+              </Link>
             </Col>
           </Row>
         </Section>
         <Section className='image-right'>
           <Row>
             <Col>
-              <H2>Programa de estudio variable</H2>
+              <H2>¿Qué aprenderás?</H2>
             </Col>
           </Row>
           <Row>
             <Col>
-              El programa de estudio pretende formarte con la habilidad de 
-              aprender lo que necesites al instante, reducir tu carga 
-              cerebral y darte las herramientas para una salida laboral 
-              desde el primer mes.
+              <H3>Aprende neoasimilación y crea tus propias oportunidades laborales</H3>
             </Col>
           </Row>
           <Row>
             <Col>
               <h2>OBJETIVO 1:</h2>
               <p>
-                APRENDER A CREAR LANDING PAGE A NIVEL PROFESIONAL, CAMPANAS 
-                DE MARKETING DIGITAL Y DIGITALIZACION DE COMERCIO. PARA QUE 
-                PUEDAS LOGRAR UNA SALIDA LABORAL AL SEGUNDO MES.
+                Aprende a crear landing pages, campañas de marketing y 
+                digitalización de comercio, <span className='text-highlight'>queremos que logres una salida 
+                laboral al segundo mes de este curso.</span>
               </p>
-              <ul>
-                <li>DESARROLLO DE LANDING PAGE</li>
-                <li>PUESTA EN MARCHA</li>
-                <li>MARKETING ONLINE</li>
-                <li>DIGITALIZACION DE COMERCIOS</li>
+              <ul className='ul-wrapper'>
+                <li>Desarrollo de Landing page</li>
+                <li>Puesta en marcha</li>
+                <li>Marketing online</li>
+                <li>Digitalización de comercios</li>
               </ul>
             </Col>
             <Col>
               <h2>OBJETIVO 2:</h2>
               <p>
-                QUEREMOS ENSENARTE A DESARROLLAR WEBSITES Y APPS A NIVEL PROFESIONAL. PARA QUE 
-                PUEDAS LOGRAR UNA SALIDA LABORAL PARA DESARROLLAR WEBSITES PARA COMERCIOS, 
-                EMPRESAS, O TRABAJAR EN UNA EMPRESA DE DESARROLLO.                
+                Desarrollo de websites y apps a nivel profesional. Aprenderas 
+                los <span className='text-highlight'>conocimientos basicos para que puedas lograr una salida 
+                laboral para desarrollar websites para comercios o trabajar 
+                en empresas de desarrollo.</span>                
               </p>
-              <ul>
-                <li>CREACION DE WEBSITES PROFESIONALES</li>
-                <li>APRENDER HERRAMIENTAS DE TRABAJO</li>
-                <li>ESTRUCTURA DE EQUIPOS DE DESARROLLO</li>
-                <li>LENGUAJES DE PROGRAMACION</li>
-                <li>CREACION DE APPS</li>
+              <ul className='ul-wrapper'>
+                <li>Desarrollo de websites profesionales</li>
+                <li>Aprende herramientas de trabajo</li>
+                <li>Estructura de equipos de desarrollo</li>
+                <li>Lenguajes de programación</li>
+                <li>Desarrollo de Apps</li>
               </ul>
             </Col>
             <Col>
               <h2>OBJETIVO 3:</h2>
               <p>
-                QUEREMOS QUE APRENDAS TECNICAS PARA CREAR TUS PROPIOS EMPRENDIMIENTOS.
+                Desarrollarás tu propio emprendimiento con dos objetivos, 
+                este servirá como <span className='text-highlight'>referencia 
+                laboral para trabajar en una empresa y generar ingresos 
+                con proyecto propio.</span>
               </p>
-              <ul>
-                <li>LEAN STARTUP</li>
-                <li>CREAR PLAN DE NEGOCIO</li>
-                <li>BUSCAR FINANCIACION</li>
-                <li>FORMAR EQUIPO</li>
-                <li>TIPS</li>
+              <ul className='ul-wrapper'>
+                <li>Lean startup</li>
+                <li>Crear plan de negocio</li>
+                <li>Busqueda de financiación</li>
+                <li>Formar equipo correcto</li>
+                <li>Conseguir clientes</li>
+                <li>Vende con neoasimilación</li>
+                <li>Tips</li>
               </ul>
-            </Col>
-          </Row>
-        </Section>
-        <Section>
-          <Row>
-            <Col>
-              <h2>Estructura organizativa</h2>
-            </Col>            
-          </Row>
-          <Row>
-            <Col>
-              Emprendimiento, Startups, Compañías IT, otros. 
-              Quienes la conforma, que hacen cada uno, promedios 
-              salariales.
             </Col>
           </Row>
         </Section>
@@ -586,22 +598,102 @@ class Home extends Component {
             </Col>
           </Row>
           <Row>
-            <Col>
-              <Form noValidate validated={validated} onSubmit={(event) => this.handleSubmit(event)}>
-                <Form.Row>
-                  <Form.Group as={Col}>
-                    <Form.Label>Units</Form.Label>
-                    <Form.Control
-                      type='number'
-                      placeholder='Units'
-                      name='email'
-                      value={email}
-                      onChange={this.handleInputChange}
-                    />
-                  </Form.Group>
-                </Form.Row>
-                <Button variant='secondary' type='submit'>Accept</Button>
-              </Form>
+            <Col className='d-flex justify-content-center'>
+              <div className='form-wrapper'>
+                <Form noValidate validated={validated} onSubmit={(event) => this.handleSubmit(event)}>
+                  <Form.Row>
+                    <Form.Group as={Col}>
+                      <Form.Label>Nombre</Form.Label>
+                      <Form.Control
+                        type='text'
+                        placeholder='Nombre'
+                        name='firstname'
+                        value={firstname}
+                        onChange={this.handleInputChange}
+                      />
+                    </Form.Group>
+                    <Form.Group as={Col}>
+                      <Form.Label>Apellido</Form.Label>
+                      <Form.Control
+                        type='text'
+                        placeholder='Apellido'
+                        name='lastname'
+                        value={lastname}
+                        onChange={this.handleInputChange}
+                      />
+                    </Form.Group>
+                  </Form.Row>
+                  <Form.Row>
+                    <Form.Group as={Col}>
+                      <Form.Label>Ciudad</Form.Label>
+                      <Form.Control
+                        type='text'
+                        placeholder='Ciudad'
+                        name='city'
+                        value={city}
+                        onChange={this.handleInputChange}
+                      />
+                    </Form.Group>
+                    <Form.Group as={Col}>
+                      <Form.Label>Código Postal</Form.Label>
+                      <Form.Control
+                        type='text'
+                        placeholder='Código Postal'
+                        name='zip_code'
+                        value={zip_code}
+                        onChange={this.handleInputChange}
+                      />
+                    </Form.Group>
+                  </Form.Row>
+                  <Form.Row>
+                    <Form.Group as={Col}>
+                      <Form.Label>Estado/Provincia</Form.Label>
+                      <Form.Control
+                        type='number'
+                        placeholder='Estado/Provincia'
+                        name='state'
+                        value={state}
+                        onChange={this.handleInputChange}
+                      />
+                    </Form.Group>
+                    <Form.Group as={Col}>
+                      <Form.Label>País</Form.Label>
+                      <Form.Control
+                        type='number'
+                        placeholder='País'
+                        name='country'
+                        value={country}
+                        onChange={this.handleInputChange}
+                      />
+                    </Form.Group>
+                  </Form.Row>
+                  <Form.Row>
+                    <Form.Group as={Col}>
+                      <Form.Label>Email</Form.Label>
+                      <Form.Control
+                        type='number'
+                        placeholder='Email'
+                        name='email'
+                        value={email}
+                        onChange={this.handleInputChange}
+                      />
+                    </Form.Group> 
+                  </Form.Row>
+                  <Form.Row>
+                    <Form.Group as={Col}>
+                      <Form.Label>Repite tu email</Form.Label>
+                      <Form.Control
+                        type='number'
+                        placeholder='Email'
+                        name='repeat_email'
+                        value={repeat_email}
+                        onChange={this.handleInputChange}
+                      />
+                    </Form.Group> 
+                  </Form.Row>
+                  <Button variant='secondary' type='submit'>Subscribirme</Button>
+                </Form>
+              </div>
             </Col>
           </Row>
         </Section>
