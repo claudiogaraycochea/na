@@ -2,7 +2,7 @@ h1, h2, h3, h4 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold !important;
 	color: #394056;
-	margin: 0;
+	margin-bottom: 20px !important;
 }
 
 h1 {
@@ -17,6 +17,7 @@ h2 {
 
 h3 {
 	font-size: 20px;
+	font-weight: 400 !important;
 }
 
 .text-highlight {
@@ -33,6 +34,6 @@ h3 {
 	}
 	
 	.h3 {
-		font-size: 22px;
+		font-size: 26px;
   }
 }

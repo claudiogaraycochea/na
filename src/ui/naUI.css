@@ -43,6 +43,10 @@ body, html, .main-app, .app, #root {
   overflow-x: hidden;
 }
 
+.space {
+	margin-right: 10px;
+}
+
 /* Icons */
 
 [class^="icon-"],
