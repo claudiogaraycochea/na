@@ -17,11 +17,10 @@
   color: #222222;
   font-size: 40px;
   font-weight: bold;
-  margin-bottom: 10px !important;
 }
 
 .hero-wrapper h2 {
-  color: #a955fd;
+  color: #795ee6;
   font-size: 40px;
   font-weight: bold;
 }
@@ -30,7 +29,6 @@
   font-size: 22px;
   font-weight: 400 !important;
   color: #919ca5;
-  margin-bottom: 20px;
 }
 
 .hero-wrapper .title {
@@ -236,30 +234,6 @@
   align-items: center;
 }
 
-.deal-wrapper h2, .deal-wrapper h3 {
-  color: #FFFFFF;
-}
-
-.social-wrapper .social-item {
-  margin-bottom: 20px;
-}
-
-.social-wrapper .social-item .btn {
-  min-width: 300px !important;
-}
-
-.call-to-action-wrapper {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #212529;
-  color: #ffffff;
-  align-items: center;
-  display: flex;
-  padding: 20px;
-}
-
 @media (min-width: 768px) {
   .hero-wrapper {
     padding-top: 60px;
@@ -273,7 +247,7 @@
   }
 
   .hero-wrapper h1 {
-    font-size: 46px !important;
+    font-size: 50px;
     line-height: 100%;
   }
 
@@ -284,10 +258,6 @@
   .hero-wrapper .row {
     min-width: 100%;
     width: 100%;
-  }
-
-  .social-wrapper .social-item .btn {
-    min-width: 100% !important;
   }
 
   .image-brain-check {
