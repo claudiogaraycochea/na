@@ -531,9 +531,11 @@ class Home extends Component {
           <Row>
             <Col>
               <H3>
-                Te ayuda a convertir una tarea compleja en una tarea que 
-                guardando en tu cerebro se convierta en una tarea sencilla 
-                de aplicar.
+                En el momento que conviertes una tarea compleja en algo sencillo de aprender
+                es el momento que sabes aplicar correctamente el paso 1 - Aprende de manera agradable.
+                A partir de alli es el punto principal para que puedas asilmilar lo resumido en el paso uno.
+                Sabes que lo tienes asimilado una vez que repites esa tarea sin necesidad de mirar lo aprendido. 
+                En este paso tu cerebro esta en paso 3 donde aplica automáticamente lo asimilado.
               </H3>
               <Row>
                 <Col lg={4}>
@@ -652,18 +654,24 @@ class Home extends Component {
           <Row>
             <Col>
               <div className='deal-wrapper'>
-                <H2>Curso de Neoasimilacion</H2>
+                <H2>Curso de Neoasimilación</H2>
                 <H3>Basado en Mundo Digital</H3>
-                <div className='title'>Obten tu ticket para acceder al curso streaming en vivo de Neoasimilacion</div>
+                <div className='title'>Obtén tu ticket para acceder al curso streaming</div>
                 <div className='description'>
-                  Te ensenaremos a que aprendas de manera agradable nociones basicas 
-                  marketing online, digitalizacion de comercios, desarrollo de apps y websites.
+                  Te enseñaremos a utilizar neoasimilación con un curso que te formará 
+                  laboralmente y tengas habilidades de aprender nuevas tecnologías 
+                  constantemente.
+                  Aprenderás a utilizar herramientas profesionales con las bases para 
+                  emprender o trabajar con todo lo relacionado 
+                  al mundo digital, que va desde marketing online, digitalización de 
+                  comercios, desarrollo de apps y websites.
                 </div>
                 <div><a href='/course'>Ver programa de estudios</a></div>
                 <div className='deal-date'>
-                  Todos los viernes 18hs Espana 10 de octubre 2020 22hs Espana
+                  Los cursos son Streaming en vivo. Todos los viernes de 19hs a 20hs (España) 
+                  a partir del 10 de noviembre 2020, la duración es de 6 meses a un valor $30/Mes / 
+                  <div className='deal-price'>Si te subscribes antes de noviembre $19/Mes</div>
                 </div>
-                <div className='deal-price'>$30/Mes o subscribete ahora y recibe tu descuento</div>
                 <Link to='/course'>
                   <Button className='primary large'>Get Ticket 19Month</Button>
                 </Link>
@@ -671,6 +679,15 @@ class Home extends Component {
             </Col>
           </Row>
         </Section>
+        <div className='call-to-action-wrapper'>
+          <div className='space'>
+            Curso de neoasimilación para adquirir todo tipo de habilidades digitales, 
+            marketing online, programación y más.
+          </div>
+          <Link to='/course'>
+            <Button className='primary'>Ver curso</Button>
+          </Link>
+        </div>
       </Container>
     );
   }

@@ -248,6 +248,18 @@
   min-width: 300px !important;
 }
 
+.call-to-action-wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #212529;
+  color: #ffffff;
+  align-items: center;
+  display: flex;
+  padding: 20px;
+}
+
 @media (min-width: 768px) {
   .hero-wrapper {
     padding-top: 60px;

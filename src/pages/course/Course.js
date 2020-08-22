@@ -2,14 +2,25 @@ import React, { Component }from "react";
 import {
   Button,
   Section, Box,
-  H1, H2, H3,
-  Icon,
+  H1, H2,
 } from '../../ui/naUI';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Form } from 'react-bootstrap';
 import './Course.css';
+import { Link } from 'react-router-dom';
+import { request, ContentTypes } from '../../libs/request';
 // import imageClaudio from '../../assets/images/image-claudio-g.png';
 
 class Home extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			forgotPasswordSent: false,
+			email: '',
+			validated: false,
+		};
+		this.handleInputChange = this.handleInputChange.bind(this);
+		this.handleSubmit = this.handleSubmit.bind(this);
+  }
 
   getFacebookURL = () => {
     const message = 'Te invito a conocer el curso de Neoasimilación para adquirir habilidades laborales rápidamente y reducir estres. Visitalo https://neoasimilacion.com';
@@ -35,8 +46,50 @@ class Home extends Component {
     return `https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fneoassimilation.com&title=${text}`;
   }
 
+	handleSubmit = (event) => {
+		event.preventDefault();
+		event.stopPropagation();
+		const form = event.currentTarget;
+		if (form.checkValidity() === false) {
+			this.setState({ validated: true });
+		} else {
+			this.sendSubscribe();
+		}
+  }
+
+	async sendSubscribe() {
+		const { email } = this.state;
+		const data = {
+			from: {
+				email: 'no-reply@projectbloc.io',
+			},
+			to: {
+				email,
+			},
+			type: 'reset',
+		};
+
+		const endpoint = '/mail/send';
+
+		try {
+			await request('POST', endpoint, data, { 'content-type': ContentTypes.json });
+			this.setState({ forgotPasswordSent: true });
+		} catch (err) {
+			// console.error(err);
+		}
+  }
+
+	handleInputChange(event) {
+		const { target } = event;
+		const { name } = target;
+		const value = target.type === 'checkbox' ? target.checked : target.value;
+		this.setState({ [name]: value });
+	}
+
   render() {
     // const { fullData } = this.props;
+    const { email, validated } = this.state;
+
     return (
       <Container fluid>
         <Section>
@@ -44,47 +97,47 @@ class Home extends Component {
             <Col>
               <H1>Curso de Neoasimilación</H1>
               <H2>Aplicado al Mundo Digital</H2>
+              <p>
+                Si no sabes que es Neoasimilación, haz click en el siguiente enlace.         
+              </p>
+              <Link to='/'>
+                ¿Qué es Neoasimilación?
+              </Link>  
             </Col>
           </Row>
         </Section>
         <Section className='image-left'>
           <Row>
             <Col>
-              <H2>Aprende neoasimilacion gratis</H2>
+              <H2>Prologo</H2>
             </Col>
           </Row>
           <Row>
             <Col>
+              <h3>
+                Soy Claudio Garaycochea, con casi dos decadas de experiencia, desarrolle 
+                apps para Facebook y el sitio de GlobalLogic (compañía IT con clientes 
+                como Samsung, HP, Fox, entre otros), también para startups varias 
+                de California, Washington DC y Suiza.
+                Según los requerimientos de cada proyecto me involucro desde idea, 
+                brainstorming, user experience, visual design, desarrollo, hasta 
+                tareas de marketing y venta corporativa.
+              </h3>
               <p>
-                Con la neoasimilacion queremos que disfrutes tu trabajo, hemos pensado este curso en reducir 
-                tu carga cerebral al maximo, que aprendas lo suficiente para emprender 
-                o trabajar en startups o companias.
-                Practicas de aprendizaje comunitario para reducir carga cerebral, 
-                reduccion de carga cerebral en tareas repetitivas, descompresion de exitasion o 
-                carga cerebral con musica, 
-                autoeducacion constante, autocreacion de referencias laborales,
-                estructura del dia, metodo pomodoro, herramientas de trabajo en 
-                startups y companias (slack, git, jira, otros).
-                Herramientas de diseno (photoshop, figma, illustrator, iconfinder, dafont, google fonts, otros).
-                Lenguajes de programacion (Javascript, vue, Angular, React, React Native, otros)                
+                En este curso comparto como creé y cómo funciona la neoasimilación 
+                de manera práctica, este metodo me permitio aprender a hablar en 
+                ingles en solo una semana con un equipo 100% anglo, tambien desarrolle 
+                apps para Facebook sin saber el lenguaje de programacion, una vez que me 
+                contrataron, en solo una semana aprendí el lenguaje de programacion.
+                El mismo proceso para desarrollar el sitio web de GlobalLogic. 
               </p>
               <p>
-                <span className='text-highlight'>Queremos que aprendas a utilizar neoasimilacion sin coste alguno, 
-                por ello hemos publicado en este documento la informacion necesaria para 
-                que aprendas a implementarlo gratis</span>.
-              </p>
-              <p>
-                Tambien puede utilizarse como metodo de estudio en instituciones educativas, 
-                colegios, universidad, cursos, etc.
-                Para sustentar la ayuda gratuita de neoasimilacion, ofrecemos cursos 
-                por un valor asequible para que apliques neoasimilacion aprendiendo 
-                habilidades laborales en el sector digital. Podras aprender a crear 
-                campanas de marketing y digitalizacion de comercios, hasta programacion 
-                de websites para trabajar en una startups o companias. Generamos en ti 
-                una habilidad de autoaprendizaje solido para que siempre puedas cubrir 
-                cualquier necesidad en el sector tecnologico. No te ensenamos una 
-                tecnologia, te ensenamos a que aprendas facilmente todas las que 
-                necesites el resto de tu vida laboral.
+                Cabe destacar que no aprendia todo, sino que habia 
+                una base que agilizaba el proceso de aprendizaje, lo que hago con la 
+                neoasimilacion es aprender el contexto basico y principal en lo que 
+                necesito cubrir en el trabajo y lo pongo en practica. 
+                Los resultados son increibles, siempre puedes cubrir con 
+                cualquier necesidad ya sea en la empresa o emprendimiento.
               </p>
             </Col>
           </Row>
@@ -92,475 +145,463 @@ class Home extends Component {
         <Section className='image-right'>
           <Row>
             <Col>
-              <H2>¿Como pensamos/actuamos?</H2>
+              <H2>Programa de estudio variable</H2>
             </Col>
           </Row>
           <Row>
             <Col>
-              El como "pensamos/actuamos", es relacionado a reducir carga en nuestro cerebro. 
-              Según entiendo, la asimilación es la columna vertebral de la neurociencia. 
-              Donde una vez que asimilas algo es muy difícil cambiarlo porque requiere carga cerebral.
-            </Col>
-          </Row>
-          <Row>
-            <Col xs={12} lg={4}>
-              <Box>
-                <H3>EJEMPLO 1</H3>
-                <p>
-                  Cuando vemos un Rottwailer, la mayoría de nosotros 
-                  "cruzamos a la vereda del frente".
-                </p>
-              </Box>
-            </Col>
-            <Col xs={12} lg={4}>
-              <Box>
-                <H3>EJEMPLO 2</H3>
-                <p>
-                  Cuando vamos por una salsa de tomate en un supermercado, buscamos una lata de color rojo.
-                </p>
-              </Box>
-            </Col>
-            <Col xs={12} lg={4}>
-              <Box>
-                <H3>EJEMPLO 3</H3>
-                <p>
-                  Cuando conducimos nuestro automovil y hablamos o leemos.
-                </p>
-              </Box>
+              El programa de estudio pretende formarte con la habilidad de 
+              aprender lo que necesites al instante, reducir tu carga 
+              cerebral y darte las herramientas para una salida laboral 
+              desde el primer mes.
             </Col>
           </Row>
           <Row>
             <Col>
-              Otro ejemplo de asimilación es "La rzaón por la que tu cberreo pudee leer etse txeto".
-              <span className='text-highlight'>Casi todo el tiempo nuestro cerebro actua de manera automatica con lo que haz asimilado previamente.</span>
+              <h2>OBJETIVO 1:</h2>
+              <p>
+                APRENDER A CREAR LANDING PAGE A NIVEL PROFESIONAL, CAMPANAS 
+                DE MARKETING DIGITAL Y DIGITALIZACION DE COMERCIO. PARA QUE 
+                PUEDAS LOGRAR UNA SALIDA LABORAL AL SEGUNDO MES.
+              </p>
+              <ul>
+                <li>DESARROLLO DE LANDING PAGE</li>
+                <li>PUESTA EN MARCHA</li>
+                <li>MARKETING ONLINE</li>
+                <li>DIGITALIZACION DE COMERCIOS</li>
+              </ul>
+            </Col>
+            <Col>
+              <h2>OBJETIVO 2:</h2>
+              <p>
+                QUEREMOS ENSENARTE A DESARROLLAR WEBSITES Y APPS A NIVEL PROFESIONAL. PARA QUE 
+                PUEDAS LOGRAR UNA SALIDA LABORAL PARA DESARROLLAR WEBSITES PARA COMERCIOS, 
+                EMPRESAS, O TRABAJAR EN UNA EMPRESA DE DESARROLLO.                
+              </p>
+              <ul>
+                <li>CREACION DE WEBSITES PROFESIONALES</li>
+                <li>APRENDER HERRAMIENTAS DE TRABAJO</li>
+                <li>ESTRUCTURA DE EQUIPOS DE DESARROLLO</li>
+                <li>LENGUAJES DE PROGRAMACION</li>
+                <li>CREACION DE APPS</li>
+              </ul>
+            </Col>
+            <Col>
+              <h2>OBJETIVO 3:</h2>
+              <p>
+                QUEREMOS QUE APRENDAS TECNICAS PARA CREAR TUS PROPIOS EMPRENDIMIENTOS.
+              </p>
+              <ul>
+                <li>LEAN STARTUP</li>
+                <li>CREAR PLAN DE NEGOCIO</li>
+                <li>BUSCAR FINANCIACION</li>
+                <li>FORMAR EQUIPO</li>
+                <li>TIPS</li>
+              </ul>
             </Col>
           </Row>
         </Section>
         <Section>
           <Row>
             <Col>
-              <H2>¿Qué tan automático somos?</H2>
-            </Col>
+              <h2>Estructura organizativa</h2>
+            </Col>            
           </Row>
           <Row>
             <Col>
-              Hay muchas teorias que si bien no aseguramos que son ciertas, nos ayudan a medir como 
-              actuamos en el dia a dia, se indexa en tres funciones basicas que nos ayudan a 
-              comprender nuestro comportamiento.
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <i className='image-3-brains'/>
-            </Col>
-          </Row>
-          <Row>
-            <Col xs={12} lg={4}>
-              <Box>
-                <H3>NEOCORTEX</H3>
-                <p>
-                  El cerebro que piensa, lo utilzamos aproximadamente un 10%.
-                </p>
-              </Box>
-            </Col>
-            <Col xs={12} lg={4}>
-              <Box>
-                <H3>LIMBICO</H3>
-                <p>
-                  El cerebro que siente, lo utilizamos aproximadamente un 10%
-                </p>
-              </Box>
-            </Col>
-            <Col xs={12} lg={4}>
-              <Box>
-                <H3>REPTILIANO</H3>
-                <p>
-                  El cerebro que actua automaticamente, lo usamos aproximadamente un 80%
-                </p>
-              </Box>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <p>
-                Para entender como tu vives, citamos el siguiente ejemplo. Años atras se 
-                realizo una campaña de McDonald's, hicieron una encuesta a sus clientes 
-                y todos estaban de acuerdo que seria bueno ofrecer comida saludable.
-              </p>
-              <p>
-                Meses mas tarde y millones de dolares gastados en publicidad, fue un total 
-                fracaso, la gente preferia seguir comiendo hamburguesas. Esto se debe a 
-                que en el momento de la encuesta, la gente respondia con el cerebro 
-                Neocórtex (o cerebro racional), pero a la hora de elegir utiliza el 
-                cerebro Reptiliano (o cerebro automatico).
-              </p>
-              <p>
-                Segun los libros de psicologia, dejamos nuestra vida en manos del cerebro 
-                reptiliano. Es el mismo que domina el 80% de las desiciones de tu vida. 
-                A su vez, tu cerebro Reptiliano se divide aprox. 10% genetico y 90% por 
-                asimilación.
-              </p>
+              Emprendimiento, Startups, Compañías IT, otros. 
+              Quienes la conforma, que hacen cada uno, promedios 
+              salariales.
             </Col>
           </Row>
         </Section>
         <Section>
           <Row>
             <Col>
-              <H2>Asimilacion define tu vida</H2>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              El funcionamiento de tu cerebro a lo largo de tu vida actúa por "asimilación", 
-              es decir, aprende algo, asimila y aplica automáticamente para reaccionar de 
-              manera inmediata.
-              Esta claro que no podemos razonar todo por cuestiones obvias. Estos 3 pasos en 
-              que nuestro cerebro actua, es positivo para resolver en lo inmediato, pero 
-              generan un gran problema porque define el camino de nuestras vidas, ya que 
-              cada accion depende de cosas que asimilamos previamente, gran parte de ellas 
-              de manera inconsciente. Con Neoasimilacion aprenderas a usar mejor tu cerebro 
-              de manera mas racional y consciente.
+              <h2>TOOLS</h2>
             </Col>
           </Row>
           <Row>
             <Col xs={12} lg={4}>
               <Box>
-                <div className='box-image'>
-                  <i className='image-assimilation-step-1'/>
+                <div className='title'>JIRA</div>
+                <div className='content'>
+                  Planificación de sprint, Crear tareas, Seguimiento y estado de tareas, Ejemplo práctico, más.
                 </div>
-                <H3>APRENDE</H3>
-                <p>
-                  Tu cerebro se encuentra en constante aprendizaje de manera consciente o inconsciente
-                </p>
               </Box>
             </Col>
             <Col xs={12} lg={4}>
               <Box>
-                <div className='box-image'>
-                  <i className='image-assimilation-step-2'/>
+                <div className='title'>SLACK</div>
+                <div className='content'>
+                  Crear grupos de chat, Agregar individuo, Funciones generales, Ejemplo práctico, más.
                 </div>
-                <H3>ASIMILA</H3>
-                <p>
-                  Una vez que aprende, la informacion se guarda en tu cabeza de manera consciente e inconsciente
-                </p>
               </Box>
             </Col>
             <Col xs={12} lg={4}>
               <Box>
-                <div className='box-image'>
-                  <i className='image-assimilation-step-3'/>
+                <div className='title'>GOOGLE CALENDAR</div>
+                <div className='content'>
+                  Crear grupos de chat, Agregar individuo, Funciones generales, Ejemplo práctico, más.
                 </div>
-                <H3>APLICA AUTOMATICAMENTE</H3>
-                <p>
-                  Una vez que asimilas lo aplicas automaticamente
-                </p>
               </Box>
             </Col>
           </Row>
           <Row>
-            <Col>
-              <p>
-                Por ejemplo, cuando hablas de política, nuestro cerebro asimilo algo que creía que esta 
-                bien, y <span className='text-highlight'>la respuesta es automática, es por eso que 
-                discutimos por cualquier cosa y si mostramos evidencias la otra persona o nosotros no entenderemos algo, nuestra comprension 
-                depende exclusivamente de nuestra asimilacion</span>, esta sencilla explicacion es 
-                la base de porque peleamos, nos enojamos, o deriva en cosas peores. 
-              </p>
-              <p>
-                Ahora bien, si seriamos 
-                seres realmente racionales 
-                analizaríamos lo que estamos hablando, lo cual llevaría tiempo en hacerlo y sacar 
-                conclusiones correctas que demoran varios minutos u horas de análisis por algo que 
-                no vale la pena.
-              </p>
-              <p>
-                ¿Se imaginan cuanto tardaríamos hablando si fuésemos seres plenamente racionales? bueno 
-                sería imposible, por eso casi siempre actuamos de manera automática gracias a la asimilación.
-                La neoasimilacion es una forma que nos ayuda a ser mas racional.
-              </p>
+            <Col xs={12} lg={4}>
+              <Box>
+                <div className='title'>GITHUB</div>
+                <div className='content'>
+                  ¿Qué es?, ¿Cómo funciona?, Crear repositorio, Comandos esenciales, Ejemplo práctico, más.
+                </div>
+              </Box>
             </Col>
-          </Row>
-        </Section>
-        <Section className='dark'>
-          <Row>
-            <Col>
-              Genial, ya sabemos que nuestro cerebro aprende de manera consciente e inconsciente, 
-              esta la asimila y la aplica automaticamente. La asimilacion es la informacion que 
-              vas a repetir automaticamente, define el 80% de nuestras decisiones, como pensamos 
-              y que haremos. Por este motivo, tomamos la asimilacion como el punto mas importante 
-              en nuestras capacidades, este proceso automatico reducira tu carga cerebral de 
-              cualquier tarea independientemente de su complejidad, hablar, conducir, prevenir, 
-              aprender, empleo, etc.
+            <Col xs={12} lg={4}>
+              <Box>
+                <div className='title'>WEB SERVERS</div>
+                <div className='content'>
+                  ¿Qué son?, ¿Cómo funcionan?, Ejemplo práctico, más.
+                </div>
+              </Box>
+            </Col>
+            <Col xs={12} lg={4}>
+              <Box>
+                <div className='title'>APPS STORE</div>
+                <div className='content'>
+                  Subir apps a Google Play, Subir apps a App Store, Ejemplo prácticos, más.
+                </div>
+              </Box>
             </Col>
           </Row>
         </Section>
         <Section>
           <Row>
             <Col>
-              <H2>Neoasimilacion</H2>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              Muy bien, ya sabes cuales son los tres pasos que tu cerebro repite consciente e 
-              inconscientemente para actuar rapidamente. Ahora bien, que pasa si a tu cerebro 
-              repites el mismo proceso pero de manera consciente. Los resultados son 
-              interesantes, adquirimos habilidades laborales rapidamente y reducimos el estres. 
-              Independientemente de la complejidad de la tarea, puedes guardar en tu cerebro 
-              solo la informacion necesaria para actuar rapido, reducira considerablemente 
-              tu carga cerebral.
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <H3>LA NEOASIMILACION, ES LA ASIMILACION PERO REPITE LOS TRES PASOS DE MANERA CONSCIENTE</H3>
+              <h2>Crear projecto</h2>
             </Col>
           </Row>
           <Row>
             <Col xs={12} lg={4}>
               <Box>
-                <div className='box-image'>
-                  <i className='image-neoassimilation-step-1'/>
+                <div className='title'>BRAINSTORMING</div>
+                <div className='content'>
+                  ¿Qué es y cómo funciona?, Creación de Flow con Draw.io, Ejemplo práctico, más.
                 </div>
-                <H3>APRENDE DE MANERA AGRADABLE</H3>
-                <p>
-                  Resume lo que tienes que hacer en lo estrictamente relevante, reduce tu carga cerebral.
-                </p>
               </Box>
             </Col>
             <Col xs={12} lg={4}>
               <Box>
-                <div className='box-image'>
-                  <i className='image-neoassimilation-step-2'/>
+                <div className='title'>UX/UI DESIGN</div>
+                <div className='content'>
+                  ¿Qué es?, Buenas prácticas, Web Neuroscience, Herramientas (Sketch, 
+                  Figma, Adobe DX, otros), Creación de Wireframe con Figma, Ejemplo práctico, más.
                 </div>
-                <H3>ASIMILA DE MANERA CONSCIENTE</H3>
-                <p>
-                  Una vez que aprendes guarda esa informacion en tu cabeza con tecnicas de asimilacion apropiada.
-                </p>
               </Box>
             </Col>
             <Col xs={12} lg={4}>
               <Box>
-                <div className='box-image'>
-                  <i className='image-neoassimilation-step-3'/>
+                <div className='title'>VISUAL DESIGN</div>
+                <div className='content'>
+                  ¿Qué es y cómo funciona?, Buenas prácticas (diseño, fuentes, 
+                  paleta de colores, svg, etc), Diseño visual con Illustrator, 
+                  Photoshop, Figma. Ejemplo práctico. Más.
                 </div>
-                <H3>APLICA AUTOMATICAMENTE</H3>
-                <p>
-                  Una vez que asimilas lo aplicas automaticamente. Es el proceso nautral para responder 
-                  rapidamente. Pero con informacion relevante y consciente. 
-                </p>
               </Box>
             </Col>
           </Row>
           <Row>
-            <Col>
-              <p>
-                En este curso te ensenaremos a guardar informacion relevante de manera 
-                consciente, para cubrir tareas laborales de manera inmediata. Es muy 
-                importante que es solo para tareas especificas, es un complemento 
-                que puede ser utilizado para reforzar aprendizaje en universidades, 
-                cursos o con fines laborales. 
-              </p>
+            <Col xs={12} lg={4}>
+              <Box>
+                <div className='title'>DEVELOPMENT</div>
+                <div className='content'>
+                  ¿Qué es y cómo funciona?, ¿Que es Frontend?, ¿Que es Backend?, Ejemplo práctico, más.
+                </div>
+              </Box>
+            </Col>
+            <Col xs={12} lg={4}>
+              <Box>
+                <div className='title'>DEPLOYMENT</div>
+                <div className='content'>
+                  ¿Qué es y cómo funciona?, Ejemplo práctico, más.
+                </div>
+              </Box>
+            </Col>
+            <Col xs={12} lg={4}>
+              <Box>
+                <div className='title'>REAL LIFE</div>
+                <div className='content'>
+                  Experiencias reales en proyectos personales, 
+                  startups, grandes compañías, más.
+                </div>
+              </Box>
             </Col>
           </Row>
         </Section>
         <Section>
           <Row>
             <Col>
-              <H2>Neoasimilacion</H2>
+              <h2>DEVELOPMENT</h2>
             </Col>
           </Row>
           <Row>
-            <Col>
-              Muy bien, ya sabes cuales son los tres pasos que tu cerebro repite consciente e 
-              inconscientemente para actuar rapidamente. Ahora bien, que pasa si a tu cerebro 
-              repites el mismo proceso pero de manera consciente. Los resultados son 
-              interesantes, adquirimos habilidades laborales rapidamente y reducimos el estres. 
-              Independientemente de la complejidad de la tarea, puedes guardar en tu cerebro 
-              solo la informacion necesaria para actuar rapido, reducira considerablemente 
-              tu carga cerebral.
+            <Col xs={12} lg={4}>
+              <Box>
+                <div className='title'>FRONTEND DEVELOPMENT</div>
+                <div className='content'>
+                  ¿Qué es?, ¿Cómo funciona Aplicación Web/Website?, 
+                  ¿Qué es HTML, CSS y Javascript?, Herramientas comunes 
+                  (React, Angular, Vue, Java, PHP, Magento, Wordpress, 
+                  otros), Ejemplo práctico, más.
+                </div>
+              </Box>
+            </Col>
+            <Col xs={12} lg={4}>
+              <Box>
+                <div className='title'>FRONTEND DEPLOYMENT</div>
+                <div className='content'>
+                  ¿Qué es y cómo funciona?, Servidor AWS (crear 
+                  dominio, servidor escalable, email, otros), Ejemplo 
+                  práctico, más.
+                </div>
+              </Box>
+            </Col>
+            <Col xs={12} lg={4}>
+              <Box>
+                <div className='title'>BACKEND DEVELOPMENT</div>
+                <div className='content'>
+                  ¿Qué es y cómo funciona?, ¿Que es una API y JSON?, 
+                  Herramientas comunes (MongoDB, MySQL, Swagger, 
+                  Postman, otros), Ejemplo práctico, más.
+                </div>
+              </Box>
             </Col>
           </Row>
           <Row>
-            <Col>
-              <Row>
-                <Col lg={4}>
-                  <Box>
-                    <div className='circle-wrapper'>1</div>
-                    <H3>Aprender de Manera Consciente y Agradable:</H3>
-                    Apunte las 3 maneras de saludar del team, y busque las 20 palabras más 
-                    utilizadas por el team, como se escribe y su pronunciación. Finalmente 
-                    “Face” era “Phase”.                    
-                  </Box>
-                </Col>
-                <Col lg={4}>
-                  <Box>
-                    <div className='circle-wrapper'>2</div>
-                    <H3>Asimila de Manera Consciente:</H3>
-                    Asimile las 23 palabras, por ejemplo budget, miraba una imagen de un presupuesto y escuchaba como sonaba. Aproximadamente unas 10 veces por cada palabra hasta que lo asimilaba como una palabra nativa.
-                  </Box>
-                </Col>
-                <Col lg={4}>
-                  <Box>
-                    <div className='circle-wrapper'>3</div>
-                    <H3>Aplica automaticamente:</H3>
-                    Listo, una vez que lo asimilas, tu cerebro reconoce esa palabra automáticamente. Una semana más tarde de la primer meeting, estaba hablando con ellos de manera relajada, utilizando mis recursos cognitivos para resolver las tareas.
-                  </Box>
-                </Col>
-              </Row>
+            <Col xs={12} lg={4}>
+              <Box>
+                <div className='title'>MOBILE DEVELOPMENT</div>
+                <div className='content'>
+                  ¿Qué es y cómo funciona Android/IOS?, ¿Qué es APK 
+                  y IPA?, Herramientas comunes (React Native, Ionic, 
+                  Native, otros), Ejemplo práctico, más.
+                </div>
+              </Box>
             </Col>
-          </Row>
-          <Row>
-            <Col>
-              <Row>
-                <Col lg={4}>
-                  <Box>
-                    <div className='circle-wrapper'>1</div>
-                    <H3>Aprende de Manera Agradable:</H3>
-                    <div>1 - Define tiempo de aprendizaje, no debe superar una semana.</div>
-                    <div>2 - Estructurate el dia</div>
-                    <div>3 - Haz una vision general de contenido para ver lo que aprenderas y reducir tu ansiedad</div>
-                    <div>4 - Busca al menos 10 fuentes de aprendizaje, encuentra la que tarda menos, y te ensene los puntos claves</div>
-                  </Box>
-                </Col>
-                <Col lg={4}>
-                  <Box>
-                    <div className='circle-wrapper'>2</div>
-                    <H3>Asimila de Manera Consciente:</H3>
-                      Ya tienes un resume sobre como aprender de manera confortable, la asimilacion es 
-                      la manera en que se guarda lo que aprendes en tu cerebro.
-                      Hay varias tecnicas de asimilacion consciente, la mas comun es la de repetir 
-                      varias veces de manera practica. Por ejemplo cuando aprendemos a dividir en la 
-                      escuela, nos dan tareas para repetir, eso es una tecnica de asimilacion. Lee el 
-                      punto 2 del ejemplo real.
-                  </Box>
-                </Col>
-                <Col lg={4}>
-                  <Box>
-                    <div className='circle-wrapper'>3</div>
-                    <H3>Aplica automaticamente:</H3>
-                    Una vez que asimilas, tu cerebro reduce su carga cerebral porque toma la asimilacion como algo que repite automaticamente. 
-                    Inicialmente costara un poco, a medida que lo utlizas los resultados te soprenderan, hablar ingles en una semana, aprender lenguaje de programacion en una semana es posible, todo dependera si aplicas correctamente la neoasimilacion. 
-                  </Box>
-                </Col>
-              </Row>
-              <Row>
-                <Col>
-                  Para hablar ingles en mi trabajo, al asimilar el 50% de palabras a las que habla el team de desarrollo se obtiene el contexto y comprende el dialogo. 
-                  Es muy importante aclara que no reemplaza cursos o clases de ingles, es un complemento.
-                </Col>
-              </Row>
+            <Col xs={12} lg={4}>
+              <Box>
+                <div className='title'>MOBILE DEPLOYMENT</div>
+                <div className='content'>
+                  ¿Qué es y cómo subir mi app en App Store/Google Play?, 
+                  Herramientas comunes (Android Studio, Swift, Expo, otros), 
+                  Ejemplo práctico, más.
+                </div>
+              </Box>
             </Col>
           </Row>
         </Section>
         <Section>
           <Row>
             <Col>
-              <H2>Reducir estres</H2>
+              <h2>TEMPLATE WEB APPLICATION</h2>
             </Col>
           </Row>
           <Row>
-            <Col>
-              Creamos la neoasimilacion para adquirir conocimientos rapidamente y reducir 
-              nuestra carga cerebral, esto se traduce en un cerebro mas confortable 
-              frente a todo tipo de tareas, menos estres y mas capacidad para cubrir 
-              multiples tareas.
+            <Col xs={12} lg={4}>
+              <Box>
+                <div className='title'>BASE WEB</div>
+                <div className='content'>
+                  ¿Qué es y cómo funciona?, Creación de HTML, CSS 
+                  y Javascript, Ejemplo práctico, más.
+                </div>
+              </Box>
+            </Col>
+            <Col xs={12} lg={4}>
+              <Box>
+                <div className='title'>LENGUAJES DE PROGRAMACION</div>
+                <div className='content'>
+                  ¿Qué es y cómo funciona?, Herramientas (React, 
+                  Angular, Vue, PHP, Magento, Wordpress, otros), 
+                  Ejemplo práctico, más.
+                </div>
+              </Box>
+            </Col>
+            <Col xs={12} lg={4}>
+              <Box>
+                <div className='title'>INSTALL TEMPLATE REACT</div>
+                <div className='content'>
+                  ¿Qué es y cómo funciona?, Buenas practicas 
+                  pre-instaladas (architecture scalable, translation, 
+                  routes, Redux, otros), Descarga template, Ejemplo 
+                  práctico, más.
+                </div>
+              </Box>
             </Col>
           </Row>
           <Row>
-            <Col>
-              <i className='image-assimilation'/>
+            <Col xs={12} lg={4}>
+              <Box>
+                <div className='title'>COPY AND PASTE</div>
+                <div className='content'>
+                  ¿Qué es y cómo funciona?, Ejemplo práctico, más.
+                </div>
+              </Box>
             </Col>
-          </Row>
-          <Row>
-            <Col>
-              <i className='image-neoassimilation'/>
+            <Col xs={12} lg={4}>
+              <Box>
+                <div className='title'>DEPLOYMENT</div>
+                <div className='content'>
+                  ¿Qué es y cómo funciona?, Test environment, 
+                  Production environment, Ejemplo práctico, más.
+                </div>
+              </Box>
             </Col>
           </Row>
         </Section>
         <Section>
           <Row>
             <Col>
-              Para que asimiles correctamente la neoasimilacion, te sugerimos leer 
-              al menos una vez mas este documento, ya que si lo sabes aplicar 
-              reducira considerablemente tu carga cerebral y por tanto tu estres.
-              A medida que lo aplicas, te generara una sensacion de bienestar 
-              que mejorara considerablemente tu calidad de vida. Aprender 
-              rapidamente habilidades laborales para conseguir empleo, reducir 
-              estres, mejor relacion con terceros y mas.
+              <h2>TEMPLATE API</h2>
             </Col>
           </Row>
           <Row>
-            <Col>
-              <Row>
-                <Col>
-                  
-                  <a href={this.getWhatsappURL()} data-action="share/whatsapp/share">
-                    <Button className='whatsapp'><Icon className='whatsapp small space'/> Compartir en Whatsapp</Button>
-                  </a>
-                </Col>
-                <Col>
-                  <a href={this.getFacebookURL()}>
-                    <Button className='facebook'><Icon className='facebook small space'/> Compartir en Facebook</Button>
-                  </a>
-                </Col>
-                <Col>
-                  <a href={this.getTwitterURL()} data-size="large">
-                    <Button className='twitter'><Icon className='twitter small space'/> Compartir en Twitter</Button>
-                  </a>
-                </Col>
-                <Col>
-                  <a href={this.getLinkedinURL()} data-size="large">
-                    <Button className='linkedin'><Icon className='linkedin small space'/> Compartir en Linkedin</Button>
-                  </a>
-                </Col>
-              </Row>
+            <Col xs={12} lg={4}>
+              <Box>
+                <div className='title'>BASE DE DATOS</div>
+                <div className='content'>
+                  ¿Qué es y cómo funciona?, Bases de datos 
+                  relacionales (MySQL), Bases de datos no 
+                  relacionales (Mongodb), Ejemplo práctico, más.
+                </div>
+              </Box>
+            </Col>
+            <Col xs={12} lg={4}>
+              <Box>
+                <div className='title'>API</div>
+                <div className='content'>
+                  ¿Qué es y cómo funciona?, Herramientas (NodeJs, MongoDB, 
+                  Express, MySQL, Swagger, Postman, otros), Ejemplo 
+                  práctico, más.
+                </div>
+              </Box>
+            </Col>
+            <Col xs={12} lg={4}>
+              <Box>
+                <div className='title'>INSTALL TEMPLATE API</div>
+                <div className='content'>
+                  ¿Qué es y cómo funciona?, Buenas prácticas pre-instaladas 
+                  (architecture scalable, MongoDB, otros), Descarga template, 
+                  Ejemplo práctico, más.
+                </div>
+              </Box>
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={12} lg={4}>
+              <Box>
+                <div className='title'>COPY AND PASTE</div>
+                <div className='content'>
+                  ¿Qué es y cómo funciona?, Ejemplo práctico, más.
+                </div>
+              </Box>
+            </Col>
+            <Col xs={12} lg={4}>
+              <Box>
+                <div className='title'>DEPLOYMENT</div>
+                <div className='content'>
+                  ¿Qué es y cómo funciona?, Test environment, 
+                  Production environment, Ejemplo práctico, más.
+                </div>
+              </Box>
             </Col>
           </Row>
         </Section>
         <Section>
           <Row>
             <Col>
-              <H2>Curso de neoasimilacion</H2>
-              <H3>Basado en Mundo Digital</H3>
+              <h2>TEMPLATE APP</h2>
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={12} lg={4}>
+              <Box>
+                <div className='title'>LENGUAJES DE PROGRAMACION</div>
+                <div className='content'>
+                  ¿Qué es y cómo funciona?, Herramientas (React Native, 
+                  Ionic, Android Studio, Swift, otros), Ejemplo práctico, más.
+                </div>
+              </Box>
+            </Col>
+            <Col xs={12} lg={4}>
+              <Box>
+                <div className='title'>INSTALL TEMPLATE REACT NATIVE</div>
+                <div className='content'>
+                  ¿Qué es y cómo funciona?, Buenas practicas pre-instalada 
+                  (webpack, architecture scalable, internationalization, 
+                  routes, Redux, otros), Descarga template, Ejemplo práctico, más.
+                </div>
+              </Box>
+            </Col>
+            <Col xs={12} lg={4}>
+              <Box>
+                <div className='title'>COPY AND PASTE</div>
+                <div className='content'>
+                  ¿Qué es y cómo funciona?, Ejemplo práctico, más.
+                </div>
+              </Box>
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={12} lg={4}>
+              <Box>
+                <div className='title'>COPY AND PASTE</div>
+                <div className='content'>
+                  ¿Qué es y cómo funciona?, Ejemplo práctico, más.
+                </div>
+              </Box>
+            </Col>
+            <Col xs={12} lg={4}>
+              <Box>
+                <div className='title'>DEPLOYMENT GOOGLE PLAY</div>
+                <div className='content'>
+                  ¿Qué es y cómo funciona?, Test environment, 
+                  Production environment, Ejemplo práctico, más.
+                </div>
+              </Box>
+            </Col>
+            <Col xs={12} lg={4}>
+              <Box>
+                <div className='title'>DEPLOYMENT APP STORE</div>
+                <div className='content'>
+                  ¿Qué es y cómo funciona?, Test environment, Production 
+                  environment, Ejemplo práctico, más.
+                </div>
+              </Box>
+            </Col>
+          </Row>
+        </Section>
+        <Section>
+          <Row>
+            <Col>
+              <H2>SUBSCRIBETE AL CURSO</H2>
             </Col>
           </Row>
           <Row>
             <Col>
-              <div className='deal-wrapper'>
-                <div className='title'>Obten tu ticket para acceder al curso streaming en vivo de Neoasimilacion</div>
-                <div className='description'>
-                  Te ensenaremos a que aprendas de manera agradable nociones basicas 
-                  marketing online, digitalizacion de comercios, desarrollo de apps y websites.
-                </div>
-                <div>
-                  Con la neoasimilacion queremos que disfrutes tu trabajo, hemos pensado este curso en reducir 
-                  tu carga cerebral al maximo, que aprendas lo suficiente para emprender 
-                  o trabajar en startups o companias.
-                  Practicas de aprendizaje comunitario para reducir carga cerebral, 
-                  reduccion de carga cerebral en tareas repetitivas, descompresion de exitasion o 
-                  carga cerebral con musica, 
-                  autoeducacion constante, autocreacion de referencias laborales,
-                  estructura del dia, metodo pomodoro, herramientas de trabajo en 
-                  startups y companias (slack, git, jira, otros).
-                  Herramientas de diseno (photoshop, figma, illustrator, iconfinder, dafont, google fonts, otros).
-                  Lenguajes de programacion (Javascript, vue, Angular, React, React Native, otros)
-                </div>
-                <div><a href='/course'>Ver programa de estudios</a></div>
-                <div className='deal-date'>
-                  Todos los viernes 18hs Espana 10 de octubre 2020 22hs Espana
-                </div>
-                <div className='deal-price'>$30/Mes o subscribete ahora y recibe tu descuento</div>
-                <Button
-                  className='secondary large'
-                >
-                  Get Ticket $19/Mes
-                </Button>
-                <div>
-                  TOP 10 CSS EFFECT
-                  https://www.youtube.com/watch?v=kEt5DCHeyJo
-                </div>
-              </div>
+              <Form noValidate validated={validated} onSubmit={(event) => this.handleSubmit(event)}>
+                <Form.Row>
+                  <Form.Group as={Col}>
+                    <Form.Label>Units</Form.Label>
+                    <Form.Control
+                      type='number'
+                      placeholder='Units'
+                      name='email'
+                      value={email}
+                      onChange={this.handleInputChange}
+                    />
+                  </Form.Group>
+                </Form.Row>
+                <Button variant='secondary' type='submit'>Accept</Button>
+              </Form>
             </Col>
           </Row>
         </Section>
