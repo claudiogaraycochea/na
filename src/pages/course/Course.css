@@ -25,12 +25,6 @@
   font-weight: bold;
 }
 
-.hero-wrapper h3 {
-  font-size: 22px;
-  font-weight: 400 !important;
-  color: #919ca5;
-}
-
 .hero-wrapper .title {
   border: 1px solid green;
 }
@@ -232,6 +226,45 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.form-wrapper {
+  max-width: 500px;
+  width: 100%;
+  text-align: left;
+}
+
+.ul-wrapper {
+  list-style-type: none;
+  margin: 0 40px;
+}
+
+.ul-wrapper li {
+  font-size: 14px;
+  text-align: left;
+  list-style-image: url('../../assets/images/icon-check.svg');
+}
+
+.hero-course-bottom {
+  color: #b3b3b3;
+  font-weight: bold;
+  border-radius: 20px;
+  font-size: 18px
+}
+
+.course-hero-wrapper {
+  background-color: #212529;
+  color: #ffffff;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.course-hero-wrapper h1 {
+  color: yellow;
+}
+
+.course-hero-wrapper h2 {
+  color: #ffffff;
 }
 
 @media (min-width: 768px) {
