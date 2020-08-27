@@ -46,8 +46,8 @@ class Home extends Component {
           <Row>
             <Col xs={12} lg={6} className='d-flex flex-column align-items-center justify-content-center'>
               <div className='content'>
-                <H1>Curso de Neoasimilación</H1>
-                <H2>Aplicado al Mundo Digital</H2>
+                <H1>CURSO DE NEOASIMILACION</H1>
+                <H2>BASADO EN FORMACION LABORAL TECNOLOGICA</H2>
                 <H3>
                   El mundo de hoy requiere que tu adquieras habilidades laborales de 
                   manera constante. La falta de tiempo para estudiar, dinero, estrés,  
