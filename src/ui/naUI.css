@@ -31,16 +31,20 @@ body, html, .main-app, .app, #root {
 
 ::-webkit-scrollbar-track {
   border-radius: 10px;
-  background-color: #353535;
+  background-color: #f4f4f4;
 }
 
 /* General Containers */
 
 .main-container {
   width: 100%;
-  height: calc(100% - 60px);
-  margin-top: 60px;
+  /* height: calc(100% - 60px);*/
+  /*margin-top: 60px;*/
   overflow-x: hidden;
+}
+
+.space {
+	margin-right: 10px;
 }
 
 /* Icons */
