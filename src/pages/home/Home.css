@@ -227,12 +227,12 @@
 .deal-wrapper {
   background-color: #3F3D56;
   color: #FFFFFF;
-  padding: 40px;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.deal-wrapper h1 {
+  color: yellow;
 }
 
 .deal-wrapper h2, .deal-wrapper h3 {
@@ -257,6 +257,8 @@
   align-items: center;
   display: flex;
   padding: 20px;
+  z-index: 100;
+  justify-content: center;
 }
 
 @media (min-width: 768px) {
