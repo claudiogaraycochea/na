@@ -76,3 +76,7 @@
 .icon.apply-automatically {
   background-image: url('../../../assets/images/icon-apply-automatically.svg');
 }
+
+.icon.email {
+  background-image: url('../../../assets/images/icon-email.svg');
+}
