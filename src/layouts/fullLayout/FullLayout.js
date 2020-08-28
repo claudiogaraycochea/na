@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import Header from '../../components/header/Header';
 import Footer from '../../components/footer/Footer';
 
 class FullLayout extends Component {
@@ -11,6 +12,7 @@ class FullLayout extends Component {
 	render() {
 		return (
 			<div className='min-vh-100'>
+				<Header />
 				{this.props.children}
         <Footer />
 			</div>

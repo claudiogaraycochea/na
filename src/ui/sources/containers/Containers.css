@@ -34,7 +34,7 @@
 
 
 .section.dark {
-  background-color: #3F3D56;
+  background-color: #1c1a33;
   color: #FFFFFF;
   font-size: 20px;
   margin-left: -15px;
@@ -79,6 +79,10 @@
   margin-bottom: 20px;
 }
 
+.row.none-bottom {
+  margin-bottom: 0;
+}
+
 .bubble-wrapper {
   padding: 40px;
   background-color: #3F3D56;
@@ -89,7 +93,6 @@
 .box {
   min-height: 100px;
   padding: 20px;
-  background: #FFFFFF;
   font-size: 14px;
   box-sizing: border-box;
   border-radius: 10px;

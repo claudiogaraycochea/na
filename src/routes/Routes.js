@@ -5,7 +5,7 @@ import Course from '../pages/course/Course';
 // import StyleGuide from '../ui/styleGuide/StyleGuide';
 
 /* Layouts */
-import DashboardLayout from '../layouts/dashboard/DashboardLayoutContainer';
+// import DashboardLayout from '../layouts/dashboard/DashboardLayoutContainer';
 import FullLayout from '../layouts/fullLayout/FullLayout';
 
 export const routes = [
@@ -22,7 +22,7 @@ export const routes = [
     exact: true,
     path: '/course',
     Component: Course,
-    Layout: DashboardLayout,
+    Layout: FullLayout,
     Access: 'Public',
   },
   {

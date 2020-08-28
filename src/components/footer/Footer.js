@@ -1,21 +1,49 @@
 import React from "react";
+import { Icon } from '../../ui/naUI';
+import { Row, Col } from 'react-bootstrap';
 import './Footer.css';
 
 const Header = () => {
   return (
-    <footer className='d-flex justify-content-between'>
-      <div className='footer-nav'>
-        <div className='item'>© Domestika 2020 </div>
-        <div className='item'><a href='/terms'>Condiciones de Uso</a></div>
+    <footer>
+      {/*<div className='footer-nav'>
+        <div className='item'>© Neoassimilation 2020 </div>
+        <div className='item'><a href='/terms'>Terminos y Condiciones</a></div>
         <div className='item'><a  href='/policy'>Política de privacidad</a></div>
-        <div className='item'><a  href='/cookies'>Política de cookies</a></div>
       </div>
       <div className='footer-nav'>
-        <div className='item'>Consultas Whatsapp</div>
+        <div className='item'>Consultas</div>
         <div className='item'>
-          <a href='https://wa.me/34932209092?text=Consulta Neoasimilación'>+34932209092</a>
+          <Icon className='email space'/> info@neoassimilation.com
+        </div>       
+        <div className='item'>
+          <a href='https://wa.me/34932209092?text=Consulta Neoasimilación'>
+            <Icon className='whatsapp space'/> +34 932 20 9092
+          </a>
         </div>
-      </div>
+  </div>*/}
+      <Row className='none-bottom'>
+        <Col xs={12} lg={6}>
+          <div className='footer-nav'>
+            <div className='item'>Consultas</div>
+            <div className='item d-flex align-items-center'>
+              <Icon className='email space'/> info@neoassimilation.com
+            </div>       
+            <div className='item'>
+              <a href='https://wa.me/34932209092?text=Consulta Neoasimilación'>
+                <Icon className='whatsapp space'/> +34 932 20 9092
+              </a>
+            </div>
+          </div>
+        </Col>
+        <Col className='d-flex align-items-center mobile-right-left' xs={12} lg={6}>
+          <div className='footer-nav'>
+            <div className='item'>© Neoassimilation 2020 </div>
+            <div className='item'><a href='/terms'>Terminos y Condiciones</a></div>
+            <div className='item'><a  href='/policy'>Política de privacidad</a></div>
+          </div>
+        </Col>
+      </Row>
     </footer>
   );
 };

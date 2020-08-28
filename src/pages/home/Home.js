@@ -650,31 +650,34 @@ class Home extends Component {
             </Col>
           </Row>
         </Section>
-        <Section>
+        <Section className='deal-wrapper'>
           <Row>
             <Col>
-              <div className='deal-wrapper'>
-                <H2>Curso de Neoasimilación</H2>
-                <H3>Basado en Mundo Digital</H3>
-                <div className='title'>Obtén tu ticket para acceder al curso streaming</div>
-                <div className='description'>
-                  Te enseñaremos a utilizar neoasimilación con un curso que te formará 
-                  laboralmente y tengas habilidades de aprender nuevas tecnologías 
-                  constantemente.
-                  Aprenderás a utilizar herramientas profesionales con las bases para 
-                  emprender o trabajar con todo lo relacionado 
-                  al mundo digital, que va desde marketing online, digitalización de 
-                  comercios, desarrollo de apps y websites.
-                </div>
-                <div><a href='/course'>Ver programa de estudios</a></div>
-                <div className='deal-date'>
-                  Los cursos son Streaming en vivo. Todos los viernes de 19hs a 20hs (España) 
-                  a partir del 10 de noviembre 2020, la duración es de 6 meses a un valor $30/Mes / 
-                  <div className='deal-price'>Si te subscribes antes de noviembre $19/Mes</div>
-                </div>
+              <H1>
+                ADQUIERE RAPIDAMENTE HABILIDADES PARA TRABAJAR EN EL MUNDO DIGITAL
+              </H1>
+              <H2>
+                CLASES VIRTUALES BASADAS EN NEOASIMILACION
+              </H2>
+              <p>
+                Neoasimilación es un metodo basado en neurociencia que te permite  
+                agilizar el proceso de aprender constantemente nuevas tecnologias y 
+                habilidades laborales. Ademas, es utilizado para reducir el estres 
+                y mejora tu calidad de vida.
+              </p>
+              <div className='hero-course-bottom'> 
+                <p> 
+                  Los cursos se brindaran vía streaming todos los viernes de 19hs a 20hs 
+                  (Espana) a partir del 10 de noviembre.
+                </p>
+                <p>
+                  Duración: 10 Meses / Costo: €29/Mes / Oferta: Curso completo, un pago de €199.
+                </p>
+              </div>
+              <div className='d-flex justify-content-center'>
                 <Link to='/course'>
-                  <Button className='primary large'>Get Ticket 19Month</Button>
-                </Link>
+                  <Button className='primary large'>Más información</Button>
+                </Link>                
               </div>
             </Col>
           </Row>
