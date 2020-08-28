@@ -3,7 +3,6 @@ import {
   Button,
   Section, Box,
   H1, H2, H3,
-  Icon,
 } from '../../ui/naUI';
 import { Container, Row, Col, Form } from 'react-bootstrap';
 import './Course.css';
@@ -25,7 +24,7 @@ class Home extends Component {
       zip_code: '',
       state: '',
       country: '',
-      course_type: 1,
+      course_type: 0,
       validated: false,
       subscriptionSent: false,
 		};
@@ -118,36 +117,45 @@ class Home extends Component {
       country,
       email,
       repeat_email,
+      course_type,
       validated,
       subscriptionSent,
     } = this.state;
-    console.log('Course: subscriptionSent:', subscriptionSent);
     return (
       <Container fluid className='course'>
         <Section className='hero-wrapper'>
           <Row>
-            <Col xs={12} lg={6} className='d-flex flex-column align-items-center justify-content-center'>
+            <Col xs={12} lg={7} className='d-flex flex-column align-items-center justify-content-center'>
               <div className='content'>
                 <H1>
-                  ADQUIERE HABILIDADES PARA TRABAJAR EN EL MUNDO LABORAL TECNOLOGICO
+                  ADQUIERE RAPIDAMENTE HABILIDADES PARA TRABAJAR EN EL MUNDO DIGITAL
                 </H1>
                 <H2>
-                  CURSO BASADO EN NEOASIMILACION
+                  CLASES VIRTUALES BASADAS EN NEOASIMILACION
                 </H2>
+                <p>
+                  Neoasimilación es un metodo basado en neurociencia que te permite  
+                  agilizar el proceso de aprender constantemente nuevas tecnologias y 
+                  habilidades laborales. Ademas, es utilizado para reducir el estres 
+                  y mejora tu calidad de vida.
+                </p>
                 <div className='hero-course-bottom'> 
-                  <div>CHARLAS EN VIVO VIA STREAMING</div>
-                  <div>Todos los viernes de 19hs a 20hs (España) a partir del 10 de noviembre</div> 
-                  <div>Duracion: 10 meses</div>
-                  <div>Valor: $30/mes ó $19/mes si te subscribes antes de noviembre</div>
+                  <p> 
+                    Los cursos se brindaran vía streaming todos los viernes de 19hs a 20hs 
+                    (Espana) a partir del 10 de noviembre.
+                  </p>
+                  <p>
+                    Duración: 10 Meses / Costo: €29/Mes / Oferta: Curso completo, un pago de €199.
+                  </p>
                 </div>
               </div>
             </Col>
-            <Col xs={12} lg={6} className='d-flex flex-column align-items-center justify-content-center'>
+            <Col xs={12} lg={5} className='d-flex flex-column align-items-center justify-content-center'>
               <i className='image-brain-check'/>
             </Col>
           </Row>
         </Section>
-        <Section className='image-left'>
+        <Section className='bg-left'>
           <Row>
             <Col>
               <H2>NEOASIMILACION & DEVELOPMENT</H2>
@@ -157,39 +165,35 @@ class Home extends Component {
             <Col>
               <H3>
                 Soy Claudio Garaycochea, con casi dos decadas de experiencia, desarrolle 
-                apps para Facebook y el sitio de GlobalLogic (compañía IT con clientes 
-                como Samsung, HP, Fox, entre otros), también para startups varias 
+                apps para Facebook y el sitio web de GlobalLogic (compañía IT con clientes 
+                como Samsung, HP, Fox, entre otros), también trabajé en startups  
                 de California, Washington DC y Suiza.
-                Según los requerimientos de cada proyecto me involucro desde idea, 
+                Según los requerimientos de cada proyecto me involucro desde las ideas de productos, 
                 brainstorming, user experience, visual design, desarrollo, hasta 
-                tareas de marketing y venta corporativa.
+                tareas de marketing y venta corporativa. Todo a nivel profesional.
               </H3>
               <p>
-                En este curso comparto como creé y cómo funciona la neoasimilación 
-                de manera práctica, este metodo me permitio aprender a hablar en 
-                ingles en solo una semana con un equipo 100% anglo, tambien desarrolle 
-                apps para Facebook sin saber el lenguaje de programacion, una vez que me 
-                contrataron, en solo una semana aprendí el lenguaje de programacion.
-                El mismo proceso para desarrollar el sitio web de GlobalLogic. 
+                En este curso comparto, por qué creé y como funciona la neoasimilación 
+                de manera práctica, este método me permitió aprender a hablar en 
+                inglés en sólo una semana con un equipo 100% anglo, también desarrolle 
+                apps para Facebook sin saber el lenguaje de programación, una vez que me 
+                contrataron a la semana estaba operativo.
+                El mismo proceso lo empleé para desarrollar el sitio web de GlobalLogic.
               </p>
               <p>
-                Cabe destacar que no aprendia todo, sino que habia 
-                una base que agilizaba el proceso de aprendizaje, lo que hago con la 
-                neoasimilacion es aprender el contexto basico y principal en lo que 
-                necesito cubrir en el trabajo y lo pongo en practica. 
-                Los resultados son increibles, siempre puedes cubrir con 
-                cualquier necesidad ya sea en la empresa o emprendimiento.
+                Si quieres saber como aprendemos rápidamente con la Neoasimilación, haz 
+                click en el siguiente enlace.         
               </p>
-              <p>
-                Si no sabes que es Neoasimilación, haz click en el siguiente enlace.         
-              </p>
-              <Link to='/'>
-                ¿Qué es Neoasimilación?
-              </Link>
+              <div className='d-flex justify-content-center'>
+                <Link to='/'>
+                  ¿Qué es Neoasimilación?
+                </Link>
+              </div>
             </Col>
           </Row>
         </Section>
-        <Section className='image-right'>
+
+        <Section>
           <Row>
             <Col>
               <H2>¿QUE APRENDERAS?</H2>
@@ -198,9 +202,9 @@ class Home extends Component {
           <Row>
             <Col>
               <H3>
-                El curso esta dividido en 3 objetivos, cada uno de ellos son trimestriales y 
-                te permiten su salida laboral, es de manera secuencial donde cada objetivo te 
-                da las herramientas para el siguiente objetivo.
+                El curso esta dividido en 3 objetivos, cada uno de ellos se dividen en periodos y 
+                te permitirá su salida laboral, es de manera secuencial donde cada objetivo te 
+                brindará las herramientas para el siguiente próposito
               </H3>
             </Col>
           </Row>
@@ -228,10 +232,9 @@ class Home extends Component {
                 <div className='title'>OBJETIVO 2</div>
                 <div className='content'>
                   <p>
-                    Desarrollo de websites y apps a nivel profesional. Aprenderas 
-                    los <span className='text-highlight'>conocimientos basicos para que puedas lograr una salida 
-                    laboral para desarrollar websites para comercios o trabajar 
-                    en empresas de desarrollo.</span>                
+                    Programación de websites y apps a nivel profesional. Aprenderas 
+                    los <span className='text-highlight'>conocimientos basicos para desarrollar  
+                    websites para comercios o empresas.</span>                
                   </p>
                   <ul className='ul-wrapper'>
                     <li>Desarrollo de websites profesionales</li>
@@ -248,9 +251,9 @@ class Home extends Component {
                 <div className='title'>OBJETIVO 3</div>
                 <div className='content'>
                   <p>
-                    Desarrollarás tu propio emprendimiento con dos objetivos, 
+                    Desarrollarás tu emprendimiento con dos objetivos, 
                     este servirá como <span className='text-highlight'>referencia 
-                    laboral para trabajar en una empresa y generar ingresos 
+                    laboral para trabajar en una empresa y/o generar ingresos 
                     con proyecto propio.</span>
                   </p>
                   <ul className='ul-wrapper'>
@@ -267,6 +270,7 @@ class Home extends Component {
             </Col>
           </Row>
         </Section>
+        
         <Section>
           <Row>
             <Col>
@@ -276,7 +280,7 @@ class Home extends Component {
           <Row>
             <Col>
               <H3>
-                Aprende habilidades laborales rapidamente con neoasimilación.
+                Aprende habilidades laborales rapidamente con este metodo
               </H3>
             </Col>
           </Row>
@@ -301,7 +305,7 @@ class Home extends Component {
               <Box>
                 <div className='title'>VENTAS</div>
                 <div className='content'>
-                  Incrementa las posivilidades de venta, previsualiza como lo veran tus clientes, ejemplos prácticos, más.
+                  Incrementa las posivilidades de venta, previsualiza la aceptacion de productos de tus clientes, ejemplos prácticos, más.
                 </div>
               </Box>
             </Col>
@@ -334,6 +338,7 @@ class Home extends Component {
             </Col>
           </Row>
         </Section>
+        <div className='image-divisor'/>
         <Section>
           <Row>
             <Col>
@@ -345,8 +350,13 @@ class Home extends Component {
               <H3>
                 Aprende a crear landing pages, campañas de marketing y 
                 digitalización de comercio, queremos que logres una salida 
-                laboral al segundo mes de este curso.
+                laboral al segundo mes de este curso
               </H3>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <i className='image-marketing'/>
             </Col>
           </Row>
           <Row>
@@ -367,6 +377,7 @@ class Home extends Component {
             </Col>
           </Row>
         </Section>
+        <div className='image-divisor'/>
         <Section>
           <Row>
             <Col>
@@ -379,15 +390,20 @@ class Home extends Component {
                 Desarrollo de websites y apps a nivel profesional. Aprenderás 
                 los conocimientos basicos para que puedas lograr una salida 
                 laboral para desarrollar websites para comercios o trabajar 
-                en empresas de desarrollo.
+                en empresas
               </H3>
             </Col>
           </Row>
           <Row>
             <Col>
+              <i className='image-web-developer'/>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
               Aprenderas a desarrollar websites profesionales conociendo como se 
-              trabaja en startups y companias, cuales son herramientas de trabajo, estructura y 
-              equipos de desarrollo, lenguajes de programacion, y desarrollo de apps.
+              trabaja en startups y companias, cuales son sus herramientas de trabajo, estructura y 
+              equipos de desarrollo, lenguajes de programacion y desarrollo de apps.
             </Col>
           </Row>
           <Row>
@@ -398,6 +414,7 @@ class Home extends Component {
             </Col>
           </Row>
         </Section>
+        <div className='image-divisor'/>
         <Section>
           <Row>
             <Col>
@@ -407,18 +424,23 @@ class Home extends Component {
           <Row>
             <Col>
               <H3>
-                Desarrollarás tu propio emprendimiento con dos objetivos, 
-                este servirá como referencia laboral para trabajar en una 
-                empresa y generar ingresos con proyecto propio.
+                Desarrollarás tu emprendimiento con dos objetivos, 
+                te servirá como referencia laboral para trabajar en una 
+                empresa y/o generar ingresos con proyecto propio
               </H3>
             </Col>
           </Row>
           <Row>
             <Col>
-              Aprenderas a realizar tus emprendimientos con mayores probabilidades
-               de exito Lean startup, plan de negocio, financiación, formar equipos, 
-               conseguir clientes, vender con neoasimilación y lo que necesites 
-               saber para lanzar tu propio proyecto.
+              <i className='image-entrepreneur'/>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              Aprenderás a realizar tus emprendimientos con mayores probabilidades 
+              de éxito aplicando Lean startup, plan de negocio, financiación, formar equipos, 
+              conseguir clientes, vender con neoasimilación y todo lo que necesites para 
+              lanzar tu propio proyecto.
             </Col>
           </Row>
           <Row>
@@ -430,7 +452,8 @@ class Home extends Component {
             </Col>
           </Row>
         </Section>
-        <Section>
+        <div className='image-divisor'/>
+        <Section className='bg-wave'>
           <Row>
             <Col>
               <H2>SUBSCRIBETE AL CURSO</H2>
@@ -442,11 +465,10 @@ class Home extends Component {
           <Row>
             <Col>
               <p> 
-                Todos los viernes 
-                de 19hs a 20hs (España) a partir del 10 de noviembre 
-                2020, la duración es de 6 meses a un valor $30/Mes /
-                Si te subscribes antes de noviembre $19/Mes
-                Te enviaremos el link de pago a tu cuenta de correo.
+                Los cursos se brindaran vía streaming todos los viernes de 19hs a 20hs (Espana) a partir del 10 de noviembre.
+              </p>
+              <p>
+                Duración: 10 Meses / Costo: €29/Mes / Oferta: Curso completo, un pago de €199.
               </p>
             </Col>
           </Row>
@@ -568,16 +590,16 @@ class Home extends Component {
                         <Col sm={10}>
                           <Form.Check
                             type="radio"
-                            label="Charla masiva vía streaming €19/mes"
-                            value="1"
+                            label="Pago mensual €29/Mes"
+                            value="29"
                             name="course_type"
                             id="formHorizontalRadios1"
                             onChange={(event) => this.handleInputChange(event)}
                           />
                           <Form.Check
                             type="radio"
-                            label="Grupos reducidos €160/mes."
-                            value="2"
+                            label="Un pago de €199"
+                            value="199"
                             name="course_type"
                             id="formHorizontalRadios2"
                             onChange={(event) => this.handleInputChange(event)}
@@ -585,7 +607,9 @@ class Home extends Component {
                         </Col>
                       </Form.Group>
                     </fieldset>
-                    <Button className='primary large' type='submit'>Subscribirme</Button>
+                    <div className='d-flex justify-content-end'>
+                      <Button className='primary large' type='submit'>Subscribirme</Button>
+                    </div>
                   </Form>
                 </div>
               </Col>
@@ -599,26 +623,12 @@ class Home extends Component {
               </Row>
               <Row>
                 <Col>
-                  <PaypalCheckoutButton />
+                  <PaypalCheckoutButton amount={course_type}/>
                 </Col>
               </Row>
             </div>)
           }
 
-        </Section>
-        <Section className='dark'>
-          <Row>
-            <Col className='d-flex justify-content-center'>
-              ¿Tienes dudas, consultanos por Whatsapp?
-            </Col>
-          </Row>
-          <Row>
-            <Col className='d-flex justify-content-center'>
-              <a href={this.getWhatsappURL('Hola, quiero consultar por el curso de neoasimilación.')} data-action="share/whatsapp/share">
-                <Button className='whatsapp'><Icon className='whatsapp small space'/>Consultanos por Whatsapp</Button>
-              </a>
-            </Col>
-          </Row>
         </Section>
       </Container>
     );

@@ -117,16 +117,30 @@ body, html, .main-app, .app, #root {
 	color: #60347B;
 }
 
+a {
+	color: #419dff;
+	display: flex;
+	align-items: center;
+}
+
 a:hover {
 	text-decoration: none !important;
 }
 
+.mobile-right-left {
+	display: block;
+}
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
 	body, html, .main-app, .app, #root {
 		font-size: 18px;
 		line-height: 1.5;
+	}
+
+	.mobile-right-left {
+		display: flex;
+		justify-content: flex-end;
 	}
 }
 
