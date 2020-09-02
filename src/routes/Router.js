@@ -5,6 +5,7 @@ import {
 import PropTypes from 'prop-types';
 
 import { routes } from './Routes';
+import ScrollToTop from './ScrollTop';
 
 const isAuthenticated = () => {
 	/*
@@ -48,6 +49,7 @@ const initRoutes = () => (
 						path={route.path}
 						component={(props) => (
 							<route.Layout {...props}>
+								<ScrollToTop />
 								<route.Component {...props} />
 							</route.Layout>
 						)}
@@ -59,6 +61,7 @@ const initRoutes = () => (
 						path={route.path}
 						render={(props) => (
 							<route.Layout {...props}>
+								<ScrollToTop />
 								<route.Component {...props} />
 							</route.Layout>
 						)}

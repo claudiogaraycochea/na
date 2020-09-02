@@ -83,13 +83,6 @@
   margin-bottom: 0;
 }
 
-.bubble-wrapper {
-  padding: 40px;
-  background-color: #3F3D56;
-  color: #FFFFFF;
-  border-radius: 140px;
-}
-
 .box {
   min-height: 100px;
   padding: 20px;

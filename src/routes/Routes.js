@@ -1,7 +1,8 @@
 /* Pages */
 //import Error404 from '../pages/error404/Error404';
 import Home from '../pages/home/Home';
-import Course from '../pages/course/Course';
+//import Course from '../pages/course/Course';
+import Workshop from '../pages/workshop/Workshop';
 // import StyleGuide from '../ui/styleGuide/StyleGuide';
 
 /* Layouts */
@@ -20,8 +21,8 @@ export const routes = [
   {
     id: 3,
     exact: true,
-    path: '/course',
-    Component: Course,
+    path: '/workshop',
+    Component: Workshop,
     Layout: FullLayout,
     Access: 'Public',
   },
