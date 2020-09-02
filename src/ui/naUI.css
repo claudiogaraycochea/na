@@ -47,6 +47,42 @@ body, html, .main-app, .app, #root {
 	margin-right: 10px;
 }
 
+.hero-wrapper { 
+  min-height: 100vh;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../assets/images/bg-image-left.svg');
+  background-position-x: right;
+  background-repeat: no-repeat;
+	background-size: contain;
+	margin-left: -15px;
+  margin-right: -15px;
+}
+
+.hero-wrapper .title {
+	color: #222222;
+	font-size: 28px;
+	font-weight: bold;
+	line-height: 1.2;
+}
+
+.hero-wrapper .subtitle {
+	color: #795ee6;
+	font-size: 28px;
+	font-weight: bold;
+	line-height: 1.2;
+}
+
+.hero-wrapper .subtitle-small {
+	color: #795ee6;
+	font-size: 22px;
+	margin-bottom: 20px;
+	line-height: 1.2;
+}
+
 /* Icons */
 
 [class^="icon-"],
@@ -130,8 +166,8 @@ a:hover {
 .mobile-right-left {
 	display: block;
 }
-/* Medium devices (tablets, 768px and up) */
 
+/* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 	body, html, .main-app, .app, #root {
 		font-size: 18px;
@@ -142,19 +178,40 @@ a:hover {
 		display: flex;
 		justify-content: flex-end;
 	}
-}
 
-/* Large devices (desktops, 992px and up) */
+	.hero-wrapper {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
 
-@media (min-width: 992px) {
-}
+	.hero-wrapper .title {
+		font-size: 42px;
+		margin-bottom: 20px;
+	}
+	
+	.hero-wrapper .subtitle {
+		font-size: 36px;
+		margin-bottom: 20px;
+	}
 
-/* Extra large devices (smart tv HD, 1200px and up) */
+	.hero-wrapper .subtitle-small {
+		font-size: 22px;
+	}
 
-@media (min-width: 1200px) {
-}
+  .hero-wrapper {
+    padding-top: 60px;
+    margin-top: 0;
+    flex-direction: row;
+  }
 
-/* Ultra large devices (smart tv Full HD, 1200px and up) */
+  .hero-wrapper .content {
+    text-align: left;
+    padding-left: 80px;
+  }
 
-@media (min-width: 1920px) {
+  .hero-wrapper .row {
+    min-width: 100%;
+    width: 100%;
+  }
+
 }
