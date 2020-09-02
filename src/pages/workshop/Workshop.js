@@ -2,16 +2,17 @@ import React, { Component }from "react";
 import {
   Button,
   Section, Box,
-  H1, H2, H3,
+  H2, H3,
+  Icon,
 } from '../../ui/naUI';
 import { Container, Row, Col, Form } from 'react-bootstrap';
-import './Course.css';
+import './Workshop.css';
 import { Link } from 'react-router-dom';
 import { request, ContentTypes } from '../../libs/request';
 import countries from '../../store/statics/Countries';
 import PaypalCheckoutButton from '../../components/paypalCheckoutButton/PaypalCheckoutButton.js';
 
-class Home extends Component {
+class Workshop extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -33,25 +34,25 @@ class Home extends Component {
   }
 
   getFacebookURL = () => {
-    const message = 'Te invito a conocer el curso de Neoasimilación para adquirir habilidades laborales rápidamente y reducir estres. Visitalo https://neoasimilacion.com';
+    const message = 'Te invito a conocer el workshop de Neoasimilación para adquirir habilidades laborales rápidamente y reducir estrés. Visita https://neoassimilation.com/workshop';
     const text = encodeURIComponent(message);
     return `https://www.facebook.com/sharer.php?u=https%3A%2F%2Fneoassimilation.com&t=${text}`;
   }
 
-  getWhatsappURL = (data) => {
-    const message = (data) ? data : 'Te invito a conocer el curso de Neoasimilación para adquirir habilidades laborales rápidamente y reducir estres. Visitalo https://neoasimilacion.com';
+  getWhatsappURL = () => {
+    const message = 'Te invito a conocer el workshop de Neoasimilación para adquirir habilidades laborales rápidamente y reducir estrés. Visita https://neoassimilation.com/workshop';
     const text = encodeURIComponent(message);
     return `whatsapp://send?text=${text}`;
   }
 
   getTwitterURL = () => {
-    const message = 'Te invito a conocer el curso de Neoasimilación para adquirir habilidades laborales rápidamente y reducir estres. Visitalo https://neoasimilacion.com';
+    const message = 'Te invito a conocer el workshop de Neoasimilación para adquirir habilidades laborales rápidamente y reducir estrés. Visita https://neoassimilation.com/workshop';
     const text = encodeURIComponent(message);
     return `https://twitter.com/intent/tweet?text=${text}`;
   }
 
   getLinkedinURL = () => {
-    const message = 'Te invito a conocer el curso de Neoasimilación para adquirir habilidades laborales rápidamente y reducir estres. Visitalo https://neoasimilacion.com';
+    const message = 'Te invito a conocer el workshop de Neoasimilación para adquirir habilidades laborales rápidamente y reducir estrés. Visita https://neoassimilation.com/workshop';
     const text = encodeURIComponent(message);
     return `https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fneoassimilation.com&title=${text}`;
   }
@@ -127,25 +128,25 @@ class Home extends Component {
           <Row>
             <Col xs={12} lg={7} className='d-flex flex-column align-items-center justify-content-center'>
               <div className='content'>
-                <H1>
-                  ADQUIERE RAPIDAMENTE HABILIDADES PARA TRABAJAR EN EL MUNDO DIGITAL
-                </H1>
-                <H2>
-                  CLASES VIRTUALES BASADAS EN NEOASIMILACION
-                </H2>
+                <div className='title'>
+                  ADQUIERE RÁPIDAMENTE HABILIDADES PARA TRABAJAR EN EL MUNDO DIGITAL
+                </div>
+                <div className='subtitle'>
+                  WORKSHOP VIRTUAL BASADO EN NEOASIMILACIÓN
+                </div>
                 <p>
-                  Neoasimilación es un metodo basado en neurociencia que te permite  
-                  agilizar el proceso de aprender constantemente nuevas tecnologias y 
-                  habilidades laborales. Ademas, es utilizado para reducir el estres 
-                  y mejora tu calidad de vida.
+                  Neoasimilación es un método basado en neurociencia que te permite  
+                  agilizar el proceso de aprender constantemente nuevas tecnologías y 
+                  habilidades laborales. Además, puede reducir el estrés 
+                  y mejorar tu calidad de vida.
                 </p>
                 <div className='hero-course-bottom'> 
                   <p> 
-                    Los cursos se brindaran vía streaming todos los viernes de 19hs a 20hs 
-                    (Espana) a partir del 10 de noviembre.
+                    Los talleres se brindarán vía streaming todos los viernes de 19hs a 20hs 
+                    (España) a partir del 10 de noviembre.
                   </p>
                   <p>
-                    Duración: 10 Meses / Costo: €29/Mes / Oferta: Curso completo, un pago de €199.
+                    Duración: 10 Meses / Costo: €29/Mes / Oferta: Taller completo, un pago de €199.
                   </p>
                 </div>
               </div>
@@ -158,31 +159,35 @@ class Home extends Component {
         <Section className='bg-left'>
           <Row>
             <Col>
-              <H2>NEOASIMILACION & DEVELOPMENT</H2>
+              <H2>NEOASIMILACIÓN & DEVELOPMENT</H2>
             </Col>
           </Row>
           <Row>
             <Col>
               <H3>
-                Soy Claudio Garaycochea, con casi dos decadas de experiencia, desarrolle 
+                Soy Claudio Garaycochea, con casi dos décadas de experiencia, desarrolle 
                 apps para Facebook y el sitio web de GlobalLogic (compañía IT con clientes 
                 como Samsung, HP, Fox, entre otros), también trabajé en startups  
                 de California, Washington DC y Suiza.
                 Según los requerimientos de cada proyecto me involucro desde las ideas de productos, 
                 brainstorming, user experience, visual design, desarrollo, hasta 
-                tareas de marketing y venta corporativa. Todo a nivel profesional.
+                tareas de marketing y venta corporativa.
               </H3>
               <p>
-                En este curso comparto, por qué creé y como funciona la neoasimilación 
+                En este taller comparto, como creé y funciona la neoasimilación 
                 de manera práctica, este método me permitió aprender a hablar en 
                 inglés en sólo una semana con un equipo 100% anglo, también desarrolle 
                 apps para Facebook sin saber el lenguaje de programación, una vez que me 
                 contrataron a la semana estaba operativo.
-                El mismo proceso lo empleé para desarrollar el sitio web de GlobalLogic.
+                El mismo proceso lo empleé para desarrollar el sitio web de GlobalLogic.  
+                <span className='text-highlight'> El workshop propone que tu pongas en 
+                práctica la neoasimilación para que puedas aprender rápidamente y 
+                constantemente las habilidades laborales relacionadas al mundo digital.
+                </span>
               </p>
               <p>
-                Si quieres saber como aprendemos rápidamente con la Neoasimilación, haz 
-                click en el siguiente enlace.         
+                Si quieres saber que es neoasimilación haz 
+                click en el siguiente enlace.
               </p>
               <div className='d-flex justify-content-center'>
                 <Link to='/'>
@@ -192,17 +197,26 @@ class Home extends Component {
             </Col>
           </Row>
         </Section>
-
         <Section>
           <Row>
             <Col>
-              <H2>¿QUE APRENDERAS?</H2>
+              En este momento de crisis es muy importante ayudarnos entre todos, 
+              poder adquirir habilidades laborales rápidamente te 
+              permitirá mayores oportunidades de empleo o realizar tu propio 
+              emprendimiento sin que la falta de recursos te detenga.
+            </Col>
+          </Row>
+        </Section>
+        <Section>
+          <Row>
+            <Col>
+              <H2>¿QUÉ APRENDERÁS?</H2>
             </Col>
           </Row>
           <Row>
             <Col>
               <H3>
-                El curso esta dividido en 3 objetivos, cada uno de ellos se dividen en periodos y 
+                El workshop esta dividido en 3 objetivos, cada uno de ellos se dividen en periodos y 
                 te permitirá su salida laboral, es de manera secuencial donde cada objetivo te 
                 brindará las herramientas para el siguiente próposito
               </H3>
@@ -216,7 +230,7 @@ class Home extends Component {
                   <p>
                     Aprende a crear landing pages, campañas de marketing y 
                     digitalización de comercio, <span className='text-highlight'>queremos que logres una salida 
-                    laboral al segundo mes de este curso.</span>
+                    laboral al segundo mes de este taller.</span>
                   </p>
                   <ul className='ul-wrapper'>
                     <li>Desarrollo de Landing page</li>
@@ -232,7 +246,7 @@ class Home extends Component {
                 <div className='title'>OBJETIVO 2</div>
                 <div className='content'>
                   <p>
-                    Programación de websites y apps a nivel profesional. Aprenderas 
+                    Programación de websites y apps a nivel profesional. Aprenderás 
                     los <span className='text-highlight'>conocimientos basicos para desarrollar  
                     websites para comercios o empresas.</span>                
                   </p>
@@ -274,13 +288,13 @@ class Home extends Component {
         <Section>
           <Row>
             <Col>
-              <H2>NEOASIMILACION</H2>
+              <H2>NEOASIMILACIÓN</H2>
             </Col>
           </Row>
           <Row>
             <Col>
               <H3>
-                Aprende habilidades laborales rapidamente con este metodo
+                Aprende habilidades laborales rápidamente con este método
               </H3>
             </Col>
           </Row>
@@ -289,15 +303,15 @@ class Home extends Component {
               <Box>
                 <div className='title'>DESGLOSANDO TU CEREBRO</div>
                 <div className='content'>
-                  ¿Como funciona?, ¿como aprendes?, ¿como tomas tus desiciones?, ¿mejorar las desiciones que tomas?, como piensan los demas, más.
+                  ¿Cómo funciona?, ¿cómo aprendes?, ¿cómo tomas tus desiciones?, ¿mejorar las desiciones que tomas?, ¿cómo piensan tus clientes?, más.
                 </div>
               </Box>
             </Col>
             <Col xs={12} lg={4}>
               <Box>
-                <div className='title'>NEOASIMILACION</div>
+                <div className='title'>NEOASIMILACIÓN</div>
                 <div className='content'>
-                  ¿Que es?, como adquirimos habilidades rapidamente, vida antes y despues de neoasimilacion, ejemplos reales de aprendizaje inmediato, ejemplo practico, más.
+                  ¿Qué es?, ¿cómo adquirimos habilidades rápidamente?, vida antes y después de neoasimilación, ejemplos reales de aprendizaje inmediato, ejemplo práctico, más.
                 </div>
               </Box>
             </Col>
@@ -305,7 +319,7 @@ class Home extends Component {
               <Box>
                 <div className='title'>VENTAS</div>
                 <div className='content'>
-                  Incrementa las posivilidades de venta, previsualiza la aceptacion de productos de tus clientes, ejemplos prácticos, más.
+                  Incrementa las posivilidades de venta, previsualiza la aceptación de productos de tus clientes, ejemplos prácticos, más.
                 </div>
               </Box>
             </Col>
@@ -315,15 +329,15 @@ class Home extends Component {
               <Box>
                 <div className='title'>BRAIN BLOCKER</div>
                 <div className='content'>
-                  ¿Que es?, ¿Como funciona?, ¿Como evitarlo?, ejemplos practicos, más.
+                  ¿Qué es?, ¿Cómo funciona?, ¿Cómo evitarlo?, ejemplos prácticos, más.
                 </div>
               </Box>
             </Col>
             <Col xs={12} lg={4}>
               <Box>
-                <div className='title'>REDUCIR ESTRES</div>
+                <div className='title'>REDUCIR ESTRÉS</div>
                 <div className='content'>
-                  ¿Que es?, Reducción de carga cerebral, ejemplos practicos, más.
+                  ¿Qué es?, Reducción de carga cerebral, ejemplos prácticos, más.
                 </div>
               </Box>
             </Col>
@@ -350,7 +364,7 @@ class Home extends Component {
               <H3>
                 Aprende a crear landing pages, campañas de marketing y 
                 digitalización de comercio, queremos que logres una salida 
-                laboral al segundo mes de este curso
+                laboral al segundo mes de este taller
               </H3>
             </Col>
           </Row>
@@ -363,16 +377,16 @@ class Home extends Component {
             <Col>
               Aprenderemos que son y para que se utilizan las landing pages, brainstorming, UX, Visual 
               Design, Desarrollo en React, y puesta en marcha en servidores de Amazon Web Services. 
-              Una vez que tienes tu landing page funcional, podras crear campanas de marketing 
-              en Google Adwords, Facebook Ads, entre otros. Con ello ya dispondras de la habilidad 
-              para hacer publicidad online. Te ensenamos como aprender a mejorar este servicio 
+              Una vez que tienes tu landing page funcional, podrás crear campañas de marketing 
+              en Google Adwords, Facebook Ads, entre otros. Con ello ya dispondrás de la habilidad 
+              para hacer publicidad online. Te enseñaremos como aprender a mejorar tus servicios 
               de manera autodidacta.
             </Col>
           </Row>
           <Row>
             <Col>
-              El curso esta creado para que puedas lograr tu salida laboral a partir del segundo mes. 
-              A su vez, te forma con conocimientos basicos profesionales para que puedas adquirir 
+              El taller esta creado para que puedas lograr tu salida laboral a partir del segundo mes. 
+              A su vez, te forma con conocimientos básicos profesionales para que puedas adquirir 
               los conocimientos laborales del objetivo 2.
             </Col>
           </Row>
@@ -388,8 +402,8 @@ class Home extends Component {
             <Col>
               <H3>
                 Desarrollo de websites y apps a nivel profesional. Aprenderás 
-                los conocimientos basicos para que puedas lograr una salida 
-                laboral para desarrollar websites para comercios o trabajar 
+                los conocimientos básicos para que puedas lograr una salida 
+                laboral como desarrollador de websites para comercios o trabajar 
                 en empresas
               </H3>
             </Col>
@@ -401,14 +415,14 @@ class Home extends Component {
           </Row>
           <Row>
             <Col>
-              Aprenderas a desarrollar websites profesionales conociendo como se 
-              trabaja en startups y companias, cuales son sus herramientas de trabajo, estructura y 
-              equipos de desarrollo, lenguajes de programacion y desarrollo de apps.
+              Aprenderás a desarrollar websites profesionales conociendo como se 
+              trabaja en startups y compañías, cuales son sus herramientas de trabajo, estructura y 
+              equipos de desarrollo, lenguajes de programación y desarrollo de apps.
             </Col>
           </Row>
           <Row>
             <Col>
-              El curso esta creado para que puedas lograr tu salida laboral a partir del 
+              El taller esta creado para que puedas lograr tu salida laboral a partir del 
               noveno mes. Brindandote las herramientas para emprender o trabajar en una 
               empresa.
             </Col>
@@ -445,7 +459,7 @@ class Home extends Component {
           </Row>
           <Row>
             <Col>
-              El curso esta creado para que puedas lograr tus propios ingresos 
+              El taller esta creado para que puedas lograr tus propios ingresos 
               al decimo mes. Este proyecto cumple con dos objetivos, el contar 
               con una referencia laboral para conseguir empleo como desarrollador, 
               e intentar monetizar tu propio emprendimiento.
@@ -456,7 +470,7 @@ class Home extends Component {
         <Section className='bg-wave'>
           <Row>
             <Col>
-              <H2>SUBSCRIBETE AL CURSO</H2>
+              <H2>SUBSCRIBETE AL TALLER</H2>
               <H3>
                 Brindamos charlas en vivo vía streaming
               </H3>
@@ -465,10 +479,10 @@ class Home extends Component {
           <Row>
             <Col>
               <p> 
-                Los cursos se brindaran vía streaming todos los viernes de 19hs a 20hs (Espana) a partir del 10 de noviembre.
+                Los talleres se brindaran vía streaming todos los viernes de 19hs a 20hs (España) a partir del 10 de noviembre.
               </p>
               <p>
-                Duración: 10 Meses / Costo: €29/Mes / Oferta: Curso completo, un pago de €199.
+                Duración: 10 Meses / Costo: €29/Mes / Oferta: Taller completo, un pago de €199.
               </p>
             </Col>
           </Row>
@@ -630,9 +644,42 @@ class Home extends Component {
           }
 
         </Section>
+        <Section className='dark'>
+          <Row>
+            <Col>
+              Comparte esta página a alguien que desees ayudar...
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Row className='social-wrapper'>
+                <Col xs={12} lg={3} className='d-flex flex-column align-items-center justify-content-center social-item'>
+                  <a href={this.getWhatsappURL()} data-action="share/whatsapp/share">
+                    <Button className='whatsapp'><Icon className='whatsapp small space'/> Compartir en Whatsapp</Button>
+                  </a>
+                </Col>
+                <Col xs={12} lg={3} className='d-flex flex-column align-items-center justify-content-center social-item'>
+                  <a href={this.getFacebookURL()}>
+                    <Button className='facebook'><Icon className='facebook small space'/> Compartir en Facebook</Button>
+                  </a>
+                </Col>
+                <Col xs={12} lg={3} className='d-flex flex-column align-items-center justify-content-center social-item'>
+                  <a href={this.getTwitterURL()} data-size="large">
+                    <Button className='twitter'><Icon className='twitter small space'/> Compartir en Twitter</Button>
+                  </a>
+                </Col>
+                <Col xs={12} lg={3} className='d-flex flex-column align-items-center justify-content-center social-item'>
+                  <a href={this.getLinkedinURL()} data-size="large">
+                    <Button className='linkedin'><Icon className='linkedin small space'/> Compartir en Linkedin</Button>
+                  </a>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+        </Section>
       </Container>
     );
   }
 };
 
-export default Home;
+export default Workshop;

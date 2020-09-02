@@ -39,7 +39,7 @@ const Header = () => {
         <Col className='d-flex align-items-center mobile-right-left' xs={12} lg={6}>
           <div className='footer-nav'>
             <div className='item'>© Neoassimilation 2020 </div>
-            <div className='item'><a href='/terms'>Terminos y Condiciones</a></div>
+            <div className='item'><a href='/terms'>Términos y Condiciones</a></div>
             <div className='item'><a  href='/policy'>Política de privacidad</a></div>
           </div>
         </Col>
