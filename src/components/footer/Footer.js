@@ -40,7 +40,6 @@ const Header = () => {
           <div className='footer-nav'>
             <div className='item'>© Neoassimilation 2020 </div>
             <div className='item'><a href='/terms'>Términos y Condiciones</a></div>
-            <div className='item'><a  href='/policy'>Política de privacidad</a></div>
           </div>
         </Col>
       </Row>

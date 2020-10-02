@@ -2,13 +2,14 @@ import React, { Component }from "react";
 import {
   Button,
   Section, Box,
-  H1, H2, H3,
+  H2, H3,
   Icon,
 } from '../../ui/naUI';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Home.css';
 import Header from '../../components/header/Header';
+import Newsletter from '../../components/newsletter/Newsletter';
 // import imageClaudio from '../../assets/images/image-claudio-g.png';
 
 class Home extends Component {
@@ -652,7 +653,7 @@ class Home extends Component {
             </Col>
           </Row>
         </Section>
-        <Section className='deal-wrapper'>
+        {/*<Section className='deal-wrapper'>
           <Row>
             <Col>
               <H1>
@@ -682,16 +683,17 @@ class Home extends Component {
               </div>
             </Col>
           </Row>
-        </Section>
-        {/*<div className='call-to-action-wrapper'>
+        </Section>*/}
+        <div className='call-to-action-wrapper'>
           <div className='space'>
             Curso de neoasimilación para adquirir todo tipo de habilidades digitales, 
             marketing online, programación y más.
           </div>
           <Link to='/workshop'>
-            <Button className='primary'>Ver curso</Button>
+            <Button className='secondary'>Ver curso</Button>
           </Link>
-          </div>*/}
+        </div>
+        <Newsletter/>
       </Container>
     );
   }

@@ -6,8 +6,7 @@ import {
   Icon,
 } from '../../ui/naUI';
 import { Container, Row, Col, Form } from 'react-bootstrap';
-import './Workshop.css';
-import { Link } from 'react-router-dom';
+import './WorkshopWebDeveloper.css';
 import { request, ContentTypes } from '../../libs/request';
 import countries from '../../store/statics/Countries';
 import PaypalCheckoutButton from '../../components/paypalCheckoutButton/PaypalCheckoutButton.js';
@@ -124,30 +123,29 @@ class Workshop extends Component {
     } = this.state;
     return (
       <Container fluid className='course'>
-        <Section className='hero-wrapper'>
+        <Section className='hero-wrapper wwd'>
           <Row>
             <Col xs={12} lg={7} className='d-flex flex-column align-items-center justify-content-center'>
               <div className='content'>
-                <div className='title'>
-                  ADQUIERE RÁPIDAMENTE HABILIDADES PARA TRABAJAR EN EL MUNDO DIGITAL
+                <div className='title mb-0'>
+                  TALLER INTENSIVO PARA
                 </div>
-                <div className='subtitle'>
-                  WORKSHOP VIRTUAL BASADO EN NEOASIMILACIÓN
+                <div className='title text-highlight'>
+                  APRENDER DESARROLLO WEB PROFESIONAL
                 </div>
-                <p>
-                  Neoasimilación es un método basado en neurociencia que te permite  
-                  agilizar el proceso de aprender constantemente nuevas tecnologías y 
-                  habilidades laborales. Además, puede reducir el estrés 
-                  y mejorar tu calidad de vida.
-                </p>
-                <div className='hero-course-bottom'> 
-                  <p> 
-                    Los talleres se brindarán vía streaming todos los viernes de 19hs a 20hs 
-                    (España) a partir del 10 de noviembre.
-                  </p>
-                  <p>
-                    Duración: 10 Meses / Costo: €29/Mes / Oferta: Taller completo, un pago de €199.
-                  </p>
+                <div className='description'>
+                  En 1 mes a solo €99, aprende las nociones básicas para que puedas crear sitios web a nivel profesional
+                </div>
+                <div className='workshop-time'>
+                  Cupo limitado a 30 alumnos /
+                  Modalidad: Vía streaming / 
+                  Días: Lun, Mier, Vier a las 19 hs (España) /
+                  Duración: 1 mes
+                </div>
+                <div>
+                  <a href='#apuntate'>
+                    <Button className='primary large'>Apuntarme al taller ahora</Button>
+                  </a>
                 </div>
               </div>
             </Col>
@@ -156,54 +154,36 @@ class Workshop extends Component {
             </Col>
           </Row>
         </Section>
-        <Section className='bg-left'>
-          <Row>
-            <Col>
-              <H2>NEOASIMILACIÓN & DEVELOPMENT</H2>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <H3>
-                Soy Claudio Garaycochea, con casi dos décadas de experiencia, desarrolle 
-                apps para Facebook y el sitio web de GlobalLogic (compañía IT con clientes 
-                como Samsung, HP, Fox, entre otros), también trabajé en startups  
-                de California, Washington DC y Suiza.
-                Según los requerimientos de cada proyecto me involucro desde las ideas de productos, 
-                brainstorming, user experience, visual design, desarrollo, hasta 
-                tareas de marketing y venta corporativa.
-              </H3>
-              <p>
-                En este taller comparto, como creé y funciona la neoasimilación 
-                de manera práctica, este método me permitió aprender a hablar en 
-                inglés en sólo una semana con un equipo 100% anglo, también desarrolle 
-                apps para Facebook sin saber el lenguaje de programación, una vez que me 
-                contrataron a la semana estaba operativo.
-                El mismo proceso lo empleé para desarrollar el sitio web de GlobalLogic.  
-                <span className='text-highlight'> El workshop propone que tu pongas en 
-                práctica la neoasimilación para que puedas aprender rápidamente y 
-                constantemente las habilidades laborales relacionadas al mundo digital.
-                </span>
-              </p>
-              <p>
-                Si quieres saber que es neoasimilación haz 
-                click en el siguiente enlace.
-              </p>
-              <div className='d-flex justify-content-center'>
-                <Link to='/'>
-                  ¿Qué es Neoasimilación?
-                </Link>
-              </div>
-            </Col>
-          </Row>
+        <Section className='highlight'>
+          <div className='bubble-wrapper'>
+            <Row>
+              <Col xs={12} lg={4}>
+                <i className='image-fisher'/>
+              </Col>
+              <Col xs={12} lg={8} className='d-flex flex-column align-items-center justify-content-center text-lg-left-xs-center'>
+                <div className='content'>"Regala un pescado a un hombre y le darás alimento para un día, 
+                enseñale a pescar y lo alimentarás para el resto de su vida"</div>
+              </Col>
+            </Row>
+          </div>
         </Section>
         <Section>
           <Row>
-            <Col>
-              En este momento de crisis es muy importante ayudarnos entre todos, 
-              poder adquirir habilidades laborales rápidamente te 
-              permitirá mayores oportunidades de empleo o realizar tu propio 
-              emprendimiento sin que la falta de recursos te detenga.
+            <Col xs={12} lg={8} className='text-lg-left-xs-center'>
+              <H2>Acerca del taller</H2>
+              <p>
+                Soy Claudio Garaycochea, con más de 17 años desarrollando productos 
+                para startups y companias de California, Washington DC y Suiza. 
+                Desarrollé apps para la compañía Facebook, el sitio web GlobalLogic.com, 
+                entre otras.
+              </p>
+              <p>
+                Con el aval de mi experiencia profesional, creé este taller para que tu 
+                puedas iniciarte rápidamente en el mundo laboral digital.
+              </p>
+            </Col>
+            <Col xs={12} lg={4}>
+              <i className='image-how-born'/>
             </Col>
           </Row>
         </Section>
@@ -216,9 +196,9 @@ class Workshop extends Component {
           <Row>
             <Col>
               <H3>
-                El workshop esta dividido en 3 objetivos, cada uno de ellos se dividen en periodos y 
-                te permitirá su salida laboral, es de manera secuencial donde cada objetivo te 
-                brindará las herramientas para el siguiente próposito
+                El taller pretende formar con conocimientos básicos para que 
+                puedas crear campañas de marketing y desarrollar websites para 
+                comercios o empresas.
               </H3>
             </Col>
           </Row>
@@ -229,10 +209,11 @@ class Workshop extends Component {
                 <div className='content'>
                   <p>
                     Aprende a crear landing pages, campañas de marketing y 
-                    digitalización de comercio, <span className='text-highlight'>queremos que logres una salida 
-                    laboral al segundo mes de este taller.</span>
+                    digitalización de comercio.
                   </p>
                   <ul className='ul-wrapper'>
+                    <li>Aprender rápidamente</li>
+                    <li>Estructura tu día</li>
                     <li>Desarrollo de Landing page</li>
                     <li>Puesta en marcha</li>
                     <li>Marketing online</li>
@@ -246,9 +227,8 @@ class Workshop extends Component {
                 <div className='title'>OBJETIVO 2</div>
                 <div className='content'>
                   <p>
-                    Programación de websites y apps a nivel profesional. Aprenderás 
-                    los <span className='text-highlight'>conocimientos basicos para desarrollar  
-                    websites para comercios o empresas.</span>                
+                    Adquiere conocimientos básicos para 
+                    desarrollar websites para comercios o empresas.              
                   </p>
                   <ul className='ul-wrapper'>
                     <li>Desarrollo de websites profesionales</li>
@@ -265,10 +245,7 @@ class Workshop extends Component {
                 <div className='title'>OBJETIVO 3</div>
                 <div className='content'>
                   <p>
-                    Desarrollarás tu emprendimiento con dos objetivos, 
-                    este servirá como <span className='text-highlight'>referencia 
-                    laboral para trabajar en una empresa y/o generar ingresos 
-                    con proyecto propio.</span>
+                    Poner en marcha tu emprendimiento online, como conseguir clientes, y más.
                   </p>
                   <ul className='ul-wrapper'>
                     <li>Lean startup</li>
@@ -284,205 +261,27 @@ class Workshop extends Component {
             </Col>
           </Row>
         </Section>
-        
-        <Section>
-          <Row>
-            <Col>
-              <H2>NEOASIMILACIÓN</H2>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <H3>
-                Aprende habilidades laborales rápidamente con este método
-              </H3>
-            </Col>
-          </Row>
-          <Row>
-            <Col xs={12} lg={4}>
-              <Box>
-                <div className='title'>DESGLOSANDO TU CEREBRO</div>
-                <div className='content'>
-                  ¿Cómo funciona?, ¿cómo aprendes?, ¿cómo tomas tus desiciones?, ¿mejorar las desiciones que tomas?, ¿cómo piensan tus clientes?, más.
-                </div>
-              </Box>
-            </Col>
-            <Col xs={12} lg={4}>
-              <Box>
-                <div className='title'>NEOASIMILACIÓN</div>
-                <div className='content'>
-                  ¿Qué es?, ¿cómo adquirimos habilidades rápidamente?, vida antes y después de neoasimilación, ejemplos reales de aprendizaje inmediato, ejemplo práctico, más.
-                </div>
-              </Box>
-            </Col>
-            <Col xs={12} lg={4}>
-              <Box>
-                <div className='title'>VENTAS</div>
-                <div className='content'>
-                  Incrementa las posivilidades de venta, previsualiza la aceptación de productos de tus clientes, ejemplos prácticos, más.
-                </div>
-              </Box>
-            </Col>
-          </Row>
-          <Row>
-            <Col xs={12} lg={4}>
-              <Box>
-                <div className='title'>BRAIN BLOCKER</div>
-                <div className='content'>
-                  ¿Qué es?, ¿Cómo funciona?, ¿Cómo evitarlo?, ejemplos prácticos, más.
-                </div>
-              </Box>
-            </Col>
-            <Col xs={12} lg={4}>
-              <Box>
-                <div className='title'>REDUCIR ESTRÉS</div>
-                <div className='content'>
-                  ¿Qué es?, Reducción de carga cerebral, ejemplos prácticos, más.
-                </div>
-              </Box>
-            </Col>
-            <Col xs={12} lg={4}>
-              <Box>
-                <div className='title'>HABILIDADES</div>
-                <div className='content'>
-                  Aprender a contextualizar, resumir, una tareas con doble 
-                  interés, estructura tu día, ejemplos prácticos, más.
-                </div>
-              </Box>
-            </Col>
-          </Row>
-        </Section>
         <div className='image-divisor'/>
-        <Section>
-          <Row>
-            <Col>
-              <H2>OBJETIVO 1</H2>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <H3>
-                Aprende a crear landing pages, campañas de marketing y 
-                digitalización de comercio, queremos que logres una salida 
-                laboral al segundo mes de este taller
-              </H3>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <i className='image-marketing'/>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              Aprenderemos que son y para que se utilizan las landing pages, brainstorming, UX, Visual 
-              Design, Desarrollo en React, y puesta en marcha en servidores de Amazon Web Services. 
-              Una vez que tienes tu landing page funcional, podrás crear campañas de marketing 
-              en Google Adwords, Facebook Ads, entre otros. Con ello ya dispondrás de la habilidad 
-              para hacer publicidad online. Te enseñaremos como aprender a mejorar tus servicios 
-              de manera autodidacta.
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              El taller esta creado para que puedas lograr tu salida laboral a partir del segundo mes. 
-              A su vez, te forma con conocimientos básicos profesionales para que puedas adquirir 
-              los conocimientos laborales del objetivo 2.
-            </Col>
-          </Row>
-        </Section>
-        <div className='image-divisor'/>
-        <Section>
-          <Row>
-            <Col>
-              <H2>OBJETIVO 2</H2>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <H3>
-                Desarrollo de websites y apps a nivel profesional. Aprenderás 
-                los conocimientos básicos para que puedas lograr una salida 
-                laboral como desarrollador de websites para comercios o trabajar 
-                en empresas
-              </H3>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <i className='image-web-developer'/>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              Aprenderás a desarrollar websites profesionales conociendo como se 
-              trabaja en startups y compañías, cuales son sus herramientas de trabajo, estructura y 
-              equipos de desarrollo, lenguajes de programación y desarrollo de apps.
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              El taller esta creado para que puedas lograr tu salida laboral a partir del 
-              noveno mes. Brindandote las herramientas para emprender o trabajar en una 
-              empresa.
-            </Col>
-          </Row>
-        </Section>
-        <div className='image-divisor'/>
-        <Section>
-          <Row>
-            <Col>
-              <H2>OBJETIVO 3</H2>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <H3>
-                Desarrollarás tu emprendimiento con dos objetivos, 
-                te servirá como referencia laboral para trabajar en una 
-                empresa y/o generar ingresos con proyecto propio
-              </H3>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <i className='image-entrepreneur'/>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              Aprenderás a realizar tus emprendimientos con mayores probabilidades 
-              de éxito aplicando Lean startup, plan de negocio, financiación, formar equipos, 
-              conseguir clientes, vender con neoasimilación y todo lo que necesites para 
-              lanzar tu propio proyecto.
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              El taller esta creado para que puedas lograr tus propios ingresos 
-              al decimo mes. Este proyecto cumple con dos objetivos, el contar 
-              con una referencia laboral para conseguir empleo como desarrollador, 
-              e intentar monetizar tu propio emprendimiento.
-            </Col>
-          </Row>
-        </Section>
-        <div className='image-divisor'/>
+        <a id="apuntate"></a>
         <Section className='bg-wave'>
           <Row>
             <Col>
-              <H2>SUBSCRIBETE AL TALLER</H2>
-              <H3>
-                Brindamos charlas en vivo vía streaming
-              </H3>
+              <H2>APUNTATE AHORA</H2>
+              <H3>Cupo limitado a 30 alumnos</H3>
             </Col>
           </Row>
           <Row>
             <Col>
               <p> 
-                Los talleres se brindaran vía streaming todos los viernes de 19hs a 20hs (España) a partir del 10 de noviembre.
+                El taller consiste en 3 días por semana vía streaming durante 1 mes, 
+                cada taller dura 1 hora, donde te enseño lo básico de cada tema, 
+                estará acompañado de material de soporte que te ayudará en la  
+                práctica. Fecha de inicio 15 de noviembre.
               </p>
               <p>
-                Duración: 10 Meses / Costo: €29/Mes / Oferta: Taller completo, un pago de €199 (€19/Mes).
+                Con mi guía, tu dedicación y esfuerzo, puedes convertirlo en tu salida laboral. 
+                Apuntate ahora... envíame un Whatsapp a +34 932 209092 o completa el siguiente 
+                formulario y adquiere tu cupo ahora.
               </p>
             </Col>
           </Row>
@@ -604,18 +403,10 @@ class Workshop extends Component {
                         <Col sm={10}>
                           <Form.Check
                             type="radio"
-                            label="Pago mensual €29/Mes"
-                            value="29"
+                            label="Un pago mensual de €99"
+                            value="99"
                             name="course_type"
                             id="formHorizontalRadios1"
-                            onChange={(event) => this.handleInputChange(event)}
-                          />
-                          <Form.Check
-                            type="radio"
-                            label="Un pago de €199 (€19Mes)"
-                            value="199"
-                            name="course_type"
-                            id="formHorizontalRadios2"
                             onChange={(event) => this.handleInputChange(event)}
                           />
                         </Col>
