@@ -60,7 +60,7 @@ export default class PaypalCheckoutButton extends React.Component {
 		}
 
 		let env = 'production'; // you can set this string to 'production'
-		let currency = 'USD'; // you can set this string from your props or state  
+		let currency = 'EUR'; // you can set this string from your props or state  
 		let total = this.props.amount;  // this is the total amount (based on currency) to charge
 		// Document on Paypal's currency code: https://developer.paypal.com/docs/classic/api/currency_codes/
 

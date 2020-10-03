@@ -30,7 +30,7 @@ export const routes = [
     id: 3,
     exact: true,
     path: '/workshop',
-    Component: Workshop,
+    Component: WorkshopWebDeveloper,
     Layout: FullLayout,
     Access: 'Public',
   },

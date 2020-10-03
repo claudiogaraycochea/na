@@ -208,13 +208,24 @@
 }
 
 .wwd .description {
-  font-size: 28px;
+  font-size: 24px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .wwd .workshop-time {
   font-size: 18px;
   margin-bottom: 20px;
+}
+
+.wwd .button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.wwd.hero-wrapper .title {
+  font-size: 34px;
 }
 
 .course-hero-wrapper {
@@ -303,8 +314,18 @@
     font-size: 54px;
   }
 
+  .wwd .description {
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
   .text-lg-left-xs-center {
     text-align: left;
   }
-  
+
+  .wwd .button-wrapper {
+    display: flex;
+    justify-content: left;
+  }
 }

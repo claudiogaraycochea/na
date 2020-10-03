@@ -24,7 +24,7 @@ class Workshop extends Component {
       zip_code: '',
       state: '',
       country: '',
-      course_type: 0,
+      course_type: 99,
       validated: false,
       subscriptionSent: false,
 		};
@@ -88,7 +88,7 @@ class Workshop extends Component {
       "zip_code": zip_code,
       "state": state,
       "country": country,
-      "course_type": course_type,
+      "course_type": 99,
     };
     const endpoint = '/subscriptor';
     //const endpoint = '/user';
@@ -128,13 +128,13 @@ class Workshop extends Component {
             <Col xs={12} lg={7} className='d-flex flex-column align-items-center justify-content-center'>
               <div className='content'>
                 <div className='title mb-0'>
-                  TALLER INTENSIVO PARA
+                  CURSO INTENSIVO PARA
                 </div>
                 <div className='title text-highlight'>
                   APRENDER DESARROLLO WEB PROFESIONAL
                 </div>
                 <div className='description'>
-                  En 1 mes a solo €99, aprende las nociones básicas para que puedas crear sitios web a nivel profesional
+                  En 1 mes a solo €99, aprende a crear sitios web a nivel profesional y marketing para lograr una salida laboral en el mundo digital.
                 </div>
                 <div className='workshop-time'>
                   Cupo limitado a 30 alumnos /
@@ -142,9 +142,9 @@ class Workshop extends Component {
                   Días: Lun, Mier, Vier a las 19 hs (España) /
                   Duración: 1 mes
                 </div>
-                <div>
+                <div className='button-wrapper'>
                   <a href='#apuntate'>
-                    <Button className='primary large'>Apuntarme al taller ahora</Button>
+                    <Button className='primary large'>Apuntarme al curso ahora</Button>
                   </a>
                 </div>
               </div>
@@ -170,15 +170,15 @@ class Workshop extends Component {
         <Section>
           <Row>
             <Col xs={12} lg={8} className='text-lg-left-xs-center'>
-              <H2>Acerca del taller</H2>
+              <H2>Acerca del curso</H2>
               <p>
                 Soy Claudio Garaycochea, con más de 17 años desarrollando productos 
-                para startups y companias de California, Washington DC y Suiza. 
+                para startups y compañías de California, Washington DC y Suiza. 
                 Desarrollé apps para la compañía Facebook, el sitio web GlobalLogic.com, 
                 entre otras.
               </p>
               <p>
-                Con el aval de mi experiencia profesional, creé este taller para que tu 
+                Con el aval de mi experiencia profesional, creé este curso para que tu 
                 puedas iniciarte rápidamente en el mundo laboral digital.
               </p>
             </Col>
@@ -196,7 +196,7 @@ class Workshop extends Component {
           <Row>
             <Col>
               <H3>
-                El taller pretende formar con conocimientos básicos para que 
+                El curso pretende formar con conocimientos básicos para que 
                 puedas crear campañas de marketing y desarrollar websites para 
                 comercios o empresas.
               </H3>
@@ -266,15 +266,15 @@ class Workshop extends Component {
         <Section className='bg-wave'>
           <Row>
             <Col>
-              <H2>APUNTATE AHORA</H2>
+              <H2>¡APUNTATE AHORA!</H2>
               <H3>Cupo limitado a 30 alumnos</H3>
             </Col>
           </Row>
           <Row>
             <Col>
               <p> 
-                El taller consiste en 3 días por semana vía streaming durante 1 mes, 
-                cada taller dura 1 hora, donde te enseño lo básico de cada tema, 
+                El curso consiste en 3 días por semana vía streaming durante 1 mes, 
+                cada clase dura 1 hora, donde te enseño lo básico de cada tema, 
                 estará acompañado de material de soporte que te ayudará en la  
                 práctica. Fecha de inicio 15 de noviembre.
               </p>
@@ -395,23 +395,6 @@ class Workshop extends Component {
                         />
                       </Form.Group> 
                     </Form.Row>
-                    <fieldset>
-                      <Form.Group as={Row}>
-                        <Form.Label as="legend" column sm={2}>
-                          Cursos:
-                        </Form.Label>
-                        <Col sm={10}>
-                          <Form.Check
-                            type="radio"
-                            label="Un pago mensual de €99"
-                            value="99"
-                            name="course_type"
-                            id="formHorizontalRadios1"
-                            onChange={(event) => this.handleInputChange(event)}
-                          />
-                        </Col>
-                      </Form.Group>
-                    </fieldset>
                     <Form.Row>
                       <Form.Group as={Row}>
                         <Col>
@@ -482,6 +465,14 @@ class Workshop extends Component {
             </Col>
           </Row>
         </Section>
+        <div className='call-to-action-wrapper'>
+          <div className='space'>
+            ¡Consulta ahora!
+          </div>
+          <a href='https://wa.me/34932209092'>
+            <Button className='primary'>Whatsapp +34 932 209092</Button>
+          </a>
+        </div>
       </Container>
     );
   }
