@@ -24,7 +24,7 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
 				? <Component {...props} /> : (
 					<Redirect
 						to={{
-							pathname: '/neoasimilacion',
+							pathname: '/',
 							state: {
 								from: props.location,
 							},
@@ -38,7 +38,7 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
 const initRoutes = () => (
 	<BrowserRouter>
 		<Switch 
-			basename={'/neoasimilacion'}
+			basename={'/'}
 		>
 			{routes.map((route) => (
 				(route.Access === 'Private') ? (
