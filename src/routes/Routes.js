@@ -29,7 +29,7 @@ export const routes = [
   {
     id: 1,
     exact: true,
-    path: '/',
+    path: '/neoasimilacion/',
     Component: Welcome,
     Layout: FullLayout,
     Access: 'Public',
